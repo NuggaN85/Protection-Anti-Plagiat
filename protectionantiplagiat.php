@@ -85,7 +85,6 @@ $sujet .= '[protection-anti-plagiat]';
 $message = '[Information] <br><br>Aspirateur : '.$navigateur.' <br><br>Url : '.geturl().' <br><br>Host : '.$hostname.' <br><br>Adresse ip : '.getip().'';
 if(mail($destinataire,$sujet,$message,$headers))
 	
-	die();
+    die();
 } 
-
 ?>
