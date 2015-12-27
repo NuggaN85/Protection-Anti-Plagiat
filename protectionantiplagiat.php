@@ -60,7 +60,7 @@ $bannav = Array('HTTrack', 'SiteSucker', 'Ezooms', 'EasouSpider', 'Baiduspider',
 foreach ($bannav as $banned) { $comparaison = strstr($navigateur, $banned);
     if(strstr($navigateur, $banned)) {
        $write_this = '[Information] Aspirateur : '.$navigateur.' Host : '.$hostname.' Adresse ip : ' .getip(); // Le texte que vous voulez avoir dans votre fichier protectionantiplagiat.cnx
-	 $tentative++;
+       $tentative++;
     }
 }
 //----------------------------------------------------
