@@ -1,4 +1,6 @@
 <?php
+$jsonfile = '../check/bannav.json';
+$bannav = json_decode(file_get_contents($jsonfile), true);
 /*!
  * protectionantiplagiat init v1.0
  * Dev: NuggaN85
@@ -7,8 +9,8 @@
  * Copyright © 2015 All rights reserved.
  * Licensed under CC BY 3.0
  */
- require('os.php');
- require('navigateur.php');
+ require('../check/os.php');
+ require('../check/navigateur.php');
 //------------------------------------------
 //récuperation des ip v4 & v6 du client 
 //------------------------------------------
