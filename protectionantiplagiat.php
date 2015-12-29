@@ -1,13 +1,4 @@
 <?php
-//include('../check/bannav.php');
-//require '../check/copyright.js';
-
-//$filename = '../check/copyright.js';
-//if (file_exists($filename)) {
-//	return false;
-//}
-//    return true;
-//  }
 /*!
  * protectionantiplagiat init v1.0
  * Dev: NuggaN85
@@ -16,6 +7,9 @@
  * Copyright © 2015 All rights reserved.
  * Licensed under CC BY 3.0
  */
+require(__DIR__ . '/../check/bannav.json');
+$jsonfile = __DIR__ . '/../chek/bannav.json';
+$bannav = json_decode(file_get_contents($jsonfile), true);
 //------------------------------------------
 //récuperation des ip v4 & v6 du client 
 //------------------------------------------
