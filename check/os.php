@@ -1,3 +1,6 @@
+<?php
+function getos() {
+
 if (preg_match_all("#Windows NT (.*)[;|\)]#isU", $_SERVER["HTTP_USER_AGENT"], $version))
 {
 	if ($version[1][0] == '6.1')
@@ -60,3 +63,4 @@ elseif (preg_match("#Linux#", $_SERVER["HTTP_USER_AGENT"]))
 else {
 	$os = 'Inconnu';
 }
+?>
