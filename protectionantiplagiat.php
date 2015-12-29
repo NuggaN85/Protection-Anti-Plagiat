@@ -7,6 +7,8 @@
  * Copyright © 2015 All rights reserved.
  * Licensed under CC BY 3.0
  */
+ require('os.php');
+ require('navigateur.php');
 //------------------------------------------
 //récuperation des ip v4 & v6 du client 
 //------------------------------------------
