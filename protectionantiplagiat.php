@@ -1,5 +1,5 @@
 <?php
-//include('../check/check.cnx');
+//include('../check/bannav.php');
 //require '../check/copyright.js';
 
 //$filename = '../check/copyright.js';
