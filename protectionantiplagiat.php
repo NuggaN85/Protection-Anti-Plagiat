@@ -1,14 +1,15 @@
 <?php
 /*!
- * protectionantiplagiat init v1.0
- * Dev: NuggaN85
- * Github: NuggaN85
- * Twitter: @NuggaN85
- * Copyright © 2015 All rights reserved.
- * Licensed under CC BY 3.0
- */
- require(INCLUDE_DIR.'os.php');
- require(INCLUDE_DIR.'navigateur.php');
+* protectionantiplagiat init v1.0
+* Dev: NuggaN85
+* Github: NuggaN85
+* Twitter: @NuggaN85
+* Copyright © 2015 All rights reserved.
+* Licensed under CC BY 3.0
+*/
+require(INCLUDE_DIR.'os.php');
+require(INCLUDE_DIR.'navigateur.php');
+require(INCLUDE_DIR.'bannav.php');
  
 $filename = 'check/bannav.php';
 if (file_exists($filename)) {
