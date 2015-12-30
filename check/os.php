@@ -1,6 +1,13 @@
 <?php
+/*!
+* protectionantiplagiat init v1.0
+* Dev: NuggaN85
+* Github: NuggaN85
+* Twitter: @NuggaN85
+* Copyright © 2015 All rights reserved.
+* Licensed under CC BY 3.0
+*/
 function getos() {
-
 if (preg_match_all("#Windows NT (.*)[;|\)]#isU", $_SERVER["HTTP_USER_AGENT"], $version))
 {
 	if ($version[1][0] == '6.1')
