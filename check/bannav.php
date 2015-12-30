@@ -1,5 +1,8 @@
 <?php
+
 $bannav = array();
 
-$bannav['1'] = "Home";
+$bannav['1'] = "HTTrack";
+$bannav['2'] = "httrack";
+
 ?>
