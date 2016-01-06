@@ -7,11 +7,12 @@
 * Copyright © 2015 All rights reserved.
 * Licensed under CC BY 3.0
 */
-require(INCLUDE_DIR.'os.php');
-require(INCLUDE_DIR.'navigateur.php');
-require(INCLUDE_DIR.'bannav.php');
+$base_dir = 'chek/';
+require($base_dir.'os.php');
+require($base_dir.'navigateur.php');
+require($base_dir.'bannav.php');
  
-$filename = 'check/bannav.php';
+$filename = ($base_dir.);
 if (file_exists($filename)) {
     exit();
 } 
