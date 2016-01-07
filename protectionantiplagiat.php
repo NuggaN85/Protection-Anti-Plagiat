@@ -11,10 +11,6 @@ $base_dir = 'chek/';
 require($base_dir.'os.php');
 require($base_dir.'navigateur.php');
 require($base_dir.'bannav.php');
-if(!file_exist('bannav.php'){ die(); }
-if (in_array("$user_agent", $bannav)){
-    die();
-}
 //------------------------------------------
 //récuperation des ip v4 & v6 du client 
 //------------------------------------------
@@ -55,9 +51,8 @@ function geturl() {
 //------------------------------------------
 $user_agent = $_SERVER['HTTP_USER_AGENT'] . "\n";
 $hostname = gethostbyaddr($_SERVER['REMOTE_ADDR']);
-if (in_array("$user_agent", $bannav)){
-    die();
-}
+if (in_array("$user_agent", $bannav)){ die(); }
+if(!file_exist('bannav.php'){ die(); }
 foreach ($bannav as $banned) { $comparaison = strstr($user_agent, $banned);
     if($comparaison !== false) {
        $write_this = '[Information] Aspirateur : '.$user_agent.' Host : '.$hostname.' Adresse ip : ' .getip(); // Le texte que vous voulez avoir dans votre fichier protectionantiplagiat.cnx
