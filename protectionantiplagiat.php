@@ -11,11 +11,6 @@ $base_dir = 'chek/';
 require($base_dir.'os.php');
 require($base_dir.'navigateur.php');
 require($base_dir.'bannav.php');
- 
-$filename = ($base_dir);
-if (file_exists($filename)) {
-    exit();
-} 
 //------------------------------------------
 //récuperation des ip v4 & v6 du client 
 //------------------------------------------
