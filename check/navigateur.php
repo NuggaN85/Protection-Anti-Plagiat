@@ -52,6 +52,6 @@ elseif(preg_match("#Netscape#", $_SERVER["HTTP_USER_AGENT"]))
 }
 else
 {
-	$navigateur = 'Inconnu';
+	$navigateur = 'UNKNOWN';
 }
 ?>
