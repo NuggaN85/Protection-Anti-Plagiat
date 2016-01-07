@@ -51,20 +51,7 @@ if($tentative > 0){
    $write_here = fopen("protectionantiplagiat.cnx", "a"); // Fichier cnx auto inclus a la racine avec le protectionantiplagiat.php.
    fwrite($write_here, "\n" . $write_this);
    fclose($write_here);
-   echo utf8_decode( '[Sécurité] Notre site web est protégé contre le vole et le spam, vos information serons automatiquement bannie sur la base de donnée de projecthoneypot <br><br> [Information] : '.$user_agent.' '.$hostname.' '.getip().''); // Le texte que vous voulez que le voleur recevra dans les fichiers télécharger.	
-//-------------------------
-// Notification emails
-//-------------------------
-$email_expediteur = 'noreply@protection-anti-plagiat.com'; 
-$email_reply = 'noreply@protection-anti-plagiat.com';
-$headers = 'From: "PAP.COM" <'.$email_expediteur.'>'."\n"; 
-$headers .= 'Return-Path: <'.$email_reply.'>'."\n";
-$headers .= 'Content-Type: text/html; charset="iso-8859-1"'."\r\n";
-$headers .= 'Content-Transfer-Encoding: 8bit';
-$destinataire .= 'VOTRE EMAIL';
-$sujet .= '[protection-anti-plagiat]';
-$message = '[Information] <br><br>Aspirateur : '.$user_agent.' <br><br>Host : '.$hostname.' <br><br>Adresse ip : '.getip().'';
-if(mail($destinataire,$sujet,$message,$headers))
+   echo utf8_decode( '[Sécurité] Notre site web est protégé contre le vole et le spam, vos information serons automatiquement bannie sur la base de donnée de projecthoneypot <br><br> [Information] : '.$user_agent.' '.$hostname.' '.getip().''); // Le texte que vous voulez que le voleur recevra dans les fichiers télécharger.
 	
     die();
 } 
