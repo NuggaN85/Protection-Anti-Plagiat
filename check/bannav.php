@@ -242,5 +242,6 @@ $bannav = Array(
   'wwwoffle',
   'Whacker',
   'whizbang',
-  'Zeus');
+  'Zeus',
+  'EmailSiphon');
   ?>
