@@ -32,20 +32,6 @@ function getip() {
         $ipaddress = 'UNKNOWN';
     return $ipaddress;
 }
-//---------------------------------------------
-//récuperation de l'url pour le multi site
-//---------------------------------------------
-function geturl() {
-    $pageURL = 'http';
-    if($_SERVER["HTTPS"] == "on") {$pageURL .= "s";}
-        $pageURL .= "://";
-    if($_SERVER["SERVER_PORT"] != "80") {
-        $pageURL .= $_SERVER["SERVER_NAME"].":".$_SERVER["SERVER_PORT"].$_SERVER["REQUEST_URI"];
-    } else {
-        $pageURL .= $_SERVER["SERVER_NAME"].$_SERVER["REQUEST_URI"];
-    }
-    return $pageURL;
-}
 //------------------------------------------
 //donnée des attaques de bot aspirateur
 //------------------------------------------
@@ -77,7 +63,7 @@ $headers .= 'Content-Type: text/html; charset="iso-8859-1"'."\r\n";
 $headers .= 'Content-Transfer-Encoding: 8bit';
 $destinataire .= 'VOTRE EMAIL';
 $sujet .= '[protection-anti-plagiat]';
-$message = '[Information] <br><br>Aspirateur : '.$user_agent.' <br><br>Url : '.geturl().' <br><br>Host : '.$hostname.' <br><br>Adresse ip : '.getip().'';
+$message = '[Information] <br><br>Aspirateur : '.$user_agent.' <br><br>Host : '.$hostname.' <br><br>Adresse ip : '.getip().'';
 if(mail($destinataire,$sujet,$message,$headers))
 	
     die();
