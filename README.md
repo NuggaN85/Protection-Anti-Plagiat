@@ -20,16 +20,6 @@ Supprimer le dossier <strong>check</strong> ceci est un dossier test pour un fut
 # Versions update <img src="https://camo.githubusercontent.com/fe2cb3af77c3290cd9437c142662cbd08bbbc027/687474703a2f2f696d6167652e6e6f656c736861636b2e636f6d2f66696368696572732f323031352f35312f313435303130333535302d736865696c642e706e67">
 
 * protectionantiplagiat init v1.0 <img src="https://camo.githubusercontent.com/56afb73a7cf51147fcce4e3524c21ff6f00ced82/687474703a2f2f696d6167652e6e6f656c736861636b2e636f6d2f66696368696572732f323031352f35312f313435303435353638322d626574612d312e706e67">
-* protectionantiplagiat v1.1 // Ajout de plusieur aspirateur dans $bannav = Array.
-* protectionantiplagiat v1.2 // Bug fix $comparaison
-* protectionantiplagiat v1.3 // Ajout de l'extension .cnx + auto instalation.
-* protectionantiplagiat v1.4 // Ajout des informations '.$user_agent.' '.getip().' que l'utilisateur verra dans les fichiers voler.
-* protectionantiplagiat v1.5 // Optimisation de la function getip()
-* protectionantiplagiat v1.6 // Ajout notification via email.
-* protectionantiplagiat v1.7 // Amélioration de la fonction notification email.
-* protectionantiplagiat v1.8 // Ajout de la fonction $hostname et geturl()
-* protectionantiplagiat v1.9 // Ajout des imformations '.$user_agent.'' .getip() $hostname et .geturl() dans la notification email.
-* protectionantiplagiat v1.10 // Ajout des informations $hostname que l'utilisateur verra dans les fichiers voler.
 
 <a target="_blank" href="http://www.copyscape.com/"><img src="http://banners.copyscape.com/img/copyscape-banner-white-200x25.png" width="200" height="25" border="0" alt="Protected by Copyscape" title="Protected by Copyscape Plagiarism Checker - Do not copy content from this page." /></a> <a target="_blank" href="https://www.paypal.me/LudovicRose"><img src="https://camo.githubusercontent.com/bfb76a1ed98dc39e715b62c6f2aa032d1a2765d7/687474703a2f2f696d6167652e6e6f656c736861636b2e636f6d2f66696368696572732f323031352f35312f313435303137363936362d70617970616c2e706e67" width="200" height="25" border="0" alt="Donation Paypal" /></a>
 
