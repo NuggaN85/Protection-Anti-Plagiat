@@ -14,6 +14,7 @@ $bannav = Array(
   'Ezooms',
   'EasouSpider',
   'Baiduspider',
+  'B-l-i-t-z-B-O-T',
   'AhrefsBot',
   'HTTPClient',
   'hors ligne',
