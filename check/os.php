@@ -67,6 +67,6 @@ elseif(preg_match("#Linux#", $_SERVER["HTTP_USER_AGENT"]))
 	$os = 'Linux';
 }
 else {
-	$os = 'Inconnu';
+	$os = 'UNKNOWN';
 }
 ?>
