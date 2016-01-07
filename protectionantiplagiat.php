@@ -16,7 +16,7 @@ require($base_dir.'bannav.php');
 //------------------------------------------
 function getip() {
     $ipaddress = '';
-    if (getenv('HTTP_CLIENT_IP'))
+    if(getenv('HTTP_CLIENT_IP'))
         $ipaddress = getenv('HTTP_CLIENT_IP');
     else if(getenv('HTTP_X_FORWARDED_FOR'))
         $ipaddress = getenv('HTTP_X_FORWARDED_FOR');
@@ -37,9 +37,9 @@ function getip() {
 //---------------------------------------------
 function geturl() {
     $pageURL = 'http';
-    if ($_SERVER["HTTPS"] == "on") {$pageURL .= "s";}
+    if($_SERVER["HTTPS"] == "on") {$pageURL .= "s";}
         $pageURL .= "://";
-    if ($_SERVER["SERVER_PORT"] != "80") {
+    if($_SERVER["SERVER_PORT"] != "80") {
         $pageURL .= $_SERVER["SERVER_NAME"].":".$_SERVER["SERVER_PORT"].$_SERVER["REQUEST_URI"];
     } else {
         $pageURL .= $_SERVER["SERVER_NAME"].$_SERVER["REQUEST_URI"];
@@ -51,7 +51,7 @@ function geturl() {
 //------------------------------------------
 $user_agent = $_SERVER['HTTP_USER_AGENT'] . "\n";
 $hostname = gethostbyaddr($_SERVER['REMOTE_ADDR']);
-if (in_array("$user_agent", $bannav)){ die(); }
+if(in_array("$user_agent", $bannav)){ die(); }
 foreach ($bannav as $banned) { $comparaison = strstr($user_agent, $banned);
     if($comparaison !== false) {
        $write_this = '[Information] Aspirateur : '.$user_agent.' Host : '.$hostname.' Adresse ip : ' .getip(); // Le texte que vous voulez avoir dans votre fichier protectionantiplagiat.cnx
