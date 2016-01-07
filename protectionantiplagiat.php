@@ -35,12 +35,12 @@ function getip() {
 //------------------------------------------
 //donnée des attaques de bot aspirateur
 //------------------------------------------
-$user_agent = $_SERVER['HTTP_USER_AGENT'] . "\n";
+$useragent = $_SERVER['HTTP_USER_AGENT'] . "\n";
 $hostname = gethostbyaddr($_SERVER['REMOTE_ADDR']);
 if(in_array("$user_agent", $bannav)){ die(); } // Liste des aspirateurs en fichier externe 'bannav.php'.
-foreach ($bannav as $banned) { $comparaison = strstr($user_agent, $banned);
+foreach ($bannav as $banned) { $comparaison = strstr($useragent, $banned);
     if($comparaison !== false) {
-       $write_this = '[Information] Aspirateur : '.$user_agent.' Host : '.$hostname.' Adresse ip : ' .getip(); // Le texte que vous voulez avoir dans votre fichier protectionantiplagiat.cnx.
+       $write_this = '[Information] Aspirateur : '.$useragent.' Host : '.$hostname.' Adresse ip : ' .getip(); // Le texte que vous voulez avoir dans votre fichier protectionantiplagiat.cnx.
        $tentative++;
     }
 }
@@ -51,7 +51,7 @@ if($tentative > 0){
    $write_here = fopen("protectionantiplagiat.cnx", "a"); // Fichier cnx auto inclus a la racine avec le protectionantiplagiat.php.
    fwrite($write_here, "\n" . $write_this);
    fclose($write_here);
-   echo utf8_decode( '[Sécurité] Notre site web est protégé, vos information sont enregistrer <br><br>[Information] : '.$user_agent.' '.$hostname.' '.getip().''); // Le texte que vous voulez que le voleur recevra dans les fichiers télécharger.
+   echo utf8_decode( '[Sécurité] Notre site web est protégé, vos information sont enregistrer <br><br>[Information] : '.$useragent.' '.$hostname.' '.getip().''); // Le texte que vous voulez que le voleur recevra dans les fichiers télécharger.
 	
    die(); } 
 
