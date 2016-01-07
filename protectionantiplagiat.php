@@ -32,9 +32,9 @@ function getip() {
         $ipaddress = 'UNKNOWN';
     return $ipaddress;
 }
-//--------------------------
-//récuperation de l'url
-//--------------------------
+//---------------------------------------------
+//récuperation de l'url pour le multi site
+//---------------------------------------------
 function geturl() {
     $pageURL = 'http';
     if ($_SERVER["HTTPS"] == "on") {$pageURL .= "s";}
