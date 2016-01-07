@@ -262,5 +262,5 @@ $bannav = Array(
   'libwww-perl',
   'Web Downloader'
   );
+  // voici une liste useragentstring mis a jours a chaque nouveau bot : http://www.useragentstring.com/pages/useragentstring.php
   ?>
-// voici une liste useragentstring mis a jours a chaque nouveau bot : http://www.useragentstring.com/pages/useragentstring.php
