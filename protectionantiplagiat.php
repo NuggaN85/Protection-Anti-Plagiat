@@ -53,7 +53,6 @@ if($tentative > 0){
    fclose($write_here);
    echo utf8_decode( '[Sécurité] Notre site web est protégé, vos information sont enregistrer <br><br>[Information] : '.$user_agent.' '.$hostname.' '.getip().''); // Le texte que vous voulez que le voleur recevra dans les fichiers télécharger.
 	
-    die();
-} 
+   die(); } 
 
 ?>
