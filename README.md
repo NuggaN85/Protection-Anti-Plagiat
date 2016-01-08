@@ -7,7 +7,7 @@ require_once($base_dir.'os.php');
 require_once($base_dir.'navigateur.php');
 require_once($base_dir.'bannav.php');
 ```
-Ce script vous permettra de protéger votre site web contre les attaques d'aspirateurs de site web pour éviter les plagiats (comme le logiciel le plus connus qui est <strong>HTTRACK</strong>). <img src="https://camo.githubusercontent.com/56afb73a7cf51147fcce4e3524c21ff6f00ced82/687474703a2f2f696d6167652e6e6f656c736861636b2e636f6d2f66696368696572732f323031352f35312f313435303435353638322d626574612d312e706e67">
+Ce script vous permettra de protéger votre site web contre les attaques d'aspirateurs de site web pour éviter les plagiats (comme le logiciel le plus connus qui est <strong>HTTRACK</strong>).
 
 Deux systéme de sécurité (Encodage automatique dans un fichier .cnx qui est pas reconu via le web et par notification via email).
 
