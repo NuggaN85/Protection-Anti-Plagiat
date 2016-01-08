@@ -39,7 +39,7 @@ $useragent = $_SERVER['HTTP_USER_AGENT'] . "\n";
 if(in_array("$user_agent", $bannav)){ die(); } // Liste des aspirateurs en fichier externe 'bannav.php'.
 foreach ($bannav as $banned) { $comparaison = strstr($useragent, $banned);
     if($comparaison !== false) {
-       $write_this = '[Information] Aspirateur : '.$useragent.' Adresse ip : ' .getip(); // Le texte que vous voulez avoir dans votre fichier protectionantiplagiat.cnx.
+       $DATA = '[Information] Aspirateur : '.$useragent.' Adresse ip : ' .getip(); // Le texte que vous voulez avoir dans votre fichier protectionantiplagiat.cnx.
        $tentative++;
     }
 }
@@ -47,9 +47,9 @@ foreach ($bannav as $banned) { $comparaison = strstr($useragent, $banned);
 // récuperation des infos avec fichier auto écrit
 //----------------------------------------------------
 if($tentative > 0){
-   $write_here = fopen("protectionantiplagiat.cnx", "a"); // Fichier cnx auto inclus a la racine avec le protectionantiplagiat.php.
-   fwrite($write_here, "\n" . $write_this);
-   fclose($write_here);
+   $files = fopen("protectionantiplagiat.cnx", "a"); // Fichier cnx auto inclus a la racine avec le protectionantiplagiat.php.
+   fputs($files, "\n" . $DATA);
+   fclose($files);
    echo utf8_decode( '[Sécurité] Notre site web est protégé, vos information sont enregistrer <br><br>[Information] : '.$useragent.' '.getip().''); // Le texte que vous voulez que le voleur recevra dans les fichiers télécharger.
 	
    die(); } 
