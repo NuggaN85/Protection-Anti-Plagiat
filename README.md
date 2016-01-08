@@ -25,9 +25,9 @@ thank you in advance: https://gitroom.org/?p=60764
   
 --------------------------------------------------------------------------------------------------------------------------------------
 
-# Versions update
+# Versions update ![alt tag](http://img15.hostingpics.net/pics/598700file94.png)
 
-```PHP
+```
 * protectionantiplagiat init v1.0 
 * protectionantiplagiat v1.1 // Liste des bots aspirateur en fichier externe 'bannav.php'.
 * protectionantiplagiat v1.2 // Ajouts de 2 fichier externe 'os.php', 'navigateur.php'
