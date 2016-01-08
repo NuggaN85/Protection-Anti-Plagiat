@@ -2,9 +2,10 @@
 
 Importer les fichiers externe.
 ```PHP
-require_once 'bannav.php';
-require_once 'os.php';
-require_once 'nav.php';
+$base_dir = 'chek/';
+require_once($base_dir.'os.php');
+require_once($base_dir.'navigateur.php');
+require_once($base_dir.'bannav.php');
 ```
 
 Ce script vous permettra de protéger votre site web contre les attaques d'aspirateurs de site web pour éviter les plagiats (comme le logiciel le plus connus qui est <strong>HTTRACK</strong>).
