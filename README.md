@@ -19,7 +19,7 @@ Pour les fichiers en <strong>php</strong>, inclure ceci " include('protectionant
 <strong>Attention !</strong>
 Pour les fichiers en <strong>html</strong>, mettre ceci " <?php include('protectionantiplagiat.php'); ?> " avant la balise " <!DOCTYPE html> dans les pages souhaitées de votre site web.
 
-[![Donate](https://img.shields.io/badge/paypal-donate-yellow.svg)](https://www.paypal.me/LudovicRose)
+[![Donate](https://img.shields.io/badge/paypal-donate-yellow.svg?style=flat)](https://www.paypal.me/LudovicRose)
 
 <a target="_blank" href="http://www.copyscape.com/"><img src="http://banners.copyscape.com/img/copyscape-banner-white-200x25.png" width="200" height="25" border="0" alt="Protected by Copyscape" title="Protected by Copyscape Plagiarism Checker - Do not copy content from this page." /></a>
 
