@@ -1,7 +1,3 @@
-<IfModule mod_headers.c>
-Header always set X-XSS-Protection "1; mode=block"
-</IfModule>
-
 <Files protectionantiplagiat.cnx>
 order allow,deny
 deny from all
