@@ -8,9 +8,9 @@
 * Licensed under CC BY 3.0
 */
 $base_dir = 'chek/';
-require($base_dir.'os.php');
-require($base_dir.'navigateur.php');
-require($base_dir.'bannav.php');
+require_once($base_dir.'os.php');
+require_once($base_dir.'navigateur.php');
+require_once($base_dir.'bannav.php');
 //------------------------------------------
 //récuperation des ip v4 & v6 du client 
 //------------------------------------------
