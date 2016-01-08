@@ -197,6 +197,7 @@ $bannav = Array(
   'snagger',
   'Snake',
   'spanner',
+  'envolk[ITS]spider',
   'SpankBot',
   'Stripper',
   'Sucker',
