@@ -19,7 +19,10 @@ Pour les fichiers en <strong>php</strong>, inclure ceci " include('protectionant
 <strong>Attention !</strong>
 Pour les fichiers en <strong>html</strong>, mettre ceci " <?php include('protectionantiplagiat.php'); ?> " avant la balise " <!DOCTYPE html> dans les pages souhaitées de votre site web.
 
-<a target="_blank" href="http://www.copyscape.com/"><img src="http://banners.copyscape.com/img/copyscape-banner-white-200x25.png" width="200" height="25" border="0" alt="Protected by Copyscape" title="Protected by Copyscape Plagiarism Checker - Do not copy content from this page." /></a> <a target="_blank" href="https://www.paypal.me/LudovicRose"><img src="https://camo.githubusercontent.com/bfb76a1ed98dc39e715b62c6f2aa032d1a2765d7/687474703a2f2f696d6167652e6e6f656c736861636b2e636f6d2f66696368696572732f323031352f35312f313435303137363936362d70617970616c2e706e67" width="200" height="25" border="0" alt="Donation Paypal" /></a>
+[![Donate](https://img.shields.io/badge/paypal-donate-yellow.svg)](https://www.paypal.me/LudovicRose)
+[![Travis CI Build Status](https://img.shields.io/travis/andersevenrud/OS.js-v2.svg)](https://travis-ci.org/NuggaN85/Protection-Anti-Plagiat)
+
+<a target="_blank" href="http://www.copyscape.com/"><img src="http://banners.copyscape.com/img/copyscape-banner-white-200x25.png" width="200" height="25" border="0" alt="Protected by Copyscape" title="Protected by Copyscape Plagiarism Checker - Do not copy content from this page." /></a>
 
 thank you in advance: https://gitroom.org/?p=60764
   
