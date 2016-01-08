@@ -160,6 +160,7 @@ $bannav = Array(
   'Ninja',
   'NPBot',
   'Octopus',
+  'LinksManager.com_bot',
   'Offline',
   'Openbot',
   'Openfind',
