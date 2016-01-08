@@ -3,6 +3,8 @@
 Importer le fichier "class.logs.1.php"
 ```PHP
 require_once 'bannav.php';
+require_once 'os.php';
+require_once 'nav.php';
 ```
 
 Ce script vous permettra de protéger votre site web contre les attaques d'aspirateurs de site web pour éviter les plagiats (comme le logiciel le plus connus qui est <strong>HTTRACK</strong>).
