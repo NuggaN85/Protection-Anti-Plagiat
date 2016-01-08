@@ -7,10 +7,7 @@
 * Copyright © 2015 All rights reserved.
 * Licensed under CC BY 3.0
 */
-$base_dir = 'chek/';
-require_once($base_dir.'os.php');
-require_once($base_dir.'navigateur.php');
-require_once($base_dir.'bannav.php');
+require($base_dir.''autoloader.php'');
 //------------------------------------------
 //récuperation des ip v4 & v6 du client 
 //------------------------------------------
