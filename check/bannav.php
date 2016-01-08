@@ -227,6 +227,7 @@ $bannav = Array(
   'Vampire',
   'NCSA_Mosaic',
   'VCI',
+  'EmeraldShield.com WebBot',
   'Veuve',
   'VoidEYE',
   'MLBot',
