@@ -8,5 +8,8 @@ function __autoload($base_dir)
 {
     require('protectionantiplagiat.php', $base_dir);
 }
-if(!file_exist('protectionantiplagiat.php'){ die(); }
+if(!file_exist('protectionantiplagiat.php'){ 
+    
+    die(); 
+}
 ?>
