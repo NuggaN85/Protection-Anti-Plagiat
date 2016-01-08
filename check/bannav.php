@@ -20,6 +20,7 @@ $bannav = Array(
   'OmniExplorer_Bot',
   'FAST-WebCrawler',
   'Radian6',
+  'BlitzBOT',
   'B-l-i-t-z-B-O-T',
   'AhrefsBot',
   'HTTPClient',
