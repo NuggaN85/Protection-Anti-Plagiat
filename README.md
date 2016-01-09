@@ -44,3 +44,23 @@ thank you in advance: https://gitroom.org/?p=60764
 * protectionantiplagiat v1.2 // Ajouts de 2 fichier externe 'os.php', 'navigateur.php'
 ```
 --------------------------------------------------------------------------------------------------------------------------------------
+
+# Exemple log ![alt tag](https://camo.githubusercontent.com/c854ccb6625c6674287cf084391dc66983ac6ec1/687474703a2f2f696d6731352e686f7374696e67706963732e6e65742f706963732f35393837303066696c6539342e706e67)
+
+```
+[INFORMATION CLIENT] 
+
+Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98) URL : 'ici sera indiquer votre url web'
+
+OS CLIENT : 'ici l'os du client'
+
+NAVIGATEUR CLIENT : 'ici le navigateur du client'
+
+IP CLIENT : 'ici l'ip du client'
+
+PORT CLIENT : 'ici le port du client'
+
+HOST CLIENT : 'ici le host du client' 
+
+POUR PLUS AVOIR DE SOUCI VEUILLEZ BLOQUER LE CLIENT DANS LA BLACKLIST.
+```
