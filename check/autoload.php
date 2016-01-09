@@ -1,15 +1,19 @@
 <?php
-$base_dir = 'chek/';
-require_once($base_dir.'os.php');
-require_once($base_dir.'navigateur.php');
-require_once($base_dir.'bannav.php');
 
-function __autoload($base_dir)
-{
-    require('protectionantiplagiat.php', $base_dir);
-}
-if(!file_exist('protectionantiplagiat.php'){ 
-    
-    die(); 
-}
+ $base_dir = 'check/';
+ 
+ function _autoload($b, $f){
+  $check = $b . $f; 
+  if(!file_exist($check)){
+   echo false;
+  }
+  else {
+   echo true;
+  }
+ }
+ 
+ if( _autoload($base_dir, 'monficher.php') == false ){
+  die();
+ }
+ 
 ?>
