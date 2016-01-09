@@ -15,6 +15,13 @@ require_once($base_dir.'os.php');
 require_once($base_dir.'navigateur.php');
 require_once($base_dir.'bannav.php');
 ```
+Ajouter ceci dans votre .htaccess
+```
+<Files protectionantiplagiat.cnx>
+order allow,deny
+deny from all
+</files>
+```
 Ce script vous permettra de protéger votre site web contre les attaques d'aspirateurs de site web pour éviter les plagiats (comme le logiciel le plus connus qui est <strong>"HTTRACK"</strong>).
 
 Deux systéme de sécurité (Encodage automatique dans un fichier .cnx qui est pas reconu via le web et par notification via email).
