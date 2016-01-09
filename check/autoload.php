@@ -12,7 +12,7 @@
   }
  }
  
- if( _autoload($base_dir, 'monficher.php') == false ){
+ if( _autoload($base_dir, 'protectionantiplagiat.php') == false ){
   die();
  }
  
