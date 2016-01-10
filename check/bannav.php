@@ -1,4 +1,5 @@
 <?php
+//===== Liste des bots/spiders/crawlers
 $bannav = Array(
   'HTTrack',
   'httrack',
@@ -270,4 +271,5 @@ $bannav = Array(
   'libwww-perl',
   'Web Downloader'
   );
+  //==========
   ?>
