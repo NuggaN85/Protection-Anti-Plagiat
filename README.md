@@ -10,7 +10,7 @@
 
 Importer les fichiers externe.
 ```PHP
-require('data.php');
+require($base_dir.'check/data.php');
 ```
 Ajouter ceci dans votre .htaccess
 ```
