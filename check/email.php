@@ -8,7 +8,7 @@ else
 {
 	$passage_ligne = "\n";
 }
-//=====Déclaration des messages au format texte et au format HTML.
+//=====Déclaration des messages au format texte.
 $message_txt = ".$useragent.' '.$os.' '.$navigateur.";
 //==========
  
