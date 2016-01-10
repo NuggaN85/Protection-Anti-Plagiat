@@ -1,11 +1,9 @@
 <?php
-//-------------------------------------
-//récuperation des fichier externe
-//-------------------------------------
+//=====récuperation des fichier externe
 require('data.php');
-//------------------------------------------
-//récuperation des ip v4 & v6 du client 
-//------------------------------------------
+//=====
+
+//=====récuperation des ip v4 & v6 du client 
 function getip() {
     $ipaddress = '';
     if(getenv('HTTP_CLIENT_IP'))
@@ -24,9 +22,9 @@ function getip() {
         $ipaddress = 'UNKNOWN';
     return $ipaddress;
 }
-//------------------------------------------
-//donnée des attaques de bot aspirateur
-//------------------------------------------
+//=====
+
+//=====donnée des attaques de bot aspirateur
 $useragent = $_SERVER['HTTP_USER_AGENT'] . "\n";
 if(in_array("$useragent", $bannav)){ die(); } // Liste des aspirateurs en fichier externe 'bannav.php'.
 foreach ($bannav as $banned) { $comparaison = strstr($useragent, $banned);
@@ -34,16 +32,17 @@ foreach ($bannav as $banned) { $comparaison = strstr($useragent, $banned);
         $tentative++;
     }
 }
-//----------------------------------------------------
-// récuperation des infos avec fichier auto écrit
-//----------------------------------------------------
+//=====
+
+//=====récuperation des infos avec fichier auto écrit
 if($tentative > 0){
    $files = fopen("protectionantiplagiat.cnx", "a"); // Fichier cnx auto inclus a la racine avec le protectionantiplagiat.php.
    $log = '[Information] Aspirateur : '.$useragent.' Adresse ip : ' .getip(); // Le texte que vous voulez avoir dans votre fichier protectionantiplagiat.cnx.
    fwrite($files, "\n" . $log);
    fclose($files);
    echo utf8_decode('[Sécurité] Notre site web est protégé, vos information sont enregistrer <br><br>[Information] : '.$useragent.' '.getip().''); // Le texte que vous voulez que le voleur recevra dans les fichiers télécharger.
-	
+//=====
+
    die(); } 
 
 ?>
