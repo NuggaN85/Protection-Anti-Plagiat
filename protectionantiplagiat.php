@@ -1,7 +1,7 @@
 <?php
 //=====récuperation des fichier externe
 require('data.php');
-//=====
+//==========
 
 //=====récuperation des ip v4 & v6 du client 
 function getip() {
@@ -22,7 +22,7 @@ function getip() {
         $ipaddress = 'UNKNOWN';
     return $ipaddress;
 }
-//=====
+//==========
 
 //=====donnée des attaques de bot aspirateur
 $useragent = $_SERVER['HTTP_USER_AGENT'] . "\n";
@@ -32,7 +32,7 @@ foreach ($bannav as $banned) { $comparaison = strstr($useragent, $banned);
         $tentative++;
     }
 }
-//=====
+//==========
 
 //=====récuperation des infos avec fichier auto écrit
 if($tentative > 0){
@@ -41,7 +41,7 @@ if($tentative > 0){
    fwrite($files, "\n" . $log);
    fclose($files);
    echo utf8_decode('[Sécurité] Notre site web est protégé, vos information sont enregistrer <br><br>[Information] : '.$useragent.' '.getip().''); // Le texte que vous voulez que le voleur recevra dans les fichiers télécharger.
-//=====
+//==========
 
    die(); } 
 
