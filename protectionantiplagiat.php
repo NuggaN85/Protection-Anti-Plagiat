@@ -5,22 +5,22 @@ require($base_dir.'check/data.php');
 
 //===== Récuperation des ip v4 & v6 du client 
 function getip() {
-    $ipaddress = '';
+    $ip = '';
     if(getenv('HTTP_CLIENT_IP'))
-        $ipaddress = getenv('HTTP_CLIENT_IP');
+        $ip = getenv('HTTP_CLIENT_IP');
     else if(getenv('HTTP_X_FORWARDED_FOR'))
-        $ipaddress = getenv('HTTP_X_FORWARDED_FOR');
+        $ip = getenv('HTTP_X_FORWARDED_FOR');
     else if(getenv('HTTP_X_FORWARDED'))
-        $ipaddress = getenv('HTTP_X_FORWARDED');
+        $ip = getenv('HTTP_X_FORWARDED');
     else if(getenv('HTTP_FORWARDED_FOR'))
-        $ipaddress = getenv('HTTP_FORWARDED_FOR');
+        $ip = getenv('HTTP_FORWARDED_FOR');
     else if(getenv('HTTP_FORWARDED'))
-       $ipaddress = getenv('HTTP_FORWARDED');
+        $ip = getenv('HTTP_FORWARDED');
     else if(getenv('REMOTE_ADDR'))
-        $ipaddress = getenv('REMOTE_ADDR');
+        $ip = getenv('REMOTE_ADDR');
     else
-        $ipaddress = 'UNKNOWN';
-    return $ipaddress;
+        $ip = 'UNKNOWN';
+    return $ip;
 }
 //==========
 
