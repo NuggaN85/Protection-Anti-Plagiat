@@ -23,18 +23,18 @@ Pour les fichiers en <strong>html</strong>, mettre ceci " <?php include('protect
 Inclure ceci dans vos pages html.
 ```PHP
 // pour les pages html inclure comme ci avant la balise <!DOCTYPE html>
-<?php require($base_dir.'pap/protectionantiplagiat.php'); ?> 
+<?php require($base_dir.'pap/papprotect.php'); ?> 
 ```
 
 Inclure ceci dans vos pages php.
 ```PHP
 // pour les pages html inclure comme ci juste après la balise <?php
-require($base_dir.'pap/protectionantiplagiat.php'); 
+require($base_dir.'pap/papprotect.php'); 
 ```
 
 Ajouter ceci dans votre .htaccess
 ```
-<Files protectionantiplagiat.cnx>
+<Files papprotect-log.cnx>
 order allow,deny
 deny from all
 </files>
