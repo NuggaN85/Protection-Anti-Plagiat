@@ -1,9 +1,9 @@
 <?php
-//===== Récuperation des fichier externe
+//===== Récuperation des fichiers externe.
 require($base_dir.'check/data.php');
 //==========
 
-//===== Récuperation des ip v4 & v6 du client 
+//===== Récuperation des ip v4 & v6 du client.
 function getip() {
     $ip = '';
     if(getenv('HTTP_CLIENT_IP'))
@@ -24,7 +24,7 @@ function getip() {
 }
 //==========
 
-//===== Donnée des attaques de bot aspirateur
+//===== Donnée des attaques de bot aspirateur.
 $user = $_SERVER['HTTP_USER_AGENT'];
 if(in_array("$user", $bannav)){ die(); } // Liste des aspirateurs en fichier externe 'bannav.php'.
 foreach ($bannav as $banned) { $comparaison = strstr($user, $banned);
@@ -34,7 +34,7 @@ foreach ($bannav as $banned) { $comparaison = strstr($user, $banned);
 }
 //==========
 
-//===== Récuperation des infos avec fichier auto écrit
+//===== Récuperation des infos avec fichier auto écrit.
 if($tentative > 0){
    $files = fopen("protectionantiplagiat.cnx", "a"); // Fichier cnx auto inclus a la racine avec le protectionantiplagiat.php.
    $log = ('[Information] Aspirateur : '.$user.' Adresse ip : '.getip().''); // Le texte que vous voulez avoir dans votre fichier protectionantiplagiat.cnx.
