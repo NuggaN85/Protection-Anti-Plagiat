@@ -10,7 +10,7 @@
 
 Importer les fichiers externe.
 ```PHP
-require($base_dir.'check/data.php');
+require($base_dir.'pap/protectionantiplagiat.php');
 ```
 Ajouter ceci dans votre .htaccess
 ```
