@@ -9,7 +9,7 @@ else
 	$passage_ligne = "\n";
 }
 //=====Déclaration des messages au format texte.
-$message_txt = ".$useragent.' '.$os.' '.$navigateur.";
+$message_txt = "".$user." ".getip()."";
 //==========
  
 //=====Création de la boundary
@@ -34,6 +34,7 @@ $message.= "Content-Type: text/plain; charset=\"ISO-8859-1\"".$passage_ligne;
 $message.= "Content-Transfer-Encoding: 8bit".$passage_ligne;
 $message.= $passage_ligne.$message_txt.$passage_ligne;
 //==========
+
 $message.= $passage_ligne."--".$boundary."--".$passage_ligne;
 $message.= $passage_ligne."--".$boundary."--".$passage_ligne;
 //==========
