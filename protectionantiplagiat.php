@@ -1,6 +1,6 @@
 <?php
 //===== Récuperation des fichier externe
-require('data.php');
+require($base_dir.'check/data.php');
 //==========
 
 //===== Récuperation des ip v4 & v6 du client 
@@ -25,9 +25,9 @@ function getip() {
 //==========
 
 //===== Donnée des attaques de bot aspirateur
-$useragent = $_SERVER['HTTP_USER_AGENT'] . "\n";
-if(in_array("$useragent", $bannav)){ die(); } // Liste des aspirateurs en fichier externe 'bannav.php'.
-foreach ($bannav as $banned) { $comparaison = strstr($useragent, $banned);
+$user = $_SERVER['HTTP_USER_AGENT'];
+if(in_array("$user", $bannav)){ die(); } // Liste des aspirateurs en fichier externe 'bannav.php'.
+foreach ($bannav as $banned) { $comparaison = strstr($user, $banned);
     if($comparaison !== false) {
         $tentative++;
     }
@@ -36,11 +36,11 @@ foreach ($bannav as $banned) { $comparaison = strstr($useragent, $banned);
 
 //===== Récuperation des infos avec fichier auto écrit
 if($tentative > 0){
-   $files = fopen("protectionantiplagiat.cnx", "a"); // Fichier cnx auto inclus a la racine avec le protectionantiplagiat.php.
-   $log = '[Information] Aspirateur : '.$useragent.' Adresse ip : ' .getip(); // Le texte que vous voulez avoir dans votre fichier protectionantiplagiat.cnx.
+   $files = fopen("stop.cnx", "a"); // Fichier cnx auto inclus a la racine avec le protectionantiplagiat.php.
+   $log = ('[Information] Aspirateur : '.$user.' Adresse ip : '.getip().''); // Le texte que vous voulez avoir dans votre fichier protectionantiplagiat.cnx.
    fwrite($files, "\n" . $log);
    fclose($files);
-   echo utf8_decode('[Sécurité] Notre site web est protégé, vos information sont enregistrer <br><br>[Information] : '.$useragent.' '.getip().''); // Le texte que vous voulez que le voleur recevra dans les fichiers télécharger.
+   echo utf8_decode('[Sécurité] Notre site web est protégé, vos information sont enregistrer <br><br>[Information] : '.$user.' '.getip().''); // Le texte que vous voulez que le voleur recevra dans les fichiers télécharger.
 //==========
 
    die(); } 
