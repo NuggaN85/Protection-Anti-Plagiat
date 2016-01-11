@@ -55,11 +55,7 @@ thank you in advance: https://gitroom.org/?p=60764
 ```
 [INFORMATION CLIENT] 
 
-Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98) URL : 'ici sera indiquer votre url web'
-
-OS CLIENT : 'ici l'os du client'
-
-NAVIGATEUR CLIENT : 'ici le navigateur du client'
+Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)
 
 IP CLIENT : 'ici l'ip du client'
 
