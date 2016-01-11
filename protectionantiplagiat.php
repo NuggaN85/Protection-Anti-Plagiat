@@ -28,7 +28,7 @@ function getip() {
 $user = getenv('HTTP_USER_AGENT') . "\n"; 
 if(in_array("$user", $bannav)){ die(); } // Liste des aspirateurs en fichier externe 'bannav.php'.
 foreach ($bannav as $banned) { $comparaison = strstr($user, $banned);
-    if($comparaison !== false) {
+    if($comparaison!==false) {
         $tentative++;
     }
 }
