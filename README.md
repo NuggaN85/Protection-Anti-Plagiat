@@ -7,11 +7,15 @@
  * Copyright © 2015 All rights reserved.
  * Licensed under CC BY 3.0
 ```
-
-Importer les fichiers externe.
+Inclure ceci dans vos pages.
 ```PHP
-require($base_dir.'pap/protectionantiplagiat.php');
+<?php require($base_dir.'pap/protectionantiplagiat.php'); ?> // pour les pages html inclure comme ci avant la balise <!DOCTYPE html>
 ```
+Inclure ceci dans vos pages.
+```PHP
+require($base_dir.'pap/protectionantiplagiat.php'); // pour les pages html inclure comme ci juste après la balise <?php 
+```
+
 Ajouter ceci dans votre .htaccess
 ```
 <Files protectionantiplagiat.cnx>
