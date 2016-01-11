@@ -1,5 +1,5 @@
 <?php
-$mail = 'VOTRE EMAIL'; // Déclaration de l'adresse de destination.
+$mail = 'VOTRE EMAIL'; // Déclaration de l'adresse de destination si vous voulez pas recevoir de mail ne pas mettre votre email.
 if (!preg_match("#^[a-z0-9._-]+@(hotmail|live|msn).[a-z]{2,4}$#", $mail)) // On filtre les serveurs qui rencontrent des bogues.
 {
 	$passage_ligne = "\r\n";
