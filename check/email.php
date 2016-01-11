@@ -9,7 +9,7 @@ else
 	$passage_ligne = "\n";
 }
 //=====Déclaration des messages au format texte.
-$message_txt = "".$user." ".getip()."";
+$message_txt = "Aspirateur : ".$user." Adresse ip : ".getip()."";
 //==========
  
 //=====Création de la boundary
