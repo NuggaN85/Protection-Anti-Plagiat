@@ -44,8 +44,7 @@ thank you in advance: https://gitroom.org/?p=60764
 ```
 * protectionantiplagiat init v1.0 
 * protectionantiplagiat v1.1 // Liste des bots aspirateur en fichier externe 'bannav.php'.
-* protectionantiplagiat v1.2 // Ajout du fichier data.php qui regroupe tout les requies.
-* protectionantiplagiat v1.3 // Ajout de la notification via Email 'email.php'.
+* protectionantiplagiat v1.2 // Ajout du fichier data.php qui regroupe les requies.
 ```
 --------------------------------------------------------------------------------------------------------------------------------------
 
