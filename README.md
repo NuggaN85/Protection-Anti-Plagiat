@@ -7,13 +7,16 @@
  * Copyright © 2015 All rights reserved.
  * Licensed under CC BY 3.0
 ```
-Inclure ceci dans vos pages.
+Inclure ceci dans vos pages html.
 ```PHP
-<?php require($base_dir.'pap/protectionantiplagiat.php'); ?> // pour les pages html inclure comme ci avant la balise <!DOCTYPE html>
+// pour les pages html inclure comme ci avant la balise <!DOCTYPE html>
+<?php require($base_dir.'pap/protectionantiplagiat.php'); ?> 
 ```
-Inclure ceci dans vos pages.
+
+Inclure ceci dans vos pages php.
 ```PHP
-require($base_dir.'pap/protectionantiplagiat.php'); // pour les pages html inclure comme ci juste après la balise <?php 
+// pour les pages html inclure comme ci juste après la balise <?php
+require($base_dir.'pap/protectionantiplagiat.php'); 
 ```
 
 Ajouter ceci dans votre .htaccess
