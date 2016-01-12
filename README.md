@@ -68,9 +68,9 @@ Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)
 
 IP CLIENT : 'ici l'ip du client'
 
-PORT CLIENT : 'ici le port du client' // Futur update.
+PORT CLIENT : 'ici le port du client' 
 
-HOST CLIENT : 'ici le host du client'  // Futur update.
+HOST CLIENT : 'ici le host du client'  
 
 POUR PLUS AVOIR DE SOUCI VEUILLEZ BLOQUER LE CLIENT DANS LA BLACKLIST.
 ```
