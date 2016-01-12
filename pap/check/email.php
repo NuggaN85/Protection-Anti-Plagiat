@@ -9,8 +9,8 @@ else
 	$passage_ligne = "\n";
 }
 //=====Déclaration des messages au format html.
-$message_html = "[INFORMATION CLIENT] <br><br>".$user." URL : ".geturl()." <br><br>IP CLIENT : ".getip()." <br><br>PORT CLIENT : ".$client_port." <br><br>HOST CLIENT : ".$hostname."
-<br><br>[INFORMATION HEBERGEUR] <br><br>IP SERVEUR : ".$server_ip." <br><br>ISP : ".getisp($isp)." <br><br><br>POUR PLUS AVOIR DE SOUCI VEUILLEZ BLOQUER LE CLIENT DANS LA BLACKLIST.";
+$message_html = "[INFORMATION CLIENT] <br><br>".$user." URL : ".geturl()." <br><br>IP CLIENT : ".getip()."  <br><br>HOST CLIENT : ".$hostname."
+<br><br><br>POUR PLUS AVOIR DE SOUCI VEUILLEZ BLOQUER LE CLIENT DANS LA BLACKLIST.";
 //==========
  
 //=====Création de la boundary
