@@ -34,6 +34,10 @@ require($base_dir.'pap/papprotect.php');
 
 Ajouter ceci dans votre .htaccess
 ```
+<IfModule mod_headers.c>
+Header always set X-XSS-Protection "1; mode=block"
+</IfModule>
+
 <Files papprotect-log.cnx>
 order allow,deny
 deny from all
