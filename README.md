@@ -39,6 +39,12 @@ order allow,deny
 deny from all
 </files>
 ```
+Sécurité supplémentaire dans votre .htaccess
+```
+<IfModule mod_headers.c>
+Header always set X-XSS-Protection "1; mode=block"
+</IfModule>
+```
 
 [![Donate](https://img.shields.io/badge/paypal-donate-yellow.svg?style=flat)](https://www.paypal.me/LudovicRose)
 
