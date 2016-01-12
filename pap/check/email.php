@@ -18,12 +18,12 @@ $boundary = "-----=".md5(rand());
 //==========
  
 //=====Définition du sujet.
-$sujet = "[protection-anti-plagiat]";
+$sujet = "[papprotect]";
 //=========
  
 //=====Création du header de l'e-mail.
-$header = "From: \"PAP.COM\"<noreply@protection-anti-plagiat.com>".$passage_ligne;
-$header.= "Reply-to: \"PAP.COM\" <noreply@protection-anti-plagiat.com>".$passage_ligne;
+$header = "From: \"PAP.COM\"<noreply@papprotect.com>".$passage_ligne;
+$header.= "Reply-to: \"PAP.COM\" <noreply@papprotect.com>".$passage_ligne;
 $header.= "MIME-Version: 1.0".$passage_ligne;
 $header.= "Content-Type: multipart/alternative;".$passage_ligne." boundary=\"$boundary\"".$passage_ligne;
 //==========
