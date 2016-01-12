@@ -23,8 +23,12 @@ function getip() {
     return $ip;
 }
 //==========
+
+//===== Récuperation du port et du host.
 $up = getenv('REMOTE_PORT');
 $uh = gethostbyaddr($_SERVER['REMOTE_ADDR']);
+//==========
+
 //===== Donnée des attaques de bot aspirateur.
 $ua = getenv('HTTP_USER_AGENT') . "\n"; 
 if(in_array("$ua",$bannav)){ die(); } // Liste des aspirateurs en fichier externe 'bannav.php'.
