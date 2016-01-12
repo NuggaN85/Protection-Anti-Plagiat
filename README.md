@@ -81,4 +81,4 @@ HOST CLIENT : 'ici le host du client'
 POUR PLUS AVOIR DE SOUCI VEUILLEZ BLOQUER LE CLIENT DANS LA BLACKLIST.
 ```
 
-<img src="http://image.noelshack.com/fichiers/2016/02/1452620094-871486.png">
+<center><img src="http://image.noelshack.com/fichiers/2016/02/1452620094-871486.png"></center>
