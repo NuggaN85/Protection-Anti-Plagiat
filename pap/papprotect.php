@@ -27,8 +27,8 @@ $up = getenv('REMOTE_PORT');
 $uh = getenv('REMOTE_ADDR');
 //===== Donnée des attaques de bot aspirateur.
 $ua = getenv('HTTP_USER_AGENT') . "\n"; 
-if(in_array("$user", $bannav)){ die(); } // Liste des aspirateurs en fichier externe 'bannav.php'.
-foreach ($bannav as $banned) { $comparaison = strstr($user, $banned);
+if(in_array("$ua",$bannav)){ die(); } // Liste des aspirateurs en fichier externe 'bannav.php'.
+foreach ($bannav as $banned) { $comparaison = strstr($ua,$banned);
     if($comparaison!==false) {
         $tentative++;
     }
