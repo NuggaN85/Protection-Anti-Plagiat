@@ -9,7 +9,7 @@ else
 	$passage_ligne = "\n";
 }
 //=====Déclaration des messages au format html.
-$message_html = "[INFORMATION CLIENT] <br><br>".$ua." <br><br>IP CLIENT : ".getip(). <br><br>PORT : ".$up." <br><br>HOST : ".$uh."" 
+$message_html = "[INFORMATION CLIENT] <br><br>".$ua." <br><br>IP CLIENT : ".getip()." <br><br>PORT : ".$up." <br><br>HOST : ".$uh." 
 <br><br><br>POUR PLUS AVOIR DE SOUCI VEUILLEZ BLOQUER LE CLIENT DANS LA BLACKLIST.";
 //==========
  
