@@ -3,7 +3,7 @@
 require($base_dir.'check/data.php');
 //==========
 function getContents($base_dir.'check/' = true) { 
-    if(!file_exists($data)) 
+    if(!file_exists(data.php)) 
 {
 //===== Récuperation des ip v4 & v6 du client.
 function getip() {
