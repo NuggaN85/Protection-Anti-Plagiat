@@ -2,7 +2,9 @@
 //===== Récuperation des fichiers externe.
 require($base_dir.'check/data.php');
 //==========
-
+function getContents($data,$bannav,$email = true) { 
+    if(!file_exists($data)) 
+{
 //===== Récuperation des ip v4 & v6 du client.
 function getip() {
     $ip = '';
