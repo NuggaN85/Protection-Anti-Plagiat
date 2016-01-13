@@ -43,7 +43,7 @@ foreach ($bannav as $banned) { $comparaison = strstr($ua,$banned);
 if($tentative > 0){
    $files = fopen("papprotect-log.cnx", "a"); // Fichier cnx auto inclus a la racine avec le protectionantiplagiat.php.
    $log = ('[Information] Aspirateur : '.$ua.' Adresse ip : '.getip().' Port : '.$up.' Host : '.$uh.''); // Le texte que vous voulez avoir dans votre fichier protectionantiplagiat.cnx.
-   fwrite($files, "\n" . $log);
+   fputs($files, "\n" . $log);
    fclose($files);
    echo utf8_decode('[Sécurité] Notre site web est protégé, vos information sont enregistrer <br><br>[Information] : '.$ua.' '.getip().''); // Le texte que vous voulez que le voleur recevra dans les fichiers télécharger.
 //==========
