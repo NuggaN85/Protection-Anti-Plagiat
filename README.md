@@ -12,7 +12,7 @@ Ce script vous permettra de protéger votre site web contre les attaques d'aspir
 
 Deux systéme de sécurité (Encodage automatique dans un fichier .cnx qui est pas reconu via le web et par notification via email).
 
-Mettre le dossier "<strong>PAP</strong>" à la racine de votre site web. Exemple dans le dossier : (public_html) ou (www), un autre fichier "papprotect-log.cnx" va s'inclure automatiquement a la racine de votre dossier "<strong>CHECK</strong>" celui ci va imprimer tout les fraudeurs qui tente d'aspirer votre site web.
+Mettre le dossier "<strong>PAP</strong>" à la racine de votre site web. Exemple dans le dossier : (public_html) ou (www), un autre fichier "papprotect-log.cnx" va s'inclure automatiquement a la racine de votre dossier "<strong>PAP</strong>" celui ci va imprimer tout les fraudeurs qui tente d'aspirer votre site web.
 
 <strong>Attention !</strong>
 Pour les fichiers en <strong>php</strong>, inclure ceci " include('papprotect.php'); " juste après la balise " <?php " dans les pages souhaitées. Préférablement, dans <strong>config.php</strong> de votre site web.
