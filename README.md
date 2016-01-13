@@ -15,10 +15,10 @@ Deux systéme de sécurité (Encodage automatique dans un fichier .cnx qui est p
 Mettre le dossier "PAP" à la racine de votre site web. Exemple dans le dossier : (public_html) ou (www), un autre fichier "papprotect-log.cnx" va s'inclure automatiquement a la racine de votre dossier "CHECK" celui ci va imprimer tout les fraudeurs qui tente d'aspirer votre site web.
 
 <strong>Attention !</strong>
-Pour les fichiers en <strong>php</strong>, inclure ceci " include('protectionantiplagiat.php'); " juste après la balise " <?php " dans les pages souhaitées. Préférablement, dans <strong>config.php</strong> de votre site web.
+Pour les fichiers en <strong>php</strong>, inclure ceci " include('papprotect.php'); " juste après la balise " <?php " dans les pages souhaitées. Préférablement, dans <strong>config.php</strong> de votre site web.
 
 <strong>Attention !</strong>
-Pour les fichiers en <strong>html</strong>, mettre ceci " <?php include('protectionantiplagiat.php'); ?> " avant la balise " <!DOCTYPE html> dans les pages souhaitées de votre site web.
+Pour les fichiers en <strong>html</strong>, mettre ceci " <?php include('papprotect.php'); ?> " avant la balise " <!DOCTYPE html> dans les pages souhaitées de votre site web.
 
 Inclure ceci dans vos pages html.
 ```PHP
