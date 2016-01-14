@@ -73,6 +73,4 @@ IP CLIENT : 'ici l'ip du client'
 PORT CLIENT : 'ici le port du client' 
 
 HOST CLIENT : 'ici le host du client'  
-
-POUR PLUS AVOIR DE SOUCI VEUILLEZ BLOQUER LE CLIENT DANS LA BLACKLIST.
 ```
