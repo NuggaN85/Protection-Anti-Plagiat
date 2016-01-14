@@ -9,7 +9,7 @@ else
 	$passage_ligne = "\n";
 }
 //=====Déclaration des messages au format html.
-$message_html = "[INFORMATION] <br><br>".$ua." <br><br>IP CLIENT : ".getip()." <br><br>PORT CLIENT : ".$up." <br><br>HOST CLIENT : ".$uh."
+$message_html = "[INFORMATION CLIENT] <br><br>".$ua." <br><br>IP CLIENT : ".getip()." <br><br>PORT CLIENT : ".$up." <br><br>HOST CLIENT : ".$uh."
 <br><br><br>POUR PLUS AVOIR DE SOUCI VEUILLEZ BLOQUER LE CLIENT DANS LA BLACKLIST.";
 //==========
  
@@ -18,7 +18,7 @@ $boundary = "-----=".md5(rand());
 //==========
  
 //=====Définition du sujet.
-$sujet = "[protection-anti-plagiat]";
+$sujet = "[papprotect]";
 //=========
  
 //=====Création du header de l'e-mail.
