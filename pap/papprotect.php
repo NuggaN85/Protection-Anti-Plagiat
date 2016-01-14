@@ -44,7 +44,7 @@ foreach ($bannav as $banned) { $comparaison = strstr($ua,$banned);
 //===== Récuperation des infos avec fichier auto écrit.
 if($tentative > 0){
    $files = fopen("papprotect-log.cnx", "a"); // Fichier cnx auto inclus a la racine avec le protectionantiplagiat.php.
-   $log = ('[Information] Aspirateur : '.$ua.' Adresse ip : '.getip().' Port : '.$up.' Host : '.$uh.''); // Le texte que vous voulez avoir dans votre fichier protectionantiplagiat.cnx.
+   $log = ('['.$ua.'] ['.getip().'] ['.$up.'] ['.$uh.']'); // Le texte que vous voulez avoir dans votre fichier protectionantiplagiat.cnx.
    fputs($files, "\n" . $log);
    flock($files, LOCK_SH);
    fclose($files);
