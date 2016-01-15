@@ -6,6 +6,7 @@ $bannav = Array(
   'WinHTTrack',
   'webhttrack',
   'proxytrack',
+  'Hackzilla',
   '008',
   'SiteSucker',
   'Ezooms',
