@@ -30,7 +30,7 @@ Inclure ceci dans vos pages html.
 
 Inclure ceci dans vos pages php.
 ```PHP
-// pour les pages html inclure comme ci juste après la balise <?php
+// pour les pages php inclure comme ci juste après la balise <?php
 require($base_dir.'pap/papprotect.php'); 
 ```
 
