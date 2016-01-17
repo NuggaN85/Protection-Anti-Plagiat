@@ -5,9 +5,9 @@ require($base_dir.'check/data.php');
 
 //===== Récuperation des ip v4 & v6 du client.
 function getip() {
-    $client  = @$_SERVER['HTTP_CLIENT_IP'];
-    $forward = @$_SERVER['HTTP_X_FORWARDED_FOR'];
-    $remote  = $_SERVER['REMOTE_ADDR'];
+    $client  = getenv('HTTP_CLIENT_IP');
+    $forward = getenv('HTTP_X_FORWARDED_FOR');
+    $remote  = getenv('REMOTE_ADDR');
 
     if(filter_var($client, FILTER_VALIDATE_IP))
     {
