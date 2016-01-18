@@ -21,7 +21,7 @@ Mettre le dossier "<strong>papprotect</strong>" à la racine de votre site web. 
 
 ## :uk: setup
 
-Put the folder "<strong> pap protect </ strong>" at the root of your website. Eg in the folder (public_html) or (www), another "papprotect-log.cnx" file will automatically include the root of your file "<strong> papprotect </ strong>" this one will print all fraudsters trying to suck your website.
+
 
 ## :fr: Important
 
