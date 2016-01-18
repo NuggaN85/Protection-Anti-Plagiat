@@ -21,10 +21,10 @@ Mettre le dossier "<strong>PAP</strong>" à la racine de votre site web. Exemple
 
 ## :fr: Important
 
-<strong>Attention !</strong>
+:warning:<strong>Attention !</strong>
 Pour les fichiers en <strong>php</strong>, inclure ceci " include('papprotect.php'); " juste après la balise " <?php " dans les pages souhaitées. Préférablement, dans <strong>config.php</strong> de votre site web.
 
-<strong>Attention !</strong>
+:warning:<strong>Attention !</strong>
 Pour les fichiers en <strong>html</strong>, mettre ceci " <?php include('papprotect.php'); ?> " avant la balise " <!DOCTYPE html> dans les pages souhaitées de votre site web.
 
 Inclure ceci dans vos pages html.
