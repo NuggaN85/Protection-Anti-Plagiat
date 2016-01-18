@@ -9,6 +9,7 @@
  * Copyright © 2015 All rights reserved.
  * Licensed under CC BY 3.0
 ```
+## :fr: Installation
 
 Ce script vous permettra de protéger votre site web contre les attaques d'aspirateurs de site web pour éviter les plagiats (comme le logiciel le plus connus qui est <strong>"HTTRACK"</strong>).
 
