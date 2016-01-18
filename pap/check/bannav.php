@@ -1,6 +1,6 @@
 <?php
 //===== Liste des bots/spiders/crawlers
-$bannav = Array(
+$bannav = array(
   'HTTrack',
   'httrack',
   'WinHTTrack',
