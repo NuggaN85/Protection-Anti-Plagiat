@@ -19,6 +19,10 @@ Deux systéme de sécurité (Encodage automatique dans un fichier .cnx qui est p
 
 Mettre le dossier "<strong>papprotect</strong>" à la racine de votre site web. Exemple dans le dossier : (public_html) ou (www), un autre fichier "papprotect-log.cnx" va s'inclure automatiquement a la racine de votre dossier "<strong>papprotect</strong>" celui ci va imprimer tout les fraudeurs qui tente d'aspirer votre site web.
 
+## :uk: Installation
+
+Put the folder "<strong> pap protect </ strong>" at the root of your website. Eg in the folder (public_html) or (www), another "papprotect-log.cnx" file will automatically include the root of your file "<strong> papprotect </ strong>" this one will print all fraudsters trying to suck your website.
+
 ## :fr: Important
 
 <strong>:warning:</strong>
