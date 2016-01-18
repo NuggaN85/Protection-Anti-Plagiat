@@ -10,6 +10,8 @@
  * Licensed under CC BY 3.0
 ```
 
+# Fonctionnement <img src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f1eb-1f1f7.png">
+
 Ce script vous permettra de protéger votre site web contre les attaques d'aspirateurs de site web pour éviter les plagiats (comme le logiciel le plus connus qui est <strong>"HTTRACK"</strong>).
 
 Deux systéme de sécurité (Encodage automatique dans un fichier .cnx qui est pas reconu via le web et par notification via email).
