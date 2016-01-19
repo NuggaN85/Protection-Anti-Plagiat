@@ -13,9 +13,9 @@ papprotect/
 ```
 
 ```
-* protectionantiplagiat init v1.0.0 
-* protectionantiplagiat v1.1.0 // Liste des bots aspirateur en fichier externe 'bannav.php'.
-* protectionantiplagiat v1.2.0 // Ajout du fichier data.php qui regroupe les requies.
-* protectionantiplagiat v1.3.0 // Ajout du fichier log en .cnx pour que ce fichier ne soit lu sur le web.
-* protectionantiplagiat v1.4.0 // Ajout du fichier email pour recevoir des notifications ( optionel ).
+* papprotect init v1.0.0 
+* papprotect v1.1.0 // Liste des bots aspirateur en fichier externe 'bannav.php'.
+* papprotect v1.2.0 // Ajout du fichier data.php qui regroupe les requies.
+* papprotect v1.3.0 // Ajout du fichier log en .cnx pour que ce fichier ne soit lu sur le web.
+* papprotect v1.4.0 // Ajout du fichier email pour recevoir des notifications ( optionel ).
 ```
