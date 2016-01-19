@@ -48,7 +48,8 @@ if($tentative > 0){
    fputs($files, "\n" . $log);
    flock($files, LOCK_SH);
    fclose($files);
-   echo utf8_decode('[Sécurité] Notre site web est protégé, vos information sont enregistrer <br><br>[Information] : '.$ua.' '.getip().''); // Le texte que vous voulez que le voleur recevra dans les fichiers télécharger.
+// Le texte que vous voulez que le voleur recevra dans les fichiers télécharger.
+   echo utf8_decode('[Sécurité] Notre site web est protégé, vos information sont enregistrer <br><br>[Information] : '.$ua.' '.getip().'');
 //==========
 
    die(); } 
