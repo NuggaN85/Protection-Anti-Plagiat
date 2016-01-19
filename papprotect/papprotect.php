@@ -51,7 +51,7 @@ if($tentative > 0){
    flock($files, LOCK_SH);
    fclose($files);
 // Le texte que vous voulez que le voleur recevra dans les fichiers télécharger.
-   echo utf8_decode('Notre site web est protégé, vos information sont enregistrer <br><br>[Information] : '.$ua.' '.getip().'');
+   echo utf8_decode('Notre site web est protégé, vos information sont enregistrer <br><br>'.$ua.' '.getip().'');
 //==========
 
    die(); } 
