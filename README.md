@@ -1,7 +1,5 @@
 # Protection Anti Plagiat <img src="https://camo.githubusercontent.com/fe2cb3af77c3290cd9437c142662cbd08bbbc027/687474703a2f2f696d6167652e6e6f656c736861636b2e636f6d2f66696368696572732f323031352f35312f313435303130333535302d736865696c642e706e67">
 
-<img src="https://camo.githubusercontent.com/dc69afaa3d3b6cb1722b45645f7f26f5f17cbfc2/687474703a2f2f696d6167652e6e6f656c736861636b2e636f6d2f66696368696572732f323031362f30322f313435323731353231392d31363837312e706e67">
-
 ```
  * Dev: NuggaN85
  * Github: NuggaN85
@@ -9,6 +7,7 @@
  * Copyright © 2015 All rights reserved.
  * Licensed under CC BY 3.0
 ```
+
 ## :fr: Présentation
 
 Ce script vous permettra de protéger votre site web contre les attaques d'aspirateurs de site web pour éviter les plagiats (comme le logiciel le plus connus qui est <strong>"HTTRACK"</strong>).
