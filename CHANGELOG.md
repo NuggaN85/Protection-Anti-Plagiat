@@ -2,6 +2,16 @@
 
 [![v1.4.0](http://img.shields.io/badge/zip-v1.4.0-blue.svg)](http://papprotect.livehost.fr/papprotect.zip)
 
+
+```
+papprotect/
+│   ├── papprotect.php.
+├── check/
+│   ├── bannav.php.
+│   ├── data.php.
+│   ├── email.php.
+```
+
 ```
 * protectionantiplagiat init v1.0.0 
 * protectionantiplagiat v1.1.0 // Liste des bots aspirateur en fichier externe 'bannav.php'.
