@@ -4,25 +4,25 @@ require($base_dir.'check/data.php');
 //==========
 
 //===== Récuperation des ip v4 & v6 du client.
-    function getIp() {
-		if (getenv('HTTP_CLIENT_IP')) {
-			$ip = getenv('HTTP_CLIENT_IP');
-		} else if(getenv('HTTP_X_FORWARDED_FOR')) {
-			$ip = getenv('HTTP_X_FORWARDED_FOR');
-		} else if(getenv('HTTP_X_FORWARDED')) {
-			$ip = getenv('HTTP_X_FORWARDED');
-		} else if(getenv('HTTP_FORWARDED_FOR')) {
-			$ip = getenv('HTTP_FORWARDED_FOR');
-		} else if(getenv('HTTP_FORWARDED')) {
-			$ip = getenv('HTTP_FORWARDED');
-		} else if(getenv('REMOTE_ADDR')) {
-			$ip = getenv('REMOTE_ADDR');
-		} else {
-			$ip = 'N/A';
-		}
-		
-		return $ip;
-	}
+function getip() {
+    $client  = getenv('HTTP_CLIENT_IP');
+    $forward = getenv('HTTP_X_FORWARDED_FOR');
+    $remote  = getenv('REMOTE_ADDR');
+
+    if(filter_var($client, FILTER_VALIDATE_IP))
+    {
+        $ip = $client;
+    }
+    elseif(filter_var($forward, FILTER_VALIDATE_IP))
+    {
+        $ip = $forward;
+    }
+    else
+    {
+        $ip = $remote;
+    }
+
+    return $ip;
 }
 //==========
 
