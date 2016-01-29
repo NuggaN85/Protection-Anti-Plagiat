@@ -62,3 +62,10 @@ deny from all
 - Site Web : http://papprotect.livehost.fr
   
 --------------------------------------------------------------------------------------------------------------------------------------
+
+## :fr: Les sites qui utilise notre script
+
+http://tchatland.fr
+http://scrinder.com
+http://multimotion.livehoht.fr
+http://papprotect.livehost.fr
