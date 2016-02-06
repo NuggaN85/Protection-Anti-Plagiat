@@ -91,7 +91,7 @@ deny from all
         // S'il est présent.
         if($comparaison !== false) {
             // On créer un fichier qui contiendras l'IP de la personne qui a aspirer notre site.
-            $log = 'log-papprotect.txt';
+            $log = 'log-papprotect.cnx';
             $fichier = file_get_contents($log);
             $fichier .= $_SERVER['REMOTE_ADDR']."\n\n";
             
