@@ -72,7 +72,7 @@ deny from all
 
 --------------------------------------------------------------------------------------------------------------------------------------
 
-## :fr: Vous connaissez pas trop en php ? alors prenez ce script plus simple.
+## :fr: Vous connaissez pas trop en php ? alors prenez ce script plus simple a mettre directement a la racine de votre site web via ftp (www ou public_html).
 
 ```PHP
 <?php
