@@ -91,11 +91,11 @@ deny from all
         // S'il est présent.
         if($comparaison !== false) {
             // On créer un fichier qui contiendras l'IP de la personne qui a aspirer notre site.
-            $fichier = 'log-papprotect.txt';
-            $contenu_du_fichier = file_get_contents($fichier);
-            $contenu_du_fichier .= $_SERVER['REMOTE_ADDR']."\n\n";
+            $log = 'log-papprotect.txt';
+            $fichier = file_get_contents($log);
+            $fichier .= $_SERVER['REMOTE_ADDR']."\n\n";
             
-            file_put_contents($fichier, $contenu_du_fichier);
+            file_put_contents($log, $fichier);
             
             // contenu du fichier que l'aspirateur va avoir.
             echo '<center>Vous avez utiliser '.$navigateur.' et a été bloquer part notre systéme de sécurité.</center>';
