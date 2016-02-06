@@ -83,10 +83,10 @@ deny from all
     $bannav = Array('HTTrack','MJ12bot','Baiduspider','SurveyBot','AboutUsBot','Semager','dotbot','httrack','WebCopier','HTTPClient','websitecopier','webcopier');
     
     // On fait une foreach de l'Array() contenant les navigateurs interdits.
-    foreach ($bannav as $banni) { 
+    foreach ($bannav as $banned) { 
 	
         // On verifie si le navigateur utilisé est présent dans le tableau array().
-        $comparaison = strstr($navigateur, $banni);
+        $comparaison = strstr($navigateur, $banned);
 
         // S'il est présent.
         if($comparaison !== false) {
