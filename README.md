@@ -69,3 +69,38 @@ deny from all
 - http://scrinder.com
 - http://multimotion.livehoht.fr
 - http://papprotect.livehost.fr
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
+## :fr: Vous connaissez pas trop en php ? alors prenez ce script plus simple.
+
+```PHP
+<?php
+    // On fait apparaitre le nom du navigateur utilisé.
+    $navigateur = $_SERVER["HTTP_USER_AGENT"];
+	
+    // On fait une array() des aspirateurs.
+    $bannav = Array('HTTrack','MJ12bot','Baiduspider','SurveyBot','AboutUsBot','Semager','dotbot','httrack','WebCopier','HTTPClient','websitecopier','webcopier');
+    
+    // On fait une foreach de l'Array() contenant les navigateurs interdits.
+    foreach ($bannav as $banni) { 
+	
+        // On verifie si le navigateur utilisé est présent dans le tableau array().
+        $comparaison = strstr($navigateur, $banni);
+
+        // S'il est présent.
+        if($comparaison !== false) {
+            // On créer un fichier qui contiendras l'IP de la personne qui a aspirer notre site.
+            $fichier = 'log-papprotect.txt';
+            $contenu_du_fichier = file_get_contents($fichier);
+            $contenu_du_fichier .= $_SERVER['REMOTE_ADDR']."\n\n";
+            
+            file_put_contents($fichier, $contenu_du_fichier);
+            
+            // contenu du fichier que l'aspirateur va avoir.
+            echo '<center>Vous avez utiliser '.$navigateur.' et a été bloquer part notre systéme de sécurité.</center>';
+           
+        die(); } 
+?>
+
+```
