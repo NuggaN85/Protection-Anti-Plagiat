@@ -67,7 +67,7 @@ deny from all
 
 - http://tchatland.fr
 - http://scrinder.com
-- http://multimotion.livehoht.fr
+- http://multimotion.livehost.fr
 - http://papprotect.livehost.fr
 
 --------------------------------------------------------------------------------------------------------------------------------------
