@@ -1,4 +1,5 @@
 <?php
+require($base_dir.'papprotect.php');
 $mail = 'VOTRE EMAIL'; // Déclaration de l'adresse de destination.
 if (!preg_match("#^[a-z0-9._-]+@(hotmail|live|msn).[a-z]{2,4}$#", $mail)) // On filtre les serveurs qui rencontrent des bogues.
 {
