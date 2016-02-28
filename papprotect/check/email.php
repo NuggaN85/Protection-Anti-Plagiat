@@ -1,6 +1,6 @@
 <?php
 
-//===== Récuperation des donnée.
+//===== Récuperation des données.
 require($base_dir.'papprtect.php');
 //==========
 
