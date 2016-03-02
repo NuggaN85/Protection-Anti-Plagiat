@@ -80,7 +80,7 @@ deny from all
     $navigateur = $_SERVER["HTTP_USER_AGENT"];
 	
     // On fait une array() des aspirateurs.
-    $bannav = Array('HTTrack','MJ12bot','Baiduspider','SurveyBot','httrack','WebCopier','HTTPClient','websitecopier','webcopier');
+    $bannav = Array('HTTrack','MJ12bot','httrack','HTTPClient','websitecopier','webcopier');
     
     // On fait une foreach de l'Array() contenant les navigateurs interdits.
     foreach ($bannav as $banned) { 
