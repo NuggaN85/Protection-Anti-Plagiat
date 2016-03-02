@@ -98,7 +98,7 @@ deny from all
             file_put_contents($log, $fichier);
             
             // contenu du fichier que l'aspirateur va avoir.
-            echo '<center>Vous avez utiliser '.$navigateur.' et a été bloquer part notre systéme de sécurité.</center>';
+            echo utf8_decode '<center>Vous avez utiliser '.$navigateur.' et a été bloquer part notre systéme de sécurité.</center>';
            
         die(); } 
 ?>
