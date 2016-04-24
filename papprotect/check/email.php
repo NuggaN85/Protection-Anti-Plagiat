@@ -1,7 +1,9 @@
 <?php
 
 //===== Récuperation des données.
-require($base_dir.'papprotect.php');
+if (file_exists($base_dir.'papprotect.php')) 
+{
+require ($base_dir.'papprotect.php');
 //==========
 
 $mail = 'VOTRE EMAIL'; // Déclaration de l'adresse de destination.
