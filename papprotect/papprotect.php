@@ -1,7 +1,5 @@
 <?php
 //===== Récuperation des fichiers externe.
-if (file_exists($base_dir.'check/data.php')) 
-{
 require ($base_dir.'check/data.php');
 //==========
 
