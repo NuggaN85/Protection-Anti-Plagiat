@@ -89,6 +89,8 @@ Inclure ceci dans vos pages php.
 require($base_dir.'papprotect.php'); 
 ```
 
+Le code php a mettre dans votre papprotect.php
+
 ```PHP
 <?php
     // On fait apparaitre le nom du navigateur utilisé.
