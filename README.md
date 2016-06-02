@@ -7,7 +7,7 @@
  * Copyright © 2015 All rights reserved.
  * Licensed under CC BY 3.0
 ```
-<img src="http://image.noelshack.com/fichiers/2016/22/1464886168-papprotect2016.jpg">
+<img src="http://image.noelshack.com/fichiers/2016/22/1464886326-papprotect2016.jpg">
 
 ## :fr: Présentation
 
