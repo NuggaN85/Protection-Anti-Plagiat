@@ -125,25 +125,47 @@ Le code php a mettre dans votre papprotect.php
 
 <img src="https://image-cc.s3.envato.com/files/188641819/Cover-min.jpg">
 
-SQLi Protection – Protection module for SQL Injections (SQLi) and XSS Vulnerabilities.
-Mass Requests Protection – Protection Module for Mass Requests that are made in order to overload your site.
-Spam Protection – Protection Module for Spammers and Spam Bots that aim to spam your site.
-Proxy Protection – Protection Module from Proxy Visitors or so-called people hiding behind proxies.
-Malicious Files Scanner – Scanner for Malicious Files that will scan your website and will notify you if viruses are detected.
-Input Sanitization – Protection Module that automatically will sanitize all incoming and outgoing fields and requests.
-DNSBL Integration – Integration with some of the best Spam Databases (DNSBL) to protect your website from Bad Visitors.
-Tor Protection – Detect and block visitors that use the Tor Browser to hide their Identify and to do malicious or suspicious things.
-Intelligent Pattern Recognition to Detect Unknown Attacks
-Industrial-Strength Algorithms to Detect Known Hacker Attacks
-Ban System – Ban System with which can be blocked and redirected Users, Countries, Operating Systems, Browsers and Internet Service Providers.
-Bad Bots and Crawlers Protection – Blocks many Bad Bots and Crawlers that will wast your website bandwidth
-Fake Bot Protection – When search engine bot visits your website will be verified if it is real or fake bot
-Bad Bots Protection – All visitors that are Bad Bots or are without User-Agent will be detected and their access to the website will be blocked
-Headers Check – Every visitor’s response headers will be checked and if there are suspicious object their access to the website will be blocked
-Real-Time Scanning of All Requests – GET, POST and other types of Data
-Auto Ban – Function that will automatically block attackers and threats such as Bad Bots, Crawlers and other.
-Attack Logs – Function that will log each attack and threat in the Database, so you can view them later. (No Duplicates)
-Detailed Logs – The threat logs contain many and useful information about the Hacker / Threat like Browser, Operating System, Country, State, City, User Agent and Location on the Map.
-E-Mail Notifications – Receive E-Mail Notifications when attack or threat is detected.
+<ul>
+<li>
+<strong>SQLi Protection</strong> – Protection module for SQL Injections (SQLi) and XSS Vulnerabilities.</li>
+<li>
+<strong>Mass Requests Protection</strong> – Protection Module for Mass Requests that are made in order to overload your site.</li>
+<li>
+<strong>Spam Protection</strong> – Protection Module for Spammers and Spam Bots that aim to spam your site.</li>
+<li>
+<strong>Proxy Protection</strong> – Protection Module from Proxy Visitors or so-called people hiding behind proxies.</li>
+<li>
+<strong>Malicious Files Scanner</strong> – Scanner for Malicious Files that will scan your website and will notify you if viruses are detected.</li>
+<li>
+<strong>Input Sanitization</strong> – Protection Module that automatically will sanitize all incoming and outgoing fields and requests.</li>
+<li>
+<strong>DNSBL Integration</strong> – Integration with some of the best Spam Databases (DNSBL) to protect your website from Bad Visitors.</li>
+<li>
+<strong>Tor Protection</strong> – Detect and block visitors that use the Tor Browser to hide their Identify and to do malicious or suspicious things.</li>
+<li>
+<strong>Intelligent Pattern Recognition</strong> to Detect Unknown Attacks</li>
+<li>
+<strong>Industrial-Strength Algorithms</strong> to Detect Known Hacker Attacks</li>
+<li>
+<strong>Ban System</strong> – Ban System with which can be blocked and redirected Users, Countries, Operating Systems, Browsers and Internet Service Providers.</li>
+<li>
+<strong>Bad Bots and Crawlers Protection</strong> – Blocks many Bad Bots and Crawlers that will wast your website bandwidth</li>
+<li>
+<strong>Fake Bot Protection</strong> – When search engine bot visits your website will be verified if it is real or fake bot</li>
+<li>
+<strong>Bad Bots Protection</strong> – All visitors that are Bad Bots or are without User-Agent will be detected and their access to the website will be blocked</li>
+<li>
+<strong>Headers Check</strong> – Every visitor’s response headers will be checked and if there are suspicious object their access to the website will be blocked</li>
+<li>
+<strong>Real-Time Scanning of All Requests</strong> – GET, POST and other types of Data</li>
+<li>
+<strong>Auto Ban</strong> – Function that will automatically block attackers and threats such as Bad Bots, Crawlers and other.</li>
+<li>
+<strong>Attack Logs</strong> – Function that will log each attack and threat in the Database, so you can view them later. (No Duplicates)</li>
+<li>
+<strong>Detailed Logs</strong> – The threat logs contain many and useful information about the Hacker / Threat like Browser, Operating System, Country, State, City, User Agent and Location on the Map.</li>
+<li>
+<strong>E-Mail Notifications</strong> – Receive E-Mail Notifications when attack or threat is detected.</li>
+</ul>
 
 Buy Now 35$ http://goo.gl/Ut6kAB
