@@ -7,7 +7,7 @@
  * Copyright © 2015 All rights reserved.
  * Licensed under CC BY 3.0
 ```
-<img src="https://camo.githubusercontent.com/8311875fd722ba69ded3fb1ffc0e9b60562b6024/687474703a2f2f696d6167652e6e6f656c736861636b2e636f6d2f66696368696572732f323031362f32322f313436343838363332362d70617070726f74656374323031362e6a7067">
+<center><img src="https://camo.githubusercontent.com/8311875fd722ba69ded3fb1ffc0e9b60562b6024/687474703a2f2f696d6167652e6e6f656c736861636b2e636f6d2f66696368696572732f323031362f32322f313436343838363332362d70617070726f74656374323031362e6a7067"></center>
 
 ## :fr: Présentation
 
@@ -123,7 +123,7 @@ Le code php a mettre dans votre papprotect.php
 
 ```
 
-<img src="https://camo.githubusercontent.com/7ee6ae4ef352b22e7cad4919f4dd4246b6454610/68747470733a2f2f696d6167652d63632e73332e656e7661746f2e636f6d2f66696c65732f3138383634313831392f436f7665722d6d696e2e6a7067">
+<center><img src="https://camo.githubusercontent.com/7ee6ae4ef352b22e7cad4919f4dd4246b6454610/68747470733a2f2f696d6167652d63632e73332e656e7661746f2e636f6d2f66696c65732f3138383634313831392f436f7665722d6d696e2e6a7067"></center>
 
 <ul>
 <li>
@@ -168,5 +168,5 @@ Le code php a mettre dans votre papprotect.php
 <strong>E-Mail Notifications</strong> – Receive E-Mail Notifications when attack or threat is detected.</li>
 </ul>
 <li>
-<strong>Buy Now 35$ http://goo.gl/Ut6kAB</strong></li>
+<strong>Buy Now 35$ </strong> http://goo.gl/Ut6kAB</li>
 </ul>
