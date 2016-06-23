@@ -123,7 +123,7 @@ Le code php a mettre dans votre papprotect.php
 
 ```
 
-<img src="https://image-cc.s3.envato.com/files/188641819/Cover-min.jpg">
+<img src="https://camo.githubusercontent.com/7ee6ae4ef352b22e7cad4919f4dd4246b6454610/68747470733a2f2f696d6167652d63632e73332e656e7661746f2e636f6d2f66696c65732f3138383634313831392f436f7665722d6d696e2e6a7067">
 
 <ul>
 <li>
@@ -167,5 +167,6 @@ Le code php a mettre dans votre papprotect.php
 <li>
 <strong>E-Mail Notifications</strong> – Receive E-Mail Notifications when attack or threat is detected.</li>
 </ul>
-
-Buy Now 35$ http://goo.gl/Ut6kAB
+<li>
+<strong>Buy Now 35$ http://goo.gl/Ut6kAB</strong></li>
+</ul>
