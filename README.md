@@ -7,7 +7,7 @@
  * Copyright © 2015 All rights reserved.
  * Licensed under CC BY 3.0
 ```
-<img src="http://image.noelshack.com/fichiers/2016/22/1464886326-papprotect2016.jpg">
+<img src="https://camo.githubusercontent.com/8311875fd722ba69ded3fb1ffc0e9b60562b6024/687474703a2f2f696d6167652e6e6f656c736861636b2e636f6d2f66696368696572732f323031362f32322f313436343838363332362d70617070726f74656374323031362e6a7067">
 
 ## :fr: Présentation
 
@@ -122,3 +122,28 @@ Le code php a mettre dans votre papprotect.php
 ?>
 
 ```
+
+<img src="https://image-cc.s3.envato.com/files/188641819/Cover-min.jpg">
+
+SQLi Protection – Protection module for SQL Injections (SQLi) and XSS Vulnerabilities.
+Mass Requests Protection – Protection Module for Mass Requests that are made in order to overload your site.
+Spam Protection – Protection Module for Spammers and Spam Bots that aim to spam your site.
+Proxy Protection – Protection Module from Proxy Visitors or so-called people hiding behind proxies.
+Malicious Files Scanner – Scanner for Malicious Files that will scan your website and will notify you if viruses are detected.
+Input Sanitization – Protection Module that automatically will sanitize all incoming and outgoing fields and requests.
+DNSBL Integration – Integration with some of the best Spam Databases (DNSBL) to protect your website from Bad Visitors.
+Tor Protection – Detect and block visitors that use the Tor Browser to hide their Identify and to do malicious or suspicious things.
+Intelligent Pattern Recognition to Detect Unknown Attacks
+Industrial-Strength Algorithms to Detect Known Hacker Attacks
+Ban System – Ban System with which can be blocked and redirected Users, Countries, Operating Systems, Browsers and Internet Service Providers.
+Bad Bots and Crawlers Protection – Blocks many Bad Bots and Crawlers that will wast your website bandwidth
+Fake Bot Protection – When search engine bot visits your website will be verified if it is real or fake bot
+Bad Bots Protection – All visitors that are Bad Bots or are without User-Agent will be detected and their access to the website will be blocked
+Headers Check – Every visitor’s response headers will be checked and if there are suspicious object their access to the website will be blocked
+Real-Time Scanning of All Requests – GET, POST and other types of Data
+Auto Ban – Function that will automatically block attackers and threats such as Bad Bots, Crawlers and other.
+Attack Logs – Function that will log each attack and threat in the Database, so you can view them later. (No Duplicates)
+Detailed Logs – The threat logs contain many and useful information about the Hacker / Threat like Browser, Operating System, Country, State, City, User Agent and Location on the Map.
+E-Mail Notifications – Receive E-Mail Notifications when attack or threat is detected.
+
+Buy Now 35$ http://goo.gl/Ut6kAB
