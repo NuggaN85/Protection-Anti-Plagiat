@@ -167,6 +167,5 @@ Le code php a mettre dans votre papprotect.php
 <li>
 <strong>E-Mail Notifications</strong> – Receive E-Mail Notifications when attack or threat is detected.</li>
 </ul>
-<li>
-<strong>Buy Now 35$ </strong> http://goo.gl/Ut6kAB</li>
-</ul>
+
+Buy Now 35$ - http://goo.gl/Ut6kAB
