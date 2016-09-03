@@ -61,7 +61,7 @@ deny from all
 - Nous-suggérez des modifications sur via [Github](https://github.com/NuggaN85/Protection-Anti-Plagiat/issues/2).
 - Suivez [@NuggaN85](https://twitter.com/NuggaN85) sur Twitter
 - Site Web : http://papprotect.livehost.fr
-- Discord dev : https://discord.gg/0xDPvJ79cDltmbAn
+- Discord dev : https://discord.me/nuggan85
   
 --------------------------------------------------------------------------------------------------------------------------------------
 
