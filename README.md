@@ -11,7 +11,7 @@
 
 ## :fr: Présentation
 
-Ce script vous permettra de protéger votre site web contre les attaques d'aspirateurs de site web pour éviter les plagiats et voir vos site web en vente en temps que <strong>NULLED</strong> (comme le logiciel le plus connus qui est <strong>"HTTRACK"</strong>).
+Ce script vous permettra de protéger votre site web contre les attaques d'aspirateurs de site web pour éviter les plagiats et voir vos site web en vente en temps que <strong>NULLED</strong>, les aspirateurs (comme le logiciel le plus connus qui est <strong>"HTTRACK"</strong>) serons bannis automatiquement grace a notre systéme de blocage.
 
 Deux systéme de sécurité (Encodage automatique dans un fichier .cnx qui est pas reconu via le web et par notification via email).
 
