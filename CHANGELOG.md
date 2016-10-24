@@ -18,4 +18,5 @@ papprotect/
 * papprotect v1.2.0 // Ajout du fichier data.php qui regroupe les requies.
 * papprotect v1.3.0 // Ajout du fichier log en .cnx pour que ce fichier ne soit lu sur le web.
 * papprotect v1.4.0 // Ajout du fichier email pour recevoir des notifications ( optionel ).
+* papprotect v1.5.0 // Ajout Récuperation des fichiers externe (file_exists).
 ```
