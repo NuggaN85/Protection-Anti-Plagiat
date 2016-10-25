@@ -2,8 +2,7 @@
 //===== Récuperation des fichiers externe.
 $data = $base_dir . 'check/data.php';
 if (file_exists($data)) { 
-    require ($data); 
-}
+    require ($data); }
 //==========
 
 //===== Récuperation des ip v4 & v6 du client.
