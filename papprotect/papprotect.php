@@ -2,7 +2,6 @@
 //===== Récuperation des fichiers externe.
 require($base_dir.'check/data.php');
 //==========
-
 //===== Récuperation des ip v4 & v6 du client.
 function getip() {
     $client  = getenv('HTTP_CLIENT_IP');
