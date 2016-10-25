@@ -1,6 +1,6 @@
 <?php
 //===== Récuperation des fichiers externe.
-$data = $base_dir . 'check/data.php';
+$data = $base_dir.'check/data.php';
 if (file_exists($data)) { 
     require ($data); 
 }
