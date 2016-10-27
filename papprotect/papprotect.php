@@ -35,7 +35,7 @@ $ua = getenv('HTTP_USER_AGENT');
 // Liste des aspirateurs en fichier externe 'bannav.php'.
 if (in_array ($ua, $bannav) === true) { die(); }
 foreach ($bannav as $banned) { $comparaison = strstr($ua, $banned);
-    if($comparaison!==false) {
+    if($comparaison! == false) {
         $tentative++;
     }
 }
