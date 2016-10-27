@@ -1,45 +1,29 @@
 <?php
-$mail = 'VOTRE EMAIL'; // Déclaration de l'adresse de destination.
-if (!preg_match("#^[a-z0-9._-]+@(hotmail|live|msn).[a-z]{2,4}$#", $mail)) // On filtre les serveurs qui rencontrent des bogues.
-{
-	$passage_ligne = "\r\n";
+//==========
+$destinataire = 'VOTRE EMAIL';
+// Pour les champs $expediteur / $copie / $destinataire, séparer par une virgule s'il y a plusieurs adresses
+$expediteur = 'noreply@papprotect.com';
+$copie = 'papprotect@pap.com';
+$copie_cachee = 'papprotect@pap.com';
+$objet = '[PAPPROTECT]'; // Objet du message
+$headers  = 'MIME-Version: 1.0' . "\n"; // Version MIME
+$headers .= 'Content-type: text/html; charset=ISO-8859-1'."\n"; // l'en-tete Content-type pour le format HTML
+$headers .= 'Reply-To: '.$expediteur."\n"; // Mail de reponse
+$headers .= 'From: "noreply@papprotect.com"<'.$expediteur.'>'."\n"; // Expediteur
+$headers .= 'Delivered-to: '.$destinataire."\n"; // Destinataire
+$headers .= 'Cc: '.$copie."\n"; // Copie Cc
+$headers .= 'Bcc: '.$copie_cachee."\n\n"; // Copie cachée Bcc        
+$message = '<div style="width: 100%; text-align: center; font-weight: bold">[INFORMATION CLIENT] <br><br>".$ua." <br><br>IP CLIENT : ".getip()." <br><br>PORT CLIENT : ".$up." <br><br>HOST CLIENT : ".$uh."
+<br><br><br>POUR PLUS AVOIR DE SOUCI VEUILLEZ BLOQUER LE CLIENT DANS LA BLACKLIST.</div>';
+if (mail($destinataire, $objet, $message, $headers)) // Envoi du message
+//==========
+	
+// On filtre les serveurs qui rencontrent des bogues
+function verifEmail ($destinataire) {
+    if (filter_var ($destinataire, FILTER_VALIDATE_EMAIL) === false) {
+        return false;
+    } else {
+        return true;
+    }
 }
-else
-{
-	$passage_ligne = "\n";
-}
-//=====Déclaration des messages au format html.
-$message_html = "[INFORMATION CLIENT] <br><br>".$ua." <br><br>IP CLIENT : ".getip()." <br><br>PORT CLIENT : ".$up." <br><br>HOST CLIENT : ".$uh."
-<br><br><br>POUR PLUS AVOIR DE SOUCI VEUILLEZ BLOQUER LE CLIENT DANS LA BLACKLIST.";
-//==========
- 
-//=====Création de la boundary
-$boundary = "-----=".md5(rand());
-//==========
- 
-//=====Définition du sujet.
-$sujet = "[papprotect]";
-//=========
- 
-//=====Création du header de l'e-mail.
-$header = "From: \"PAP.COM\"<noreply@papprotect.com>".$passage_ligne;
-$header.= "Reply-to: \"PAP.COM\" <noreply@papprotect.com>".$passage_ligne;
-$header.= "MIME-Version: 1.0".$passage_ligne;
-$header.= "Content-Type: multipart/alternative;".$passage_ligne." boundary=\"$boundary\"".$passage_ligne;
-//==========
- 
-//=====Création du message.
-$message = $passage_ligne."--".$boundary.$passage_ligne;
-//=====Ajout du message au format HTML
-$message.= "Content-Type: text/html; charset=\"ISO-8859-1\"".$passage_ligne;
-$message.= "Content-Transfer-Encoding: 8bit".$passage_ligne;
-$message.= $passage_ligne.$message_html.$passage_ligne;
-//==========
-$message.= $passage_ligne."--".$boundary."--".$passage_ligne;
-$message.= $passage_ligne."--".$boundary."--".$passage_ligne;
-//==========
- 
-//=====Envoi de l'e-mail.
-if(mail($mail,$sujet,$message,$header))
-//==========
 ?>
