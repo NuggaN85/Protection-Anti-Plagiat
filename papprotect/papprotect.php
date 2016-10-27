@@ -7,7 +7,6 @@ function getip() {
     $client  = getenv('HTTP_CLIENT_IP');
     $forward = getenv('HTTP_X_FORWARDED_FOR');
     $remote  = getenv('REMOTE_ADDR');
-
     if(filter_var($client, FILTER_VALIDATE_IP))
     {
         $ip = $client;
@@ -20,27 +19,23 @@ function getip() {
     {
         $ip = $remote;
     }
-
     return $ip;
 }
 //==========
-
 //===== Récuperation du port et du host.
 $up = getenv('REMOTE_PORT');
 $uh = gethostbyaddr($_SERVER['REMOTE_ADDR']);
 //==========
-
 //===== Donnée des attaques de bot aspirateur.
 $ua = getenv('HTTP_USER_AGENT');
 // Liste des aspirateurs en fichier externe 'bannav.php'.
 if (in_array ($ua, $bannav) === true) { die(); }
 foreach ($bannav as $banned) { $comparaison = strstr($ua, $banned);
-    if($comparaison! == false) {
+    if($comparaison!==false) {
         $tentative++;
     }
 }
 //==========
-
 //===== Récuperation des infos avec fichier auto écrit.
 if($tentative > 0) {
 if (!function_exists('file_put_contents')) {
@@ -57,7 +52,5 @@ if (!function_exists('file_put_contents')) {
 // Le texte que vous voulez que le voleur recevra dans les fichiers télécharger.
    echo utf8_decode('Notre site web est protégé, vos information sont enregistrer, ['.$ua.'] ['.getip().']');
 //==========
-
    die(); } 
-
 ?>
