@@ -50,8 +50,7 @@ if (!function_exists('file_put_contents')) {
    flock($files, LOCK_SH);
    fclose($files);
 // Le texte que vous voulez que le voleur recevra dans les fichiers télécharger.
-   echo utf8_decode('Site web est protégé, vos information sont enregistrer, ['.$ua.'] ['.getip().']');
-    
+   echo utf8_decode('Site web est protégé, vos information sont enregistrés, ['.$ua.'] ['.getip().']') . '<br>'; 
    echo utf8_decode('Website is protected, your information is recorded, ['.$ua.'] ['.getip().']');
 //==========
    die(); } 
