@@ -143,9 +143,9 @@ Le code php a mettre dans votre papprotect.php
 <li>
 <strong>Tor Protection</strong> – Détecter et bloquer les visiteurs qui utilisent le navigateur Tor pour cacher leur identité et de faire des choses malveillantes ou suspectes.</li>
 <li>
-<strong>Intelligent Pattern Recognition</strong> pour détecter les attaques inconnues</li>
+<strong>Reconnaissance Pattern Intelligence</strong> pour détecter les attaques inconnues</li>
 <li>
-<strong>Industrial-Strength Algorithms</strong> pour détecter les attaques de pirates connus</li>
+<strong>Algorithmes Industrial-Force</strong> pour détecter les attaques de pirates connus</li>
 <li>
 <strong>Ban System</strong> – Système Ban qui peut être bloqué et redirigé les utilisateurs, les pays, les systèmes d'exploitation, les navigateurs et les fournisseurs de services Internet.</li>
 <li>
@@ -155,17 +155,17 @@ Le code php a mettre dans votre papprotect.php
 <li>
 <strong>Bad Bots Protection</strong> – Tous les visiteurs qui sont Bad Bots ou sont sans User-Agent seront détectés et leur accès au site seront bloqués</li>
 <li>
-<strong>Headers Check</strong> – Tous les visiteurs têtes de réponse seront vérifiés et s'il y a un objet suspect leur accès au site seront bloqués</li>
+<strong>Headers Vérifier</strong> – Tous les visiteurs têtes de réponse seront vérifiés et s'il y a un objet suspect leur accès au site seront bloqués</li>
 <li>
-<strong>Real-Time Scanning of All Requests</strong> – GET, POST et d'autres types de données</li>
+<strong>Analyse en temps réel de toutes les demandes</strong> – GET, POST et d'autres types de données</li>
 <li>
 <strong>Auto Ban</strong> –Fonction qui permet de bloquer automatiquement les attaques et les menaces telles que Bad Bots, Crawlers et autres.</li>
 <li>
-<strong>Attack Logs</strong> – Fonction qui se connectera chaque attaque et menace dans la base de données, de sorte que vous pouvez les voir plus tard. (No Duplicates)</li>
+<strong>Journaux d'attaque</strong> – Fonction qui se connectera chaque attaque et menace dans la base de données, de sorte que vous pouvez les voir plus tard. (No Duplicates)</li>
 <li>
-<strong>Detailed Logs</strong> – Les journaux de menaces contiennent de nombreux et utiles informations sur le Hacker / Threat comme navigateur, système d'exploitation, Pays, État, Ville, User Agent et emplacement sur la carte.</li>
+<strong>journaux détaillés</strong> – Les journaux de menaces contiennent de nombreux et utiles informations sur le Hacker / Threat comme navigateur, système d'exploitation, Pays, État, Ville, User Agent et emplacement sur la carte.</li>
 <li>
-<strong>E-Mail Notifications</strong> – Recevoir des notifications par courriel quand l'attaque ou la menace est détectée.</li>
+<strong>Notifications par email</strong> – Recevoir des notifications par courriel quand l'attaque ou la menace est détectée.</li>
 </ul>
 
 Buy Now 35$ - http://goo.gl/Ut6kAB
