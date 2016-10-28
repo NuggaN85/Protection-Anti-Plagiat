@@ -61,7 +61,7 @@ function getip() {
 //Systeme de notification part Email.
    if (!preg_match("#^[a-z0-9._-]+@(hotmail|live|msn).[a-z]{2,4}$#", $destinataire)) // On filtre les serveurs qui rencontrent des bogues.
 //==========   
-   $destinataire = 'hoyois.michael@gmail.com';
+   $destinataire = 'VOTRE EMAIL ICI';
 // Pour les champs $expediteur / $copie / $destinataire, séparer par une virgule s'il y a plusieurs adresses
    $expediteur = 'noreply@papprotect.com';
    $copie = 'noreply@papprotect.com';
