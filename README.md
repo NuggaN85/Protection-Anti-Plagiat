@@ -68,7 +68,7 @@ deny from all
 ## :fr: Les sites qui utilise notre script
 
 - https://www.tchatland.fr
-- http://scrinder.com
+- https://social-gaming.fr
 - http://multimotion.livehost.fr
 - http://papprotect.livehost.fr
 
