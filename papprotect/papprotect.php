@@ -1,6 +1,10 @@
 <?php
 //===== Récuperation des fichiers externe.
-require($base_dir.'check/data.php');
+if (file_exists($base_dir.'papprotect')) {
+  require ($base_dir.'check/data.php');
+} else {
+  die('S\'il vous plaît mettre les fichiers dans le répertoire papprotect !');
+}
 //==========
 //===== Récuperation des ip v4 & v6 du client.
 function getip() {
@@ -47,7 +51,7 @@ function getip() {
 // Fichier cnx auto inclus a la racine avec le papprotect.php.
    $files = fopen($base_dir."papprotect/papprotect-log.cnx", "a");
 // Le texte que vous voulez avoir dans votre fichier papprotect-log.cnx.
-   $log = ('['.$ua.'] ['.getip().'] ['.$up.'] ['.$uh.']');
+   $log = ('['.$ua.'] ['.getip().'] ['.$up.'] ['.$ra.']');
    fputs($files, "\n" . $log);
    flock($files, LOCK_SH);
    fclose($files);
@@ -84,5 +88,5 @@ function getip() {
 //==========   
    if (mail($destinataire, $objet, $message, $headers)) // Envoi du message
 //==========
-   die(); } 
+      die('Une erreur est survenue contacter le créateur.'); } 
 ?>
