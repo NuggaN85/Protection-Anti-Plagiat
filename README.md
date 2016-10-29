@@ -117,6 +117,7 @@ deny from all
 <strong>journaux détaillés</strong> – Les journaux de menaces contiennent de nombreux et utiles informations sur le Hacker / Threat comme navigateur, système d'exploitation, Pays, État, Ville, User Agent et emplacement sur la carte.</li>
 <li>
 <strong>Notifications par email</strong> – Recevoir des notifications par courriel quand l'attaque ou la menace est détectée.</li>
+<li>
+<strong>Buy Now 35$</strong> – http://goo.gl/Ut6kAB</li>
+<li>
 </ul>
-
-Buy Now 35$ - http://goo.gl/Ut6kAB
