@@ -74,55 +74,6 @@ deny from all
 
 --------------------------------------------------------------------------------------------------------------------------------------
 
-## :fr: Vous connaissez pas trop en php ? alors prenez ce script plus simple a mettre directement a la racine de votre site web via ftp (www ou public_html).
-
-Crée un fichier php nomer le en papprotect.php et mettre ceci dans vos pages : 
-
-Inclure ceci dans vos pages html.
-```PHP
-// pour les pages html inclure comme ci avant la balise <!DOCTYPE html>
-<?php require($base_dir.'papprotect.php'); ?> 
-```
-
-Inclure ceci dans vos pages php.
-```PHP
-// pour les pages php inclure comme ci juste après la balise <?php
-require($base_dir.'papprotect.php'); 
-```
-
-Le code php a mettre dans votre papprotect.php
-
-```PHP
-<?php
-    // On fait apparaitre le nom du navigateur utilisé.
-    $navigateur = $_SERVER["HTTP_USER_AGENT"];
-	
-    // On fait une array() des aspirateurs.
-    $bannav = Array('HTTrack','MJ12bot','httrack','HTTPClient','websitecopier','webcopier');
-    
-    // On fait une foreach de l'Array() contenant les navigateurs interdits.
-    foreach ($bannav as $banned) { 
-	
-        // On verifie si le navigateur utilisé est présent dans le tableau array().
-        $comparaison = strstr($navigateur, $banned);
-
-        // S'il est présent.
-        if($comparaison !== false) {
-            // On créer un fichier qui contiendras l'IP de la personne qui a aspirer notre site.
-            $log = 'log-papprotect.cnx';
-            $fichier = file_get_contents($log);
-            $fichier .= $_SERVER['REMOTE_ADDR']."\n\n";
-            
-            file_put_contents($log, $fichier);
-            
-            // contenu du fichier que l'aspirateur va avoir.
-            echo utf8_decode '<center>Vous avez utiliser '.$navigateur.' et a été bloquer part notre systéme de sécurité.</center>';
-           
-        die(); } 
-?>
-
-```
-
 <center><img src="https://camo.githubusercontent.com/7ee6ae4ef352b22e7cad4919f4dd4246b6454610/68747470733a2f2f696d6167652d63632e73332e656e7661746f2e636f6d2f66696c65732f3138383634313831392f436f7665722d6d696e2e6a7067"></center>
 
 <ul>
