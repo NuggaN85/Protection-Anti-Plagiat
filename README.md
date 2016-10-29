@@ -119,5 +119,5 @@ deny from all
 <li>
 <strong>Notifications par email</strong> – Recevoir des notifications par courriel quand l'attaque ou la menace est détectée.</li>
 <li>
-<strong>Buy Now 35$</strong> – http://goo.gl/Ut6kAB</li>
+<strong>Acheter</strong> – http://goo.gl/Ut6kAB</li>
 </ul>
