@@ -1,5 +1,9 @@
 <?php
 //===== Les includes des fichier externe
-require_once($base_dir.'bannav.php');
+if (file_exists($base_dir.'papprotect')) {
+  require_once($base_dir.'bannav.php');
+} else {
+  die('S\'il vous plaît mettre les fichiers dans le répertoire papprotect !');
+}
 //==========
 ?>
