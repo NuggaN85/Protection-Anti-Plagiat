@@ -74,7 +74,7 @@ deny from all
 
 --------------------------------------------------------------------------------------------------------------------------------------
 
-<center><img src="https://camo.githubusercontent.com/7ee6ae4ef352b22e7cad4919f4dd4246b6454610/68747470733a2f2f696d6167652d63632e73332e656e7661746f2e636f6d2f66696c65732f3138383634313831392f436f7665722d6d696e2e6a7067"></center>
+<div style="text-align:center"><img src ="https://camo.githubusercontent.com/7ee6ae4ef352b22e7cad4919f4dd4246b6454610/68747470733a2f2f696d6167652d63632e73332e656e7661746f2e636f6d2f66696c65732f3138383634313831392f436f7665722d6d696e2e6a7067" /></div>
 
 <ul>
 <li>
