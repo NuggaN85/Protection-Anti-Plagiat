@@ -18,5 +18,6 @@ papprotect/
 * papprotect v1.3.0 // Ajout du fichier log en .cnx pour que ce fichier ne soit lu sur le web.
 * papprotect v1.4.0 // Ajout de l'option email pour recevoir des notifiations (optionel).
 * papprotect v1.5.0 // Ajout de l'option file_exists + message d'erreur si le script est pas mis corectement.
-* papprotect v1.6.0 soon // fichier externe pour une meilleur optimisation du script.
+* papprotect v1.6.0 // Ajout de la function isValidEmail pour vérifier si votre email est valide pour les notification.
+* papprotect v1.7.0 soon // fichier externe pour une meilleur optimisation du script.
 ```
