@@ -87,5 +87,5 @@ function getip() {
 //==========   
    if (mail($destinataire, $objet, $message, $headers)) // Envoi du message
 //==========
-      die('Une erreur est survenue contacter le créateur.'); } 
+      die(); } 
 ?>
