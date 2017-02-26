@@ -34,9 +34,9 @@ function getip() {
    $ua = getenv('HTTP_USER_AGENT');
    $sf = getenv('SCRIPT_FILENAME');
    $sn = getenv('SERVER_NAME');
-// Liste des aspirateurs en fichier externe 'bannav.php'. 
-   if (in_array ($ua, $bannav) === true) { die(); }
-   foreach ($bannav as $banned) { $comparaison = strstr($ua, $banned);
+// Liste des aspirateurs en fichier externe 'bad_bots.php'. 
+   if (in_array ($ua, $bad_bots) === true) { die(); }
+   foreach ($bad_bots as $banned) { $comparaison = strstr($ua, $banned);
        if($comparaison !== false) {
            $tentative++;
        }
