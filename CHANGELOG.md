@@ -20,4 +20,5 @@ papprotect/
 * papprotect v1.5.0 // Ajout file_exists + message d'erreur si le script est pas mis corectement.
 * papprotect v1.6.0 // Ajout des options email comme savoir sur quel page a été attaquer.
 * papprotect v1.7.0 // Ajout domaine pour savoir sur quel siteweb a été attaquer.
+* papprotect v1.8.0 // Fixed function getip for bug
 ```
