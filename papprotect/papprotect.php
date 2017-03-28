@@ -56,7 +56,7 @@ function getUserIP() {
    flock($files, LOCK_SH);
    fclose($files);
 // Le texte que vous voulez que le voleur recevra dans les fichiers télécharger.
-   echo '<div style="text-align: center;"><img src="https://camo.githubusercontent.com/fe2cb3af77c3290cd9437c142662cbd08bbbc027/687474703a2f2f696d6167652e6e6f656c736861636b2e636f6d2f66696368696572732f323031352f35312f313435303130333535302d736865696c642e706e67" border="0" /></div> ';	
+   echo '<div style="text-align: center;"><img src="https://camo.githubusercontent.com/fe2cb3af77c3290cd9437c142662cbd08bbbc027/687474703a2f2f696d6167652e6e6f656c736861636b2e636f6d2f66696368696572732f323031352f35312f313435303130333535302d736865696c642e706e67" border="0" /></div> ';    
    echo '<br><br>';
    echo utf8_decode('<div style="width: 100%; text-align: center; font-weight: bold">[Site web est protégé, vos information sont enregistrés] <br><br>'.$ua.' <br><br>IP CLIENT : '.getUserIP().' <br><br>PORT CLIENT : '.$up.' <br><br>HOST CLIENT : '.$ra.'
    </div>');
