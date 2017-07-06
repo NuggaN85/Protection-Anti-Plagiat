@@ -1,6 +1,8 @@
 <?php
 //===== Liste des bots/spiders/crawlers
 $bad_bots = array(
+    "nikto",
+    "sqlmap",
     "Abonti",
     "aggregator",
     "AhrefsBot",
