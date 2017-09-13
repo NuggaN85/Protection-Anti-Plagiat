@@ -34,13 +34,13 @@ Pour les fichiers en <strong>html</strong>, mettre " <?php include('papprotect/p
 Inclure ceci dans vos pages html.
 ```PHP
 // pour les pages html inclure comme ci avant la balise <!DOCTYPE html>
-<?php require($base_dir.'papprotect/papprotect.php'); ?> 
+<?php require_once($base_dir.'papprotect/papprotect.php'); ?> 
 ```
 
 Inclure ceci dans vos pages php.
 ```PHP
 // pour les pages php inclure comme ci juste après la balise <?php
-require($base_dir.'papprotect/papprotect.php'); 
+require_once($base_dir.'papprotect/papprotect.php'); 
 ```
 
 Ajouter ceci dans votre .htaccess
