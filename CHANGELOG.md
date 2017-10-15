@@ -7,7 +7,7 @@
 papprotect/
 │   ├── papprotect.php.
 ├── check/
-│   ├── bad_bot.php.
+│   ├── bad_bots.php.
 │   ├── data.php.
 │   ├── email.php.
 ```
