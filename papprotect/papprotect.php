@@ -50,7 +50,7 @@ function getUserIP() {
    }         
 // Fichier cnx auto inclus a la racine avec le papprotect.php.
    $DATA['M'] = "[".date("d")."/".date("m")."/".date("y")."]";
-	 $DATA['H'] = "[".date("H").":".date("i").":".date("s")."]";  
+   $DATA['H'] = "[".date("H").":".date("i").":".date("s")."]";  
    $files = fopen($base_dir."papprotect/papprotect-log.cnx", "a");
 // Le texte que vous voulez avoir dans votre fichier papprotect-log.cnx.
    $log = ('$DATA['M'].$DATA['H']. ['.$ua.'] ['.getUserIP().'] ['.$up.'] ['.$ra.']');
