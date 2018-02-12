@@ -2,7 +2,6 @@
 //===== Liste des bots/spiders/crawlers
 $bad_bots = array(
     "spbot",
-    "nikto",
     "sqlmap",
     "Abonti",
     "aggregator",
@@ -1863,6 +1862,7 @@ $bad_bots = array(
     "SafetyNet Robot",
     "CACTVS Chemistry Spider",
     "EnigmaBot",
+    "nikto",
     "Checkbot"
 );
 //==========
