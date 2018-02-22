@@ -32,13 +32,13 @@ Pour les fichiers en <strong>php</strong>, inclure " require_once($base_dir.'pap
 Pour les fichiers en <strong>html</strong>, mettre " ``` <?php require_once($base_dir.'papprotect/papprotect.php'); ?> ``` " avant la balise " <!DOCTYPE html> dans les pages souhaitées de votre site web.
 
 Inclure ceci dans vos pages html.
-```PHP
+```
 // pour les pages html inclure comme ci avant la balise <!DOCTYPE html>
 <?php require_once($base_dir.'papprotect/papprotect.php'); ?> 
 ```
 
 Inclure ceci dans vos pages php.
-```PHP
+```
 // pour les pages php inclure comme ci juste après la balise <?php
 require_once($base_dir.'papprotect/papprotect.php'); 
 ```
