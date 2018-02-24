@@ -6,24 +6,25 @@ if (file_exists($base_dir.'papprotect')) {
   die('S\'il vous plaît mettre les fichiers dans le répertoire papprotect !');
 }
 //==========
-//===== Récuperation des ip v4 & v6 du client.
+//===== Récuperation des ip v4, v6 & cloud du client.
 function getUserIP() {
-    $client  = getenv('HTTP_CLIENT_IP');
+    $client = getenv('HTTP_CLIENT_IP');
     $forward = getenv('HTTP_X_FORWARDED_FOR');
-    $remote  = getenv('REMOTE_ADDR');
-    if(filter_var($client, FILTER_VALIDATE_IP))
-    {
+    $cloud = getenv('HTTP_CF_CONNECTING_IP');
+    $remote = getenv('REMOTE_ADDR');
+    if(filter_var($cloud, FILTER_VALIDATE_IP)) {
+        $ip = $cloud;
+    }
+    else if(filter_var($client, FILTER_VALIDATE_IP)) {
         $ip = $client;
     }
-    elseif(filter_var($forward, FILTER_VALIDATE_IP))
-    {
+    elseif(filter_var($forward, FILTER_VALIDATE_IP)) {
         $ip = $forward;
     }
-    else
-    {
+    else{
         $ip = $remote;
     }
-    return $ip;
+    return escape($ip);
 }
 //==========
 //===== Récuperation du port et du host.
