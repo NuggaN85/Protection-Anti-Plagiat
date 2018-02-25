@@ -24,7 +24,7 @@ function getUserIP() {
     else{
         $ip = $remote;
     }
-    return escape($ip);
+    return ($ip);
 }
 //==========
 //===== Récuperation du port et du host.
