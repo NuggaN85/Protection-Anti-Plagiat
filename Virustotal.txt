@@ -1,0 +1,6 @@
+SHA256:	fb019f26584550a6f71de71fe481b2894afa4428cd9ddd4529d35fda60080306
+Nom du fichier :	Protection-Anti-Plagiat-master.zip
+Ratio de détection :	0 / 57
+Date d'analyse :	2018-02-28 10:05:06 UTC
+
+https://www.virustotal.com/fr/file/fb019f26584550a6f71de71fe481b2894afa4428cd9ddd4529d35fda60080306/analysis/1519812306/
