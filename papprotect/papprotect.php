@@ -39,7 +39,7 @@ function getUserIP() {
    if (in_array ($ua, $bad_bots) === true) { die(); }
    foreach ($bad_bots as $banned) { $comparaison = strstr($ua, $banned);
        if($comparaison !== false) {
-           $tentative++;
+           ++$tentative;
        }
    }
 //==========
