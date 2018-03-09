@@ -26,21 +26,21 @@ Put the folder "<strong>papprotect</strong>" at the root of your website. Eg in 
 ## :fr: Important
 
 <strong>:warning:</strong>
-Pour les fichiers en <strong>php</strong>, inclure " require_once($base_dir.'papprotect/papprotect.php'); " juste après la balise " <?php " dans les pages souhaitées. Préférablement, dans <strong>config.php</strong> de votre site web.
+Pour les fichiers en <strong>php</strong>, inclure " require ($base_dir.'papprotect/papprotect.php'); " juste après la balise " <?php " dans les pages souhaitées. Préférablement, dans <strong>config.php</strong> de votre site web.
 
 <strong>:warning:</strong>
-Pour les fichiers en <strong>html</strong>, mettre " ``` <?php require_once($base_dir.'papprotect/papprotect.php'); ?> ``` " avant la balise " <!DOCTYPE html> dans les pages souhaitées de votre site web.
+Pour les fichiers en <strong>html</strong>, mettre " ``` <?php require ($base_dir.'papprotect/papprotect.php'); ?> ``` " avant la balise " <!DOCTYPE html> dans les pages souhaitées de votre site web.
 
 Inclure ceci dans vos pages html.
 ```
 // pour les pages html inclure comme ci avant la balise <!DOCTYPE html>
-<?php require_once($base_dir.'papprotect/papprotect.php'); ?> 
+<?php require ($base_dir.'papprotect/papprotect.php'); ?> 
 ```
 
 Inclure ceci dans vos pages php.
 ```
 // pour les pages php inclure comme ci juste après la balise <?php
-require_once($base_dir.'papprotect/papprotect.php'); 
+require ($base_dir.'papprotect/papprotect.php'); 
 ```
 
 Ajouter ceci dans votre .htaccess
