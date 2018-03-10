@@ -51,6 +51,12 @@ deny from all
 </files>
 ```
 
+Ajouter ceci dans votre robot.txt
+```
+User-agent: HTTrack
+Disallow: /
+```
+
 ## :fr: Contribuer
 
 [![Donate](https://img.shields.io/badge/paypal-donate-yellow.svg?style=flat)](https://www.paypal.me/LudovicRose)
