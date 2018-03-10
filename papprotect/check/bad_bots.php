@@ -78,6 +78,7 @@ $bad_bots = array(
     "httplib",
     "HMView",
     "HTTrack",
+    "IDentity",
     "httpdown",
     "humanlinks",
     "IDBot",
