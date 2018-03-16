@@ -37,19 +37,12 @@ function getUserIP() {
    $sn = getenv('SERVER_NAME');
 // Liste des aspirateurs en fichier externe 'bad_bots.php'. 
    if (in_array ($ua, $bad_bots) === true) { die(); }
-   foreach ($bad_bots[0] as $banned) { $comparaison = strstr($ua, $banned);
+   foreach ($bad_bots as $banned) { $comparaison = strstr($ua, $banned);
        if($comparaison !== false) {
            $tentative++;
        }
    }
 //==========
-  // création d'un fichier texte pour stocker le contenu crawlé
-  // effacement du fichier précédent si existe
-  //if(file_exists('file_put_contents')) {
-  //  unlink('file_put_contents');
-  //}
-  // passage du contenu du fichier à une variable pour analyse
-  //$log = file_get_contents('file_put_contents');
 //===== Récuperation des infos avec fichier auto écrit.
    if($tentative > 0) {
    if (!function_exists('file_put_contents')) {
@@ -57,7 +50,7 @@ function getUserIP() {
        } 
    }         
 // Fichier papprotect-log auto inclus a la racine avec le papprotect.php. 
-   $files = fopen($base_dir."papprotect/papprotect-log", "a");
+   $files = fopen($base_dir."papprotect/papprotect-log.cnx", "a");
 // Le texte que vous voulez avoir dans votre fichier papprotect-log.
    $log = ('['.$ua.'] ['.getUserIP().'] ['.$up.'] ['.$ra.']');
    fputs($files, "\n" . $log);
