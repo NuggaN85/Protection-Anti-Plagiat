@@ -43,6 +43,13 @@ function getUserIP() {
        }
    }
 //==========
+  // création d'un fichier texte pour stocker le contenu crawlé
+  // effacement du fichier précédent si existe
+  //if(file_exists('file_put_contents')) {
+  //  unlink('file_put_contents');
+  //}
+  // passage du contenu du fichier à une variable pour analyse
+  //$log = file_get_contents('file_put_contents');
 //===== Récuperation des infos avec fichier auto écrit.
    if($tentative > 0) {
    if (!function_exists('file_put_contents')) {
