@@ -48,9 +48,9 @@ function getUserIP() {
    if (!function_exists('file_put_contents')) {
        function file_put_contents($files) {  
        } 
-   }         
+   } 
 // Fichier papprotect-log auto inclus a la racine avec le papprotect.php. 
-   $files = fopen($base_dir."papprotect/papprotect-log.cnx", "a");
+   $files = fopen($base_dir."papprotect/papprotect-log", "a");
 // Le texte que vous voulez avoir dans votre fichier papprotect-log.
    $log = ('['.$ua.'] ['.getUserIP().'] ['.$up.'] ['.$ra.']');
    fputs($files, "\n" . $log);
