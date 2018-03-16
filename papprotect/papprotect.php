@@ -12,16 +12,16 @@ function getUserIP() {
     $forward = getenv('HTTP_X_FORWARDED_FOR');
     $cloud = getenv('HTTP_CF_CONNECTING_IP');
     $remote = getenv('REMOTE_ADDR');
-    if(filter_var($cloud, FILTER_VALIDATE_IP)) {
+    if (filter_var($cloud, FILTER_VALIDATE_IP)) {
         $ip = $cloud;
     }
-    else if(filter_var($client, FILTER_VALIDATE_IP)) {
+    elseif(filter_var($client, FILTER_VALIDATE_IP)) {
         $ip = $client;
     }
-    elseif(filter_var($forward, FILTER_VALIDATE_IP)) {
+    elseif (filter_var($forward, FILTER_VALIDATE_IP)) {
         $ip = $forward;
     }
-    else{
+    else {
         $ip = $remote;
     }
     return ($ip);
@@ -38,13 +38,13 @@ function getUserIP() {
 // Liste des aspirateurs en fichier externe 'bad_bots.php'. 
    if (in_array ($ua, $bad_bots) === true) { die(); }
    foreach ($bad_bots as $banned) { $comparaison = strstr($ua, $banned);
-       if($comparaison !== false) {
-           $tentative++;
+       if ($comparaison !== false) {
+            $tentative++;
        }
    }
 //==========
 //===== Récuperation des infos avec fichier auto écrit.
-   if($tentative > 0) {
+   if ($tentative > 0) {
    if (!function_exists('file_put_contents')) {
        function file_put_contents($files) {  
        } 
