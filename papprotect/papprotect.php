@@ -37,9 +37,9 @@ function getUserIP() {
    $sn = getenv('SERVER_NAME');
 // Liste des aspirateurs en fichier externe 'bad_bots.php'. 
    if (in_array ($ua, $bad_bots) === true) { die(); }
-   foreach ($bad_bots as $banned) { $comparaison = strstr($ua, $banned);
+   foreach ($bad_bots[0] as $banned) { $comparaison = strstr($ua, $banned);
        if($comparaison !== false) {
-           ++$tentative;
+           $tentative++;
        }
    }
 //==========
