@@ -3,7 +3,7 @@
 if (file_exists($base_dir.'papprotect')) {
   require($base_dir.'check/data.php');
 } else {
-  die('S\'il vous plaît mettre les fichiers dans le répertoire papprotect !');
+  exit('S\'il vous plaît mettre les fichiers dans le répertoire papprotect!');
 }
 //==========
 //===== Récuperation des ip v4, v6 & cloud du client.
@@ -12,16 +12,16 @@ function getUserIP() {
     $forward = getenv('HTTP_X_FORWARDED_FOR');
     $cloud = getenv('HTTP_CF_CONNECTING_IP');
     $remote = getenv('REMOTE_ADDR');
-    if (filter_var($cloud, FILTER_VALIDATE_IP)) {
+    if(filter_var($cloud, FILTER_VALIDATE_IP)) {
         $ip = $cloud;
     }
-    elseif(filter_var($client, FILTER_VALIDATE_IP)) {
+    else if(filter_var($client, FILTER_VALIDATE_IP)) {
         $ip = $client;
     }
-    elseif (filter_var($forward, FILTER_VALIDATE_IP)) {
+    elseif(filter_var($forward, FILTER_VALIDATE_IP)) {
         $ip = $forward;
     }
-    else {
+    else{
         $ip = $remote;
     }
     return ($ip);
@@ -32,27 +32,28 @@ function getUserIP() {
    $ra = gethostbyaddr($_SERVER['REMOTE_ADDR']);
 //==========
 //===== Donnée des attaques de bot aspirateur.
+   $ss = getenv('SERVER_SOFTWARE');
    $ua = getenv('HTTP_USER_AGENT');
    $sf = getenv('SCRIPT_FILENAME');
    $sn = getenv('SERVER_NAME');
 // Liste des aspirateurs en fichier externe 'bad_bots.php'. 
    if (in_array ($ua, $bad_bots) === true) { die(); }
    foreach ($bad_bots as $banned) { $comparaison = strstr($ua, $banned);
-       if ($comparaison !== false) {
-            $tentative++;
+       if($comparaison !== false) {
+           $tentative++;
        }
    }
 //==========
 //===== Récuperation des infos avec fichier auto écrit.
-   if ($tentative > 0) {
+   if($tentative > 0) {
    if (!function_exists('file_put_contents')) {
        function file_put_contents($files) {  
        } 
    } 
-// Fichier papprotect-log.cnx auto inclus a la racine avec le papprotect.php. 
-   $files = fopen($base_dir."papprotect/papprotect-log.cnx", "a");
-// Le texte que vous voulez avoir dans votre fichier papprotect-log.cnx.
-   $log = ('['.$ua.'] ['.getUserIP().'] ['.$up.'] ['.$ra.']');
+// Fichier papprotect-log auto inclus a la racine avec le papprotect.php. 
+   $files = fopen($base_dir."papprotect/papprotect-log", "a");
+// Le texte que vous voulez avoir dans votre fichier papprotect-log.
+   $log = ('['.$ua.'] ['.getUserIP().'] ['.$up.'] ['.$ra.'] ['.$ss.']');
    fputs($files, "\n" . $log);
    flock($files, LOCK_SH);
    fclose($files);
@@ -65,5 +66,5 @@ function getUserIP() {
    echo utf8_decode('<div style="width: 100%; text-align: center; font-weight: bold">[Website is protected, your information is recorded] <br><br>'.$ua.' <br><br>IP CLIENT : '.getUserIP().' <br><br>PORT CLIENT : '.$up.' <br><br>HOST CLIENT : '.$ra.'
    </div>');
 //==========
-      die(); } 
+      exit(1); } 
 ?>
