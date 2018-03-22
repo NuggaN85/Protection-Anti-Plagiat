@@ -1,4 +1,5 @@
 <?php
+error_reporting(0);
 //===== Récuperation des fichiers externe.
 if (file_exists($base_dir.'papprotect')) {
   require($base_dir.'check/data.php');
