@@ -31,6 +31,9 @@ Pour les fichiers en <strong>php</strong>, inclure " require ($base_dir.'papprot
 <strong>:warning:</strong>
 Pour les fichiers en <strong>html</strong>, mettre " ``` <?php require ($base_dir.'papprotect/papprotect.php'); ?> ``` " avant la balise " <!DOCTYPE html> dans les pages souhaitées de votre site web.
 
+<strong>:warning:</strong>
+Pour certain fichier en index.html ou index.htm renomer les en index.php ou si vous voulez garder votre extension utilisé ceci dans votre .htaccess (AddType application/x-httpd-php .html)
+
 Inclure ceci dans vos pages html.
 ```
 // pour les pages html inclure comme ci avant la balise <!DOCTYPE html>
