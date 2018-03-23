@@ -11,10 +11,10 @@
    $copie = 'noreply@papprotect.com';
    $copie_cachee = 'noreply@papprotect.com';
    $objet = '[INFORMATION]'; // Objet du message
-   $headers  = 'MIME-Version: 1.0' . "\n"; // Version MIME
-   $headers .= 'Content-type: text/html; charset=utf-8'."\n"; // l'en-tete Content-type pour le format HTML
+   $headers  = 'MIME-Version: 1.0' . "\r\n"; // Version MIME
+   $headers .= 'Content-Type: text/html; utf8_encode()'."\n"; // l'en-tete Content-type pour le format HTML
    $headers .= 'Reply-To: '.$expediteur."\n"; // Mail de reponse
-   $headers .= 'From: "papprotect.com"<'.$expediteur.'>'."\n"; // Expediteur
+   $headers .= 'From: "papprotect.com"<'.$expediteur.'>'."\r\n"; // Expediteur
    $headers .= 'Delivered-to: '.$destinataire."\n"; // Destinataire
    $headers .= 'Cc: '.$copie."\n"; // Copie Cc
    $headers .= 'Bcc: '.$copie_cachee."\n\n"; // Copie cachée Bcc
