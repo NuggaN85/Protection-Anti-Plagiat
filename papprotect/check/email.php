@@ -12,7 +12,7 @@
    $copie_cachee = 'noreply@papprotect.com';
    $objet = '[INFORMATION]'; // Objet du message
    $headers  = 'MIME-Version: 1.0' . "\n"; // Version MIME
-   $headers .= 'Content-type: text/html; charset=ISO-8859-1'."\n"; // l'en-tete Content-type pour le format HTML
+   $headers .= 'Content-type: text/html; charset=utf-8'."\n"; // l'en-tete Content-type pour le format HTML
    $headers .= 'Reply-To: '.$expediteur."\n"; // Mail de reponse
    $headers .= 'From: "papprotect.com"<'.$expediteur.'>'."\n"; // Expediteur
    $headers .= 'Delivered-to: '.$destinataire."\n"; // Destinataire
