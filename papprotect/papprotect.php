@@ -7,24 +7,21 @@ if (file_exists($base_dir.'papprotect')) {
       exit(1); } 
 //==========
 //===== Récuperation des ip v4, v6 & cloud du client.
-function getUserIP() {
-    $client = getenv('HTTP_CLIENT_IP');
-    $forward = getenv('HTTP_X_FORWARDED_FOR');
-    $cloud = getenv('HTTP_CF_CONNECTING_IP');
-    $remote = getenv('REMOTE_ADDR');
-    if(filter_var($cloud, FILTER_VALIDATE_IP)) {
-        $ip = $cloud;
+function getUserIP()
+{
+    foreach (array('HTTP_CLIENT_IP', 'HTTP_CF_CONNECTING_IP', 'HTTP_X_FORWARDED_FOR', 'HTTP_X_FORWARDED', 'HTTP_X_CLUSTER_CLIENT_IP', 'HTTP_FORWARDED_FOR', 'HTTP_FORWARDED', 'REMOTE_ADDR') as $key)
+    {
+        if (array_key_exists($key, $_SERVER) === true)
+        {
+            foreach (array_map('trim', explode(',', $_SERVER[$key])) as $ip)
+            {
+                if (filter_var($ip, FILTER_VALIDATE_IP, FILTER_FLAG_NO_PRIV_RANGE | FILTER_FLAG_NO_RES_RANGE) !== false)
+                {
+                    return $ip;
+                }
+            }
+        }
     }
-    else if(filter_var($client, FILTER_VALIDATE_IP)) {
-        $ip = $client;
-    }
-    elseif(filter_var($forward, FILTER_VALIDATE_IP)) {
-        $ip = $forward;
-    }
-    else{
-        $ip = $remote;
-    }
-    return ($ip);
 }
 //==========
 //===== Récuperation du port et du host.
