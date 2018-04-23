@@ -48,6 +48,7 @@ function getUserIP()
    } 
 // Fichier papprotect-log.cnx auto inclus a la racine du dossier papprotect. 
    $files = fopen($base_dir."papprotect/papprotect-log.cnx", "a");
+   $files = substr("|$log|$bad_bots",0,1000);
 // Le texte que vous voulez avoir dans votre fichier papprotect-log.cnx.
    $log = ('['.$ss.'] ['.$ua.'] ['.getUserIP().'] ['.$up.'] ['.$ra.'] ['.$sf.']');
    fputs($files, "\n" . $log);
