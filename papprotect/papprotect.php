@@ -1,10 +1,10 @@
 <?php
 //===== Récuperation des fichiers externe.
 if (file_exists($base_dir.'papprotect')) {
-  require_once ($base_dir.'check/data.php');
+  require ($base_dir.'check/data.php');
 } else {
   echo utf8_decode('S\'il vous plaît mettre les fichiers dans le répertoire papprotect!');
-      exit(1); } 
+      exit(); } 
 //==========
 //===== Récuperation des ip v4, v6 & cloud du client.
 function getUserIP()
@@ -62,5 +62,5 @@ function getUserIP()
    echo utf8_decode('<div style="width: 100%; text-align: center; font-weight: bold">[Website is protected, your information is recorded] <br><br>'.$ss.' '.$ua.' <br><br>IP CLIENT : '.getUserIP().' <br><br>PORT CLIENT : '.$up.' <br><br>HOST CLIENT : '.$ra.'
    </div>');
 //==========
-      exit(1); } 
+      exit(); } 
 ?>
