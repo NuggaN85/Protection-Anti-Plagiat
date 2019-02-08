@@ -76,7 +76,7 @@ Disallow: /
 - Signalez-nous les bugs que vous remarquez sur via [Github](https://github.com/NuggaN85/Protection-Anti-Plagiat/issues/1).
 - Nous-suggérez des modifications sur via [Github](https://github.com/NuggaN85/Protection-Anti-Plagiat/issues/2).
 - Suivez [@NuggaN85](https://twitter.com/NuggaN85) sur Twitter
-- Site Web : https://tchatland.fr
+- Site Web : https://tchatland.fr , https://gamesplay.fr
 - Discord dev : https://discord.me/nuggan85
 
 --------------------------------------------------------------------------------------------------------------------------------------
