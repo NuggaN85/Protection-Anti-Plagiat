@@ -9,7 +9,7 @@ if (file_exists($base_dir.'papprotect')) {
 //===== Récuperation des ip v4, v6 & cloud du client.
 function getUserIP()
 {
-    foreach (array('HTTP_CLIENT_IP', 'HTTP_CF_CONNECTING_IP', 'HTTP_X_FORWARDED_FOR', 'HTTP_X_FORWARDED', 'HTTP_X_FORWARDED_SSL', 'HTTP_X_CLUSTER_CLIENT_IP', 'HTTP_FORWARDED_FOR', 'HTTP_FORWARDED', 'HTTP_FORWARDED_SSL', 'REMOTE_ADDR') as $key)
+    foreach (array('HTTP_PROXY_CONNECTION', 'HTTP_VIA', 'VIA', 'CLIENT_IP', 'FORWARDED_FOR_IP', 'X_FORWARDED_FOR', 'X_FORWARDED', 'FORWARDED', 'FORWARDED_FOR', 'HTTP_FORWARDED_FOR_IP', 'HTTP_CLIENT_IP', 'HTTP_CF_CONNECTING_IP', 'HTTP_X_FORWARDED_FOR', 'HTTP_X_FORWARDED', 'HTTP_X_FORWARDED_SSL', 'HTTP_X_CLUSTER_CLIENT_IP', 'HTTP_FORWARDED_FOR', 'HTTP_FORWARDED', 'HTTP_FORWARDED_SSL', 'REMOTE_ADDR') as $key)
     {
         if (array_key_exists($key, $_SERVER) === true)
         {
