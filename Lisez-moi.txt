@@ -5,8 +5,8 @@ Merci d'avoir téléchargé le script "papprotect".
 L'archive contient les pages html, ainsi que les fichiers images, css et javascript, excepté les dépendances jquery et bootstrap (accès par CDN).
 
 Auteur : @NuggaN85
-Site web : http://papprotect.livehost.fr
-Contact : contact@papprotect.livehost.fr
+Site web : https://tchatland.fr
+Contact : https://tchatland.fr
 
 Note : Ce script est réservé à un usage gratuit et non commercial, et vous êtes libre de le redistribuer et le modifier, mais ne pouvez pas vous en déclarer l'auteur.
 
