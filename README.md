@@ -4,7 +4,7 @@
  * Dev: NuggaN85
  * Github: NuggaN85
  * Twitter: @NuggaN85
- * Copyright © 2015 All rights reserved.
+ * Copyright © 2015 - 2019 All rights reserved.
  * Licensed under CC BY 3.0
 ```
 <div style="text-align:center"><img src ="https://camo.githubusercontent.com/8311875fd722ba69ded3fb1ffc0e9b60562b6024/687474703a2f2f696d6167652e6e6f656c736861636b2e636f6d2f66696368696572732f323031362f32322f313436343838363332362d70617070726f74656374323031362e6a7067" /></div>
