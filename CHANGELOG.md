@@ -21,4 +21,5 @@ papprotect/
 * papprotect v1.5.0 // Ajout domaine pour savoir sur quel siteweb a été attaquer.
 * papprotect v1.6.0 // Fixed function getip for bug
 * papprotect v1.7.0 // Nouveau fichier papprotect.cry.php fichier crypter en base64 pour plus de sécurité.
+* papprotect v1.8.0 // Fixed Cloudflare & Proxy
 ```
