@@ -6,7 +6,7 @@ if (file_exists(__DIR__.'papprotect')) {
   echo utf8_decode('S\'il vous plaît mettre les fichiers dans le répertoire papprotect!');
       exit(); } 
 //==========
-//===== Récuperation des ip v4, v6 & cloud du client.
+//===== Cloudflare Fix & HTTP Proxy Fix.
 function getUserIP()
 {
     foreach (array('HTTP_CLIENT_IP', 'HTTP_X_FORWARDED_FOR', 'HTTP_X_FORWARDED_PROTO', 'HTTP_CF_VISITOR', 'HTTP_CF_CONNECTING_IP', 'REMOTE_ADDR') as $key)
