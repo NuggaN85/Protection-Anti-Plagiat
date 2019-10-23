@@ -7,22 +7,15 @@ if (file_exists(__DIR__.'papprotect')) {
       exit(); } 
 //==========
 //===== Cloudflare Fix & HTTP Proxy Fix.
-function getUserIP()
-{
-    foreach (array('HTTP_CLIENT_IP', 'HTTP_X_FORWARDED_FOR', 'HTTP_X_FORWARDED_PROTO', 'HTTP_CF_VISITOR', 'HTTP_CF_CONNECTING_IP', 'REMOTE_ADDR') as $key)
-    {
-        if (array_key_exists($key, $_SERVER) === true)
-        {
-            foreach (array_map('trim', explode(',', $_SERVER[$key])) as $ip)
-            {
-                if (filter_var($ip, FILTER_VALIDATE_IP, FILTER_FLAG_NO_PRIV_RANGE | FILTER_FLAG_NO_RES_RANGE) !== false)
-                {
-                    return $ip;
-                }
+function getUserIP() {
+    foreach (array('HTTP_CLIENT_IP', 'HTTP_X_FORWARDED_FOR', 'HTTP_X_FORWARDED_PROTO', 'HTTP_CF_VISITOR', 'HTTP_CF_CONNECTING_IP', 'REMOTE_ADDR') as $key) {
+        if (array_key_exists($key, $_SERVER) === true){
+            foreach (array_map('trim', explode(',', $_SERVER[$key])) as $ip) {
+            if (filter_var($_SERVER['REMOTE_ADDR'], FILTER_VALIDATE_IP, FILTER_FLAG_IPV4) !== FALSE) {
+                $ip = 'IPv4';
+            } else {
+                $ip = 'IPv6';
             }
-        }
-    }
-}
 //==========
 //===== Récuperation du port et du host.
    $ra = gethostbyaddr($_SERVER['REMOTE_ADDR']);
