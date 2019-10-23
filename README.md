@@ -67,7 +67,7 @@ Disallow: /
 
 ## :fr: Contribuer
 
-[![Donate](https://img.shields.io/badge/paypal-donate-yellow.svg?style=flat)](https://www.paypal.me/LudovicRose)
+[![Donate](https://img.shields.io/badge/paypal-donate-yellow.svg?style=flat)](https://www.paypal.me/LudovicRose) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/3319a02c269049cfa8720f3b7c408046)](https://www.codacy.com/manual/NuggaN85/Protection-Anti-Plagiat?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=NuggaN85/Protection-Anti-Plagiat&amp;utm_campaign=Badge_Grade)
 
 <a target="_blank" href="http://www.copyscape.com/"><img src="http://banners.copyscape.com/img/copyscape-banner-white-200x25.png" width="200" height="25" border="0" alt="Protected by Copyscape" title="Protected by Copyscape Plagiarism Checker - Do not copy content from this page." /></a>
 
