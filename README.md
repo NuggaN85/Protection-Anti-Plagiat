@@ -32,18 +32,18 @@ Pour les fichiers en <strong>php</strong>, inclure " require_once ($base_dir.'pa
 Pour les fichiers en <strong>html</strong>, mettre " ``` <?php require_once ($base_dir.'papprotect/papprotect.php'); ?> ``` " avant la balise " <!DOCTYPE html> dans les pages souhaitées de votre site web.
 
 <strong>:warning:</strong>
-Pour certain fichier en index.html ou index.htm renomer les en index.php ou si vous voulez garder votre extension utilisé ceci dans votre .htaccess (AddType application/x-httpd-php .html et AddType application/x-httpd-php .htm)
+Pour certain fichier en .html renomer les en extension .php
 
 Inclure ceci dans vos pages html.
 ```
 // pour les pages html inclure comme ci avant la balise <!DOCTYPE html>
-<?php require_once ($base_dir.'papprotect/papprotect.php'); ?> 
+<?php require_once (__DIR__.'papprotect/papprotect.php'); ?> 
 ```
 
 Inclure ceci dans vos pages php.
 ```
 // pour les pages php inclure comme ci juste après la balise <?php
-require_once ($base_dir.'papprotect/papprotect.php'); 
+require_once (__DIR__.'papprotect/papprotect.php'); 
 ```
 
 Ajouter ceci dans votre .htaccess
