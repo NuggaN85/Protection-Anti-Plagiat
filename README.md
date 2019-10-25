@@ -54,15 +54,6 @@ deny from all
 </files>
 ```
 
-Ajouter ceci dans votre robot.txt
-```
-User-agent: HTTrack
-Disallow: /
-
-User-agent: IDentity
-Disallow: /
-```
-
 --------------------------------------------------------------------------------------------------------------------------------------
 
 🛡️ Contribuer
