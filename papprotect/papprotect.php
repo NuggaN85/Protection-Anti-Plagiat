@@ -1,7 +1,7 @@
-<?php
+<?php 
 //===== Récuperation des fichiers externe.
-if (file_exists(__DIR__.'papprotect')) {
-  require_once (__DIR__.'check/data.php');
+if (file_exists(dirname(__FILE__) . 'papprotect/papprotect.php')) {
+  require_once (dirname(__FILE__) . 'papprotect/papprotect.php'); 
 } else {
   echo utf8_decode('S\'il vous plaît mettre les fichiers dans le répertoire papprotect!');
       exit(); } 
