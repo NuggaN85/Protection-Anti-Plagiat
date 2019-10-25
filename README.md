@@ -26,10 +26,10 @@ Put the folder "<strong>papprotect</strong>" at the root of your website. Eg in 
 🛡️ Important
 
 <strong>:warning:</strong>
-Pour les fichiers en <strong>php</strong>, inclure " require_once ($base_dir.'papprotect/papprotect.php'); " juste après la balise " <?php " dans les pages souhaitées. Préférablement, dans <strong>config.php</strong> de votre site web.
+Pour les fichiers en <strong>php</strong>, inclure " require_once (__DIR__.'papprotect/papprotect.php'); " juste après la balise " <?php " dans les pages souhaitées. Préférablement, dans <strong>config.php</strong> de votre site web.
 
 <strong>:warning:</strong>
-Pour les fichiers en <strong>html</strong>, mettre " ``` <?php require_once ($base_dir.'papprotect/papprotect.php'); ?> ``` " avant la balise " <!DOCTYPE html> dans les pages souhaitées de votre site web.
+Pour les fichiers en <strong>html</strong>, mettre " ``` <?php require_once (__DIR__.'papprotect/papprotect.php'); ?> ``` " avant la balise " <!DOCTYPE html> dans les pages souhaitées de votre site web.
 
 <strong>:warning:</strong>
 Pour certain fichier en .html renomer les en extension .php
