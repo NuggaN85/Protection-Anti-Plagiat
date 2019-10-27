@@ -7,6 +7,8 @@
  * Copyright © 2015 - 2019 All rights reserved.
  * Licensed under CC BY 3.0
 ```
+<a href="https://www.paypal.me/LudovicRose" rel="nofollow"><img src="https://camo.githubusercontent.com/93df17879fa8f6a7a09e115cf16e9d728c9ff1f2/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f646f6e6174652d70617970616c2d3030343537632e7376673f6c6f676f3d70617970616c267374796c653d666c61742d737175617265" alt="Donate Paypal" data-canonical-src="https://img.shields.io/badge/donate-paypal-00457c.svg?logo=paypal&amp;style=flat-square" style="max-width:100%;"></a>
+
 <div style="text-align:center"><img src ="https://camo.githubusercontent.com/8311875fd722ba69ded3fb1ffc0e9b60562b6024/687474703a2f2f696d6167652e6e6f656c736861636b2e636f6d2f66696368696572732f323031362f32322f313436343838363332362d70617070726f74656374323031362e6a7067" /></div>
 
 🛡️ Présentation
@@ -57,8 +59,6 @@ deny from all
 --------------------------------------------------------------------------------------------------------------------------------------
 
 🛡️ Contribuer
-
-<a href="https://www.paypal.me/LudovicRose" rel="nofollow"><img src="https://camo.githubusercontent.com/93df17879fa8f6a7a09e115cf16e9d728c9ff1f2/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f646f6e6174652d70617970616c2d3030343537632e7376673f6c6f676f3d70617970616c267374796c653d666c61742d737175617265" alt="Donate Paypal" data-canonical-src="https://img.shields.io/badge/donate-paypal-00457c.svg?logo=paypal&amp;style=flat-square" style="max-width:100%;"></a>
 
 [![Donate](https://img.shields.io/badge/paypal-donate-yellow.svg?style=flat)](https://www.paypal.me/LudovicRose) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/3319a02c269049cfa8720f3b7c408046)](https://www.codacy.com/manual/NuggaN85/Protection-Anti-Plagiat?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=NuggaN85/Protection-Anti-Plagiat&amp;utm_campaign=Badge_Grade)
 
