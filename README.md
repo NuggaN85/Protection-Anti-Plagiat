@@ -50,10 +50,11 @@ include_once($base_dir. 'papprotect/papprotect.php');
 
 Ajouter ceci dans votre .htaccess
 ```
-<Files papprotect-log.cnx>
-order allow,deny
-deny from all
-</files>
+## PROTECT FILES
+<FilesMatch "\.(htaccess|cnx)$">
+  Order Allow,Deny
+  Deny from all
+</FilesMatch>
 ```
 
 --------------------------------------------------------------------------------------------------------------------------------------
