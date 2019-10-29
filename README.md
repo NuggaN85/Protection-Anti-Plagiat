@@ -10,21 +10,21 @@
 
 <div style="text-align:center"><img src ="https://camo.githubusercontent.com/8311875fd722ba69ded3fb1ffc0e9b60562b6024/687474703a2f2f696d6167652e6e6f656c736861636b2e636f6d2f66696368696572732f323031362f32322f313436343838363332362d70617070726f74656374323031362e6a7067" /></div>
 
-🛡️ Présentation
+## FR Présentation
 
 Ce script vous permettra de protéger votre site web contre les attaques d'aspirateurs de site web pour éviter les plagiats et voir vos site web en vente en temps que <strong>NULLED</strong>, les aspirateurs (comme le logiciel le plus connus qui est <strong>"HTTRACK"</strong>) serons bannis automatiquement grace a notre systéme de blocage.
 
 Deux systéme de sécurité (Encodage automatique dans un fichier <strong>.CNX</strong> qui est pas reconu via le web).
 
-🛡️ Instalation
+## FR Instalation
 
 Mettre le dossier "<strong>papprotect</strong>" à la racine de votre site web. Exemple dans le dossier : (public_html) ou (www), un autre fichier "papprotect-log.cnx" va s'inclure automatiquement a la racine de votre dossier "<strong>papprotect</strong>" celui ci va imprimer tout les fraudeurs qui tente d'aspirer votre site web.
 
-🛡️ Setup
+## ENG Setup
 
 Put the folder "<strong>papprotect</strong>" at the root of your website. Eg in the folder (public_html) or (www), another "papprotect-log.cnx" file will automatically include the root of your file "<strong>papprotect</strong>" this one will print all fraudsters trying to suck your website.
 
-🛡️ Important
+## FR Important
 
 <strong>:warning:</strong>
 Pour les fichiers en <strong>php</strong>, inclure " ``` include_once($base_dir. 'papprotect/papprotect.php');``` " juste après la balise " <?php " dans les pages souhaitées. Préférablement, dans <strong>config.php</strong> de votre site web.
@@ -58,7 +58,7 @@ Ajouter ceci dans votre .htaccess
 
 --------------------------------------------------------------------------------------------------------------------------------------
 
-🛡️ Contribuer
+## Contribuer
 
 [![Donate](https://img.shields.io/badge/paypal-donate-yellow.svg?style=flat)](https://www.paypal.me/LudovicRose) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/3319a02c269049cfa8720f3b7c408046)](https://www.codacy.com/manual/NuggaN85/Protection-Anti-Plagiat?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=NuggaN85/Protection-Anti-Plagiat&amp;utm_campaign=Badge_Grade) [![v1.8.0](http://img.shields.io/badge/zip-v1.8.0-blue.svg)](https://github.com/NuggaN85/Protection-Anti-Plagiat/archive/master.zip)
 
