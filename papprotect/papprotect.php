@@ -1,7 +1,7 @@
 <?php 
 //===== Récuperation des fichiers externe.
-if (file_exists(__DIR__ . "papprotect/papprotect.php")) {
-  require_once (__DIR__ . "papprotect/papprotect.php"); 
+if (file_exists($base_dir . "papprotect/papprotect.php")) {
+  require_once ($base_dir . "papprotect/papprotect.php"); 
 } else {
   echo utf8_decode("S\'il vous plaît mettre les fichiers dans le répertoire papprotect!");
       exit(); } 
@@ -40,7 +40,7 @@ function getUserIP() {
        } 
    } 
 // Fichier papprotect-log.cnx auto inclus a la racine du dossier papprotect. 
-   $files = fopen(__DIR__ ."papprotect/papprotect-log.cnx", "a");
+   $files = fopen($base_dir."papprotect/papprotect-log.cnx", "a");
 // Le texte que vous voulez avoir dans votre fichier papprotect-log.cnx.
    $log = ("[".$ss."] [".$ua."] [".getUserIP()."] [".$up."] [".$ra."] [".$sf."]");
    fputs($files, "\n" . $log);
