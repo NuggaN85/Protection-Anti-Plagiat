@@ -6,7 +6,13 @@ L'archive contient les pages html, ainsi que les fichiers images, css et javascr
 
 Auteur : @NuggaN85
 Site web : https://tchatland.fr
-Contact : nuggan85@free.fr
+Contact : https://discord.me/nuggan85
 
 Note : Ce script est réservé à un usage gratuit et non commercial, et vous êtes libre de le redistribuer et le modifier, mais ne pouvez pas vous en déclarer l'auteur.
+
+Signalez-nous les bugs que vous remarquez sur via Github.
+Nous-suggérez des modifications sur via Github.
+Suivez @NuggaN85 sur Twitter
+Site Web : https://www.tchatland.fr , https://www.belink.weax.net , https://www.image-heberg.weax.net/
+Discord dev : https://discord.me/nuggan85
 
