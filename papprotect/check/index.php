@@ -1,5 +1,5 @@
 <?php
 header("Status: 301 Moved Permanently", false, 301);
-header("Location: ../index.php");
+header("location:../../index.php");
 exit();
 ?>
