@@ -10,42 +10,27 @@
 
 <div style="text-align:center"><img src ="" /></div>
 
-## <strong>:fr:</strong> (FR) Présentation
+## <strong>:fr:</strong> Présentation
 
 Ce script vous permettra de protéger votre site web contre les attaques d'aspirateurs de site web pour éviter les plagiats et voir vos site web en vente en temps que <strong>NULLED</strong>, les aspirateurs (comme le logiciel le plus connus qui est <strong>"HTTRACK"</strong>) serons bannis automatiquement grace a notre systéme de blocage.
 
 Deux systéme de sécurité (Encodage automatique dans un fichier <strong>.CNX</strong> qui est pas reconu via le web).
 
-## <strong>:fr:</strong> (FR) Instalation
+## <strong>:fr:</strong> Instalation
 
 Mettre le dossier "<strong>papprotect</strong>" à la racine de votre site web. Exemple dans le dossier : (public_html) ou (www), un autre fichier "papprotect-log.cnx" va s'inclure automatiquement a la racine de votre dossier "<strong>papprotect</strong>" celui ci va imprimer tout les fraudeurs qui tente d'aspirer votre site web.
 
-## <strong>:gb:</strong> (ENG) Setup
+## <strong>:gb:</strong> Setup
 
 Put the folder "<strong>papprotect</strong>" at the root of your website. Eg in the folder (public_html) or (www), another "papprotect-log.cnx" file will automatically include the root of your file "<strong>papprotect</strong>" this one will print all fraudsters trying to suck your website.
 
-## <strong>:fr:</strong> (FR) Important
+## <strong>:fr:</strong> Important
 
 <strong>:warning:</strong>
 Pour les fichiers en <strong>php</strong>, inclure " ``` include_once($base_dir. 'papprotect/papprotect.php');``` " juste après la balise " <?php " dans les pages souhaitées. Préférablement, dans <strong>config.php</strong> de votre site web.
 
 <strong>:warning:</strong>
 Pour les fichiers en <strong>html</strong>, mettre " ``` <?php include_once($base_dir. 'papprotect/papprotect.php'); ?> ``` " avant la balise " <!DOCTYPE html> dans les pages souhaitées de votre site web.
-
-<strong>:warning:</strong>
-Pour certain fichier en .html renomer les en extension .php
-
-Inclure ceci dans vos pages html.
-```
-// pour les pages html inclure comme ci avant la balise <!DOCTYPE html>
-<?php include_once($base_dir. 'papprotect/papprotect.php'); ?> 
-```
-
-Inclure ceci dans vos pages php.
-```
-// pour les pages php inclure comme ci juste après la balise <?php
-include_once($base_dir. 'papprotect/papprotect.php');
-```
 
 Ajouter ceci dans votre .htaccess
 ```
