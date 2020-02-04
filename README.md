@@ -58,7 +58,7 @@ Ajouter ceci dans votre .htaccess
 
 --------------------------------------------------------------------------------------------------------------------------------------
 
-## (Contribuer)
+## 🏆(Contribuer)🏆
 
 [![Donate](https://img.shields.io/badge/paypal-donate-yellow.svg?style=flat)](https://www.paypal.me/LudovicRose) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/3319a02c269049cfa8720f3b7c408046)](https://www.codacy.com/manual/NuggaN85/Protection-Anti-Plagiat?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=NuggaN85/Protection-Anti-Plagiat&amp;utm_campaign=Badge_Grade) [![v1.8.0](http://img.shields.io/badge/zip-v1.8.0-blue.svg)](https://github.com/NuggaN85/Protection-Anti-Plagiat/archive/master.zip)
 
