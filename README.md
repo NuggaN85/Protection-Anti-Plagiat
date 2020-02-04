@@ -1,4 +1,4 @@
-## 🛡️ <img src ="" /> Protection Anti Plagiat 🛡️
+## 🛡️ Protection Anti Plagiat 🛡️
 
 ```
  * Dev: NuggaN85
