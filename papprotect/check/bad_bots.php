@@ -1,6 +1,7 @@
 <?php
 //===== Liste des bots/spiders/crawlers
 $bad_bots = array(
+    "Bogon"
     "tor"
     "spbot",
     "sqlmap",
