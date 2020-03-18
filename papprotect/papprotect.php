@@ -18,7 +18,7 @@ function getUserIP() {
             }
 //==========
 //===== Récuperation du port et du host.
-   $ra = gethostbyaddr($_SERVER["REMOTE_ADDR"]);
+   $ra = getenv("REMOTE_ADDR");
    $up = getenv("REMOTE_PORT");
 //==========
 //===== Donnée des attaques de bot aspirateur.
