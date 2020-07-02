@@ -36,9 +36,11 @@ Ajouter ceci dans votre .htaccess
 ```
 ## PROTECT FILES
 <FilesMatch "\.(htaccess|cnx)$">
-  Order Allow,Deny
+  Order allow,deny
   Deny from all
+	Satisfy All
 </FilesMatch>
+## PROTECT FILES
 ```
 
 --------------------------------------------------------------------------------------------------------------------------------------
