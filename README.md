@@ -8,7 +8,7 @@
  * Licensed under CC BY 3.0
 ```
 
-<div style="text-align:center"><img src ="" /></div>
+<div style="text-align:center"><img src ="https://image.noelshack.com/fichiers/2020/27/4/1593712328-comment-proteger-votre-site-web-contre-les-attaques-ddos-et-des-botnets.png" /></div>
 
 ## <strong>:fr:</strong> Présentation
 
