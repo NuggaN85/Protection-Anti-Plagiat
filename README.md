@@ -36,9 +36,9 @@ Ajouter ceci dans votre .htaccess
 ```
 ## PROTECT FILES
 <FilesMatch "\.(htaccess|cnx)$">
-  Order allow,deny
-  Deny from all
-	Satisfy All
+Order allow,deny
+Deny from all
+Satisfy All
 </FilesMatch>
 ## PROTECT FILES
 ```
