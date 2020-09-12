@@ -1,6 +1,11 @@
-SHA256:	fb019f26584550a6f71de71fe481b2894afa4428cd9ddd4529d35fda60080306
-Nom du fichier :	Protection-Anti-Plagiat-master.zip
-Ratio de détection :	0 / 57
-Date d'analyse :	2018-02-28 10:05:06 UTC
+MD5	79fe22dfb65056d1be9ba0b9953fba43
+SHA-1	945384d7d0013f7721e77cd901fffba419c56681
+SHA-256	fb019f26584550a6f71de71fe481b2894afa4428cd9ddd4529d35fda60080306
+Vhash	40a885828313b628382db5af03473dec
+SSDEEP	384:N4r8ALU0GFWaUcTurPFoAV3bLwqKdWxn4aYMhY3wLh18s:N28kUQaVCFoAJPwqKMx4aDG3wbh
 
-https://www.virustotal.com/fr/file/fb019f26584550a6f71de71fe481b2894afa4428cd9ddd4529d35fda60080306/analysis/1519812306/
+Nom du fichier :	Protection-Anti-Plagiat-master.zip
+Ratio de détection :	0/61
+Date d'analyse :	2020-09-12 15:42:04 UTC
+
+https://www.virustotal.com/gui/file/fb019f26584550a6f71de71fe481b2894afa4428cd9ddd4529d35fda60080306/details
