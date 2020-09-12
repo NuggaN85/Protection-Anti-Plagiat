@@ -10,6 +10,7 @@ papprotect/
 ├── check/
 │   ├── bad_bots.php.
 │   ├── data.php.
+│   ├── index.php
 ```
 
 ```
