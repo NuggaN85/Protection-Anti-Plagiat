@@ -56,7 +56,7 @@ Satisfy All
 - Signalez-nous les bugs que vous remarquez sur via [Github](https://github.com/NuggaN85/Protection-Anti-Plagiat/issues/1).
 - Nous-suggérez des modifications sur via [Github](https://github.com/NuggaN85/Protection-Anti-Plagiat/issues/2).
 - Suivez [@NuggaN85](https://twitter.com/NuggaN85) sur Twitter
-- Discord : https://discord.io/nuggan85
+- Discord : https://discord.gg/4gZsXRKdmJ
 
 --------------------------------------------------------------------------------------------------------------------------------------
 
