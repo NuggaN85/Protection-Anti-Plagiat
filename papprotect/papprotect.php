@@ -3,7 +3,7 @@
 if (file_exists($base_dir . "papprotect/papprotect.php")) {
   require_once ($base_dir . "papprotect/papprotect.php"); 
 } else {
-  echo utf8_decode("S\'il vous plaît mettre les fichiers dans le répertoire papprotect!");
+  echo utf8_decode("S'il vous plaît mettre les fichiers dans le répertoire papprotect!");
       exit(); } 
 //==========
 //===== Cloudflare Fix & HTTP Proxy Fix.
@@ -11,11 +11,16 @@ function getUserIP() {
     foreach (array("HTTP_CLIENT_IP", "HTTP_X_FORWARDED_FOR", "HTTP_X_FORWARDED_PROTO", "HTTP_CF_VISITOR", "HTTP_CF_CONNECTING_IP", "X-Real-IP", "REMOTE_ADDR") as $key) {
         if (array_key_exists($key, $_SERVER) === true) {
             foreach (array_map("trim", explode(",", $_SERVER[$key])) as $ip) {
-            if (filter_var($_SERVER["REMOTE_ADDR"], FILTER_VALIDATE_IP, FILTER_FLAG_IPV4) !== FALSE) {
-                $ip = "IPv4";
-            } else {
-                $ip = "IPv6";
+                if (filter_var($ip, FILTER_VALIDATE_IP, FILTER_FLAG_IPV4) !== FALSE) {
+                    return $ip;
+                } else {
+                    return $ip;
+                }
             }
+        }
+    }
+    return '';
+}
 //==========
 //===== Récuperation du port et du host.
    $ra = getenv("REMOTE_ADDR");
