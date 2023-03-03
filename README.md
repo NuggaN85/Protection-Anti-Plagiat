@@ -4,7 +4,7 @@
  * Dev: NuggaN85
  * Github: NuggaN85
  * Twitter: @NuggaN85
- * Copyright © 2015 - 2019 All rights reserved.
+ * Copyright © 2015 - 2023 All rights reserved.
  * Licensed under CC BY 3.0
 ```
 
