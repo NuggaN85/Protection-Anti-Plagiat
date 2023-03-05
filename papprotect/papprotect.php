@@ -79,6 +79,6 @@ if ($tentative > 0) {
    echo "<br><br>";
    echo utf8_decode("<div style="width: 100%; text-align: center; font-weight: bold">[Website is protected, your information is recorded] <br><br>".$ss." ".$ua." <br><br>IP CLIENT : ".getUserIP()." <br><br>PORT CLIENT : ".$up." <br><br>HOST CLIENT : ".$ra."
    </div>");
-//==========
+
       exit(); } 
 ?>
