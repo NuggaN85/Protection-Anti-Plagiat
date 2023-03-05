@@ -1,4 +1,4 @@
-## 🛡️ Protection Anti Plagiat 🛡️
+## 🛡️ Protection Anti Plagiat - béta 1.8.0 🛡️
 
 ```
  * Dev: NuggaN85
