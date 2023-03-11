@@ -10,7 +10,7 @@
 
 <div style="text-align:center"><img src ="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.fidelizarte.pt%2Fblog%2Fwp-content%2Fuploads%2F2019%2F09%2F1_1-1024x561.png&f=1&nofb=1&ipt=df1e87f6a3b8113e33f15c4caaa78c0c30d8160ea2c93d09ca1bd5fee5c866a7&ipo=images" /></div>
 
-## <strong>🇫🇷</strong> Présentation
+## 🆕<strong>🇫🇷</strong> Présentation
 
 Ce script vous permettra de protéger votre site web contre les attaques d'aspirateurs de site web, afin d'éviter le plagiat et la vente de votre contenu en tant que `NULLED`. Les aspirateurs, comme le logiciel le plus connu `HTTRACK`, seront automatiquement bannis grâce à notre système de blocage.
 
@@ -20,17 +20,17 @@ N'hésitez pas à nous contacter si vous avez des questions ou si vous souhaitez
 
 --------------------------------------------------------------------------------------------------------------------------------------
 
-## <strong>🇫🇷</strong> Instalation
+## 🆕<strong>🇫🇷</strong> Instalation
 
 Pour protéger votre site web, veuillez placer le dossier `papprotect` à la racine de votre site, par exemple dans le dossier `public_html` ou `www`. Une fois installé, un fichier supplémentaire nommé `papprotect-log.cnx` sera automatiquement inclus dans le dossier `papprotect`. Ce fichier enregistrera toutes les tentatives de fraudeurs qui tenteront d'aspirer votre site web.
 
-## <strong>🇬🇧</strong> Setup
+## 🆕<strong>🇬🇧</strong> Setup
 
 To protect your website, please place the `papprotect` folder in the root of your website, for example in the `public_html` or `www` folder. Once installed, an additional file named `papprotect-log.cnx` will automatically be included in the `papprotect` folder. This file will log all attempts by fraudsters to steal your website.
 
 --------------------------------------------------------------------------------------------------------------------------------------
 
-## <strong>🇫🇷</strong> Important
+## 🆕<strong>🇫🇷</strong> Important
 
 Afin d'installer correctement la protection de votre site web, veuillez suivre les étapes suivantes :
 
@@ -44,7 +44,8 @@ Ces étapes sont cruciales pour assurer que la protection de votre site web est 
 
 --------------------------------------------------------------------------------------------------------------------------------------
 
-Pour protéger certains fichiers de votre site web tels que ".htaccess" et "papprotect-log.cnx", vous pouvez ajouter le code suivant à votre fichier ".htaccess" :
+## 🆕<strong>🛡️</strong> Sécurité
+Pour protéger certains fichiers de votre site web tels que `.htaccess` et `papprotect-log.cnx`, vous pouvez ajouter le code suivant à votre fichier `.htaccess` :
 
 ```
 ## PROTECT FILES
