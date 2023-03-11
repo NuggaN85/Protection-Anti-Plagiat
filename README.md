@@ -18,6 +18,8 @@ Notre solution de sécurité comprend deux éléments : un encodage automatique 
 
 N'hésitez pas à nous contacter si vous avez des questions ou si vous souhaitez en savoir plus sur notre solution de protection de site web.
 
+--------------------------------------------------------------------------------------------------------------------------------------
+
 ## <strong>🇫🇷</strong> Instalation
 
 Pour protéger votre site web, veuillez placer le dossier `papprotect` à la racine de votre site, par exemple dans le dossier `public_html` ou `www`. Une fois installé, un fichier supplémentaire nommé `papprotect-log.cnx` sera automatiquement inclus dans le dossier `papprotect`. Ce fichier enregistrera toutes les tentatives de fraudeurs qui tenteront d'aspirer votre site web.
@@ -25,6 +27,8 @@ Pour protéger votre site web, veuillez placer le dossier `papprotect` à la rac
 ## <strong>🇬🇧</strong> Setup
 
 To protect your website, please place the `papprotect` folder in the root of your website, for example in the `public_html` or `www` folder. Once installed, an additional file named `papprotect-log.cnx` will automatically be included in the `papprotect` folder. This file will log all attempts by fraudsters to steal your website.
+
+--------------------------------------------------------------------------------------------------------------------------------------
 
 ## <strong>🇫🇷</strong> Important
 
