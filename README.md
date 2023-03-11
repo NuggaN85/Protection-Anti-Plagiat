@@ -24,7 +24,7 @@ Pour protéger votre site web, veuillez placer le dossier `papprotect` à la rac
 
 ## <strong>🇬🇧</strong> Setup
 
-Put the folder "<strong>papprotect</strong>" at the root of your website. Eg in the folder (public_html) or (www), another "papprotect-log.cnx" file will automatically include the root of your file "<strong>papprotect</strong>" this one will print all fraudsters trying to suck your website.
+To protect your website, please place the `papprotect` folder in the root of your website, for example in the `public_html` or `www` folder. Once installed, an additional file named `papprotect-log.cnx` will automatically be included in the `papprotect` folder. This file will log all attempts by fraudsters to steal your website.
 
 ## <strong>🇫🇷</strong> Important
 
