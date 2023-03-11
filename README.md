@@ -12,9 +12,9 @@
 
 ## <strong>🇫🇷</strong> Présentation
 
-Ce script vous permettra de protéger votre site web contre les attaques d'aspirateurs de site web, afin d'éviter le plagiat et la vente de votre contenu en tant que "NULLED". Les aspirateurs, comme le logiciel le plus connu "HTTRACK", seront automatiquement bannis grâce à notre système de blocage.
+Ce script vous permettra de protéger votre site web contre les attaques d'aspirateurs de site web, afin d'éviter le plagiat et la vente de votre contenu en tant que `NULLED`. Les aspirateurs, comme le logiciel le plus connu `HTTRACK`, seront automatiquement bannis grâce à notre système de blocage.
 
-Notre solution de sécurité comprend deux éléments : un encodage automatique de votre site web dans un fichier .CNX qui n'est pas reconnu par les navigateurs web, ainsi qu'un système de blocage des aspirateurs. Ces mesures garantiront que votre site web est protégé contre les tentatives de copie de contenu.
+Notre solution de sécurité comprend deux éléments : un encodage automatique de votre site web dans un fichier `.CNX` qui n'est pas reconnu par les navigateurs web, ainsi qu'un système de blocage des aspirateurs. Ces mesures garantiront que votre site web est protégé contre les tentatives de copie de contenu.
 
 N'hésitez pas à nous contacter si vous avez des questions ou si vous souhaitez en savoir plus sur notre solution de protection de site web.
 
