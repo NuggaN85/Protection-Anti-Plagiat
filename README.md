@@ -38,16 +38,23 @@ Pour les fichiers en HTML, insérez le code `<?php include_once($base_dir. 'papp
 
 Ces étapes sont cruciales pour assurer que la protection de votre site web est active et fonctionnelle. N'hésitez pas à nous contacter si vous rencontrez des problèmes lors de l'installation de la protection de votre site web.
 
-Ajouter ceci dans votre .htaccess
+--------------------------------------------------------------------------------------------------------------------------------------
+
+Pour protéger certains fichiers de votre site web tels que ".htaccess" et "papprotect-log.cnx", vous pouvez ajouter le code suivant à votre fichier ".htaccess" :
+
 ```
 ## PROTECT FILES
 <FilesMatch "\.(htaccess|cnx)$">
-Order allow,deny
+Order Allow,Deny
 Deny from all
 Satisfy All
 </FilesMatch>
 ## PROTECT FILES
 ```
+
+Ce code permettra de restreindre l'accès à ces fichiers en empêchant les visiteurs d'y accéder directement via leur navigateur. Cela renforcera la sécurité de votre site web et empêchera les tentatives de piratage.
+
+N'hésitez pas à contacter notre équipe d'assistance si vous avez des questions sur la mise en place de cette protection.
 
 --------------------------------------------------------------------------------------------------------------------------------------
 
