@@ -5,7 +5,7 @@
  * Github: NuggaN85
  * Twitter: @NuggaN85
  * Copyright © 2015 - 2023 All rights reserved.
- * Licensed under CC BY 3.0
+ * MIT Licensed
 ```
 
 <div style="text-align:center"><img src ="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.fidelizarte.pt%2Fblog%2Fwp-content%2Fuploads%2F2019%2F09%2F1_1-1024x561.png&f=1&nofb=1&ipt=df1e87f6a3b8113e33f15c4caaa78c0c30d8160ea2c93d09ca1bd5fee5c866a7&ipo=images" /></div>
