@@ -69,7 +69,7 @@ N'hésitez pas à contacter notre équipe d'assistance si vous avez des question
 
 <a target="_blank" href="http://www.copyscape.com/"><img src="http://banners.copyscape.com/img/copyscape-banner-white-200x25.png" width="200" height="25" border="0" alt="Protected by Copyscape" title="Protected by Copyscape Plagiarism Checker - Do not copy content from this page." /></a>
 
-<a target="_blank" href="//www.dmca.com/Protection/Status.aspx?ID=e1725bf3-1ec4-44bb-b65e-0a20fd4919fa" title="DMCA.com Protection Status" class="dmca-badge"> <img src ="https://images.dmca.com/Badges/dmca_protected_sml_120d.png?ID=e1725bf3-1ec4-44bb-b65e-0a20fd4919fa"  alt="DMCA.com Protection Status" /></a>  <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"> </script>
+<a title="DMCA.com Protection Status" class="dmca-badge"> <img src ="https://images.dmca.com/Badges/dmca_protected_sml_120d.png?ID=e1725bf3-1ec4-44bb-b65e-0a20fd4919fa"  alt="DMCA.com Protection Status" /></a>
 
 --------------------------------------------------------------------------------------------------------------------------------------
 
