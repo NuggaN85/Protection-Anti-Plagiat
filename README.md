@@ -67,9 +67,7 @@ N'hésitez pas à contacter notre équipe d'assistance si vous avez des question
 
 [![Donate](https://img.shields.io/badge/paypal-donate-yellow.svg?style=flat)](https://www.paypal.me/nuggan85) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/3319a02c269049cfa8720f3b7c408046)](https://app.codacy.com/gh/NuggaN85/Protection-Anti-Plagiat/commits?bid=14837328) [![v1.8.0](http://img.shields.io/badge/zip-v1.8.0-blue.svg)](https://github.com/NuggaN85/Protection-Anti-Plagiat/archive/master.zip) [![GitHub issues](https://img.shields.io/github/issues/NuggaN85/Protection-Anti-Plagiat)](https://github.com/NuggaN85/Protection-Anti-Plagiat/issues) [![GitHub forks](https://img.shields.io/github/forks/NuggaN85/Protection-Anti-Plagiat)](https://github.com/NuggaN85/Protection-Anti-Plagiat/network) [![GitHub stars](https://img.shields.io/github/stars/NuggaN85/Protection-Anti-Plagiat)](https://github.com/NuggaN85/Protection-Anti-Plagiat/stargazers) [![GitHub license](https://img.shields.io/github/license/NuggaN85/Protection-Anti-Plagiat)](https://github.com/NuggaN85/Protection-Anti-Plagiat)
 
-<a target="_blank" href="http://www.copyscape.com/"><img src="http://banners.copyscape.com/img/copyscape-banner-white-200x25.png" width="200" height="25" border="0" alt="Protected by Copyscape" title="Protected by Copyscape Plagiarism Checker - Do not copy content from this page." /></a>
-
-<a title="DMCA.com Protection Status" class="dmca-badge"> <img src ="https://images.dmca.com/Badges/dmca_protected_sml_120d.png?ID=e1725bf3-1ec4-44bb-b65e-0a20fd4919fa"  alt="DMCA.com Protection Status" /></a>
+<a target="_blank" href="https://www.dmca.com/Protection/Status.aspx?ID=e1725bf3-1ec4-44bb-b65e-0a20fd4919fa&refurl=https://github.com/NuggaN85/Protection-Anti-Plagiat" title="DMCA.com Protection Status" class="dmca-badge"> <img src ="https://images.dmca.com/Badges/dmca_protected_sml_120d.png?ID=e1725bf3-1ec4-44bb-b65e-0a20fd4919fa"  alt="DMCA.com Protection Status" /></a>
 
 --------------------------------------------------------------------------------------------------------------------------------------
 
