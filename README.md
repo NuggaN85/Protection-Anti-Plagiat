@@ -49,10 +49,14 @@ Pour protéger certains fichiers de votre site web tels que `.htaccess` et `papp
 
 ```
 ## PROTECT FILES
-<FilesMatch "\.(htaccess|cnx)$">
-Order Allow,Deny
-Deny from all
-Satisfy All
+# Limiter l'accès au fichier .htaccess lui-même
+<Files ".htaccess">
+    Require all denied
+</Files>
+
+# Bloquer l'accès à certains fichiers sensibles
+<FilesMatch "(^\.|\.htaccess$|^\.cnx$)">
+    Require all denied
 </FilesMatch>
 ## PROTECT FILES
 ```
