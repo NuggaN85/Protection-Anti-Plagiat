@@ -35,10 +35,10 @@ To protect your website, please place the `papprotect` folder in the root of you
 Afin d'installer correctement la protection de votre site web, veuillez suivre les étapes suivantes :
 
 <strong>⚠️</strong>
-Pour les fichiers en PHP, incluez la ligne `require_once __DIR__ . '/papprotect/papprotect.php';` juste après la balise `<?php` dans les pages que vous souhaitez protéger. Cette étape est idéalement réalisée dans le fichier "config.php" de votre site web.
+Pour les fichiers en PHP, incluez la ligne `include_once($base_dir. 'papprotect/papprotect.php');` juste après la balise `<?php` dans les pages que vous souhaitez protéger. Cette étape est idéalement réalisée dans le fichier "config.php" de votre site web.
 
 <strong>⚠️</strong>
-Pour les fichiers en HTML, insérez le code `<?php require_once __DIR__ . '/papprotect/papprotect.php'; ?>` avant la balise `</head>` dans les pages que vous souhaitez protéger.
+Pour les fichiers en HTML, insérez le code `<?php include_once($base_dir. 'papprotect/papprotect.php'); ?>` avant la balise `</head>` dans les pages que vous souhaitez protéger.
 
 Ces étapes sont cruciales pour assurer que la protection de votre site web est active et fonctionnelle. N'hésitez pas à nous contacter si vous rencontrez des problèmes lors de l'installation de la protection de votre site web.
 
