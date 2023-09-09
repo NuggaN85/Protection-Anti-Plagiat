@@ -1,5 +1,6 @@
 <?php
-header("Status: 301 Moved Permanently", false, 301);
-header("location:../../index.php");
+// Effectue une redirection permanente vers "../../index.php"
+header("HTTP/1.1 301 Moved Permanently");
+header("Location: ../../index.php");
 exit();
 ?>
