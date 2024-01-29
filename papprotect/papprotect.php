@@ -1,25 +1,25 @@
 <?php
 // Définir le chemin de base en utilisant __DIR__ plutôt que '/' pour être sûr du répertoire de ce script.
-$base_dir = __DIR__ . '/';
+define('BASE_DIR', __DIR__ . '/');
 
 // Initialiser la variable de tentative.
 $tentative = 0;
 
 // Récupérer les fichiers externes
-$protect_file = $base_dir . 'papprotect/papprotect.php';
-$log_file = $base_dir . 'papprotect/papprotect-log.cnx';
+define('PROTECT_FILE', BASE_DIR . 'papprotect/papprotect.php');
+define('LOG_FILE', BASE_DIR . 'papprotect/papprotect-log.cnx');
 
 // Vérifier si les fichiers de protection sont manquants et afficher un message approprié.
-if (!file_exists($protect_file)) {
-    die('Les fichiers de protection sont manquants!');
+if (!file_exists(PROTECT_FILE)) {
+    trigger_error('Les fichiers de protection sont manquants!', E_USER_ERROR);
 } else {
-    require_once($protect_file);
+    require_once(PROTECT_FILE);
 }
 
 // Fonction pour récupérer l'adresse IP de l'utilisateur.
 function getUserIP()
 {
-    $keys = array('HTTP_CLIENT_IP', 'HTTP_X_FORWARDED_FOR', 'HTTP_X_FORWARDED_PROTO', 'HTTP_CF_VISITOR', 'HTTP_CF_CONNECTING_IP', 'X-Real-IP', 'REMOTE_ADDR');
+    $keys = array('HTTP_CLIENT_IP', 'HTTP_X_FORWARDED_FOR', 'HTTP_X_FORWARDED_PROTO', 'HTTP_CF_VISITOR', 'HTTP_CF_CONNECTING_IP', 'X-Real-IP', 'REMOTE_ADDR);
     foreach ($keys as $key) {
         if (isset($_SERVER[$key]) && filter_var($_SERVER[$key], FILTER_VALIDATE_IP, FILTER_FLAG_IPV4) !== false) {
             return $_SERVER[$key];
@@ -29,8 +29,8 @@ function getUserIP()
 }
 
 // Récupérer le port et le host.
-$ra = $_SERVER['REMOTE_ADDR'];
-$up = $_SERVER['REMOTE_PORT'];
+$ra = filter_input(INPUT_SERVER, 'REMOTE_ADDR', FILTER_VALIDATE_IP);
+$up = filter_input(INPUT_SERVER, 'REMOTE_PORT', FILTER_VALIDATE_INT);
 
 // Données des attaques de bot aspirateur.
 $ss = $_SERVER['SERVER_SOFTWARE'];
@@ -55,16 +55,16 @@ if (in_array($ua, $bad_bots, true)) {
 // Récupérer les informations et les écrire dans le fichier de log.
 if ($tentative > 0) {
     // Vérifier si la fonction file_put_contents existe.
-    if (!function_exists("file_put_contents")) {
-        function file_put_contents($file, $data)
-        {
-            $f = fopen($file, "a");
-            if ($f) {
-                fwrite($f, $data);
-                fclose($f);
-            }
+if (!function_exists("file_put_contents")) {
+    function file_put_contents($file, $data)
+    {
+        $f = fopen($file, "a");
+        if ($f) {
+            fwrite($f, $data);
+            fclose($f);
         }
     }
+}
 
     // Fichier papprotect-log.cnx auto inclus à la racine du dossier papprotect.
     $log = "[" . $ss . "] [" . $ua . "] [" . getUserIP() . "] [" . $up . "] [" . $ra . "] [" . $sf . "]";
