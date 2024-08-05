@@ -1,15 +1,12 @@
 <?php
 // Utilisez la constante DIRECTORY_SEPARATOR pour garantir la portabilité des chemins
-$redirect_path = ".." . DIRECTORY_SEPARATOR . ".." . DIRECTORY_SEPARATOR . "index.php";
+$redirect_path = realpath(__DIR__ . DIRECTORY_SEPARATOR . ".." . DIRECTORY_SEPARATOR . ".." . DIRECTORY_SEPARATOR . "index.php");
 
-// Assurez-vous que le chemin est sécurisé en utilisant realpath()
-$redirect_path = realpath($redirect_path);
-
-// Vérifiez que le chemin est valide avant de procéder à la redirection
+// Vérifiez que le chemin est valide et sécurisé avant de procéder à la redirection
 if ($redirect_path !== false && is_file($redirect_path)) {
     // Utilisez la fonction header() pour envoyer l'en-tête de redirection
     header("HTTP/1.1 301 Moved Permanently");
-    header("Location: " . $redirect_path);
+    header("Location: /index.php"); // Utilisez une URL relative ou absolue pour la redirection
     // Assurez-vous que le script se termine après la redirection
     exit();
 } else {
