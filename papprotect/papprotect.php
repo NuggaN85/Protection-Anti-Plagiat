@@ -13,16 +13,14 @@ define('BAD_BOTS_FILE', BASE_DIR . 'papprotect/bad_bots.php');
 // Vérifier si les fichiers de protection sont manquants et afficher un message approprié.
 if (!file_exists(PROTECT_FILE)) {
     trigger_error('Les fichiers de protection sont manquants!', E_USER_ERROR);
-} else {
-    require_once(PROTECT_FILE);
 }
+require_once(PROTECT_FILE);
 
 // Vérifier si le fichier des bots est manquant et afficher un message approprié.
 if (!file_exists(BAD_BOTS_FILE)) {
     trigger_error('Le fichier bad_bots.php est manquant!', E_USER_ERROR);
-} else {
-    $bad_bots = require(BAD_BOTS_FILE);
 }
+$bad_bots = require(BAD_BOTS_FILE);
 
 // Fonction pour récupérer l'adresse IP de l'utilisateur.
 function getUserIP() {
@@ -57,20 +55,9 @@ if (in_array($ua, $bad_bots, true)) {
 
 // Récupérer les informations et les écrire dans le fichier de log.
 if ($tentative > 0) {
-    // Vérifier si la fonction file_put_contents existe.
-    if (!function_exists("file_put_contents")) {
-        function file_put_contents($file, $data) {
-            $f = fopen($file, "a");
-            if ($f) {
-                fwrite($f, $data);
-                fclose($f);
-            }
-        }
-    }
-
     // Créer une entrée de log.
     $log = "[" . date('Y-m-d H:i:s') . "] [" . $ss . "] [" . $ua . "] [" . getUserIP() . "] [" . $up . "] [" . $ra . "] [" . $sf . "]";
-    file_put_contents(LOG_FILE, "\n" . $log);
+    file_put_contents(LOG_FILE, "\n" . $log, FILE_APPEND);
 
     // Message à afficher pour le voleur.
     $message = "Votre téléchargement est en cours de traitement. Veuillez patienter...";
