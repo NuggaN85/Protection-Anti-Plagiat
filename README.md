@@ -1,16 +1,19 @@
-## 🛡️ Protection Anti Plagiat - béta 1.8.0 🛡️
+```markdown
+# 🛡️ Protection Anti Plagiat - béta 1.8.0 🛡️
 
 ```
- * Dev: NuggaN85
- * Github: NuggaN85
- * Twitter: @NuggaN85
- * Copyright © 2015 - 2023 All rights reserved.
- * MIT Licensed
+* Dev: NuggaN85
+* Github: NuggaN85
+* Twitter: @NuggaN85
+* Copyright © 2015 - 2023 All rights reserved.
+* MIT Licensed
 ```
 
-<div style="text-align:center"><img src ="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.fidelizarte.pt%2Fblog%2Fwp-content%2Fuploads%2F2019%2F09%2F1_1-1024x561.png&f=1&nofb=1&ipt=df1e87f6a3b8113e33f15c4caaa78c0c30d8160ea2c93d09ca1bd5fee5c866a7&ipo=images" /></div>
+<div align="center">
+  <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.fidelizarte.pt%2Fblog%2Fwp-content%2Fuploads%2F2019%2F09%2F1_1-1024x561.png&f=1&nofb=1&ipt=df1e87f6a3b8113e33f15c4caaa78c0c30d8160ea2c93d09ca1bd5fee5c866a7&ipo=images" alt="Protection Anti Plagiat">
+</div>
 
-## <strong>🆕</strong> Présentation
+## 🆕 Présentation
 
 Ce script vous permettra de protéger votre site web contre les attaques d'aspirateurs de site web, afin d'éviter le plagiat et la vente de votre contenu en tant que `NULLED`. Les aspirateurs, comme le logiciel le plus connu `HTTRACK`, seront automatiquement bannis grâce à notre système de blocage.
 
@@ -18,36 +21,37 @@ Notre solution de sécurité comprend deux éléments : un encodage automatique 
 
 N'hésitez pas à nous contacter si vous avez des questions ou si vous souhaitez en savoir plus sur notre solution de protection de site web.
 
---------------------------------------------------------------------------------------------------------------------------------------
+---
 
-## <strong>🆕</strong> Instalation
+## 🆕 Installation
 
 Pour protéger votre site web, veuillez placer le dossier `papprotect` à la racine de votre site, par exemple dans le dossier `public_html` ou `www`. Une fois installé, un fichier supplémentaire nommé `papprotect-log.cnx` sera automatiquement inclus dans le dossier `papprotect`. Ce fichier enregistrera toutes les tentatives de fraudeurs qui tenteront d'aspirer votre site web.
 
-## <strong>🆕</strong> Setup
+---
 
-To protect your website, please place the `papprotect` folder in the root of your website, for example in the `public_html` or `www` folder. Once installed, an additional file named `papprotect-log.cnx` will automatically be included in the `papprotect` folder. This file will log all attempts by fraudsters to steal your website.
+## 🆕 Configuration
 
---------------------------------------------------------------------------------------------------------------------------------------
+Pour protéger votre site web, placez le dossier `papprotect` à la racine de votre site, par exemple dans le dossier `public_html` ou `www`. Une fois installé, un fichier supplémentaire nommé `papprotect-log.cnx` sera automatiquement inclus dans le dossier `papprotect`. Ce fichier enregistrera toutes les tentatives de fraudeurs qui tenteront d'aspirer votre site web.
 
-## <strong>🆕</strong> Important
+---
+
+## 🆕 Important
 
 Afin d'installer correctement la protection de votre site web, veuillez suivre les étapes suivantes :
 
-<strong>⚠️</strong>
-Pour les fichiers en PHP, incluez la ligne `include_once($base_dir. 'papprotect/papprotect.php');` juste après la balise `<?php` dans les pages que vous souhaitez protéger. Cette étape est idéalement réalisée dans le fichier "config.php" de votre site web.
+⚠️ **Pour les fichiers en PHP**, incluez la ligne `include_once($base_dir. 'papprotect/papprotect.php');` juste après la balise `<?php` dans les pages que vous souhaitez protéger. Cette étape est idéalement réalisée dans le fichier "config.php" de votre site web.
 
-<strong>⚠️</strong>
-Pour les fichiers en HTML, insérez le code `<?php include_once($base_dir. 'papprotect/papprotect.php'); ?>` avant la balise `</head>` dans les pages que vous souhaitez protéger.
+⚠️ **Pour les fichiers en HTML**, insérez le code `<?php include_once($base_dir. 'papprotect/papprotect.php'); ?>` avant la balise `</head>` dans les pages que vous souhaitez protéger.
 
 Ces étapes sont cruciales pour assurer que la protection de votre site web est active et fonctionnelle. N'hésitez pas à nous contacter si vous rencontrez des problèmes lors de l'installation de la protection de votre site web.
 
---------------------------------------------------------------------------------------------------------------------------------------
+---
 
-## <strong>🆕</strong> Sécurité
+## 🆕 Sécurité
+
 Pour protéger certains fichiers de votre site web tels que `.htaccess` et `papprotect-log.cnx`, vous pouvez ajouter le code suivant à votre fichier `.htaccess` :
 
-```
+```apache
 ## PROTECT FILES
 # Limiter l'accès au fichier .htaccess lui-même
 <Files ".htaccess">
@@ -65,20 +69,26 @@ Ce code permettra de restreindre l'accès à ces fichiers en empêchant les visi
 
 N'hésitez pas à contacter notre équipe d'assistance si vous avez des questions sur la mise en place de cette protection.
 
---------------------------------------------------------------------------------------------------------------------------------------
+---
 
-## <strong>❤️</strong> (Contribuer) <strong>❤️</strong>
+## ❤️ Contribuer ❤️
 
-[![Donate](https://img.shields.io/badge/paypal-donate-yellow.svg?style=flat)](https://www.paypal.me/nuggan85) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/3319a02c269049cfa8720f3b7c408046)](https://app.codacy.com/gh/NuggaN85/Protection-Anti-Plagiat/commits?bid=14837328) [![v1.8.0](http://img.shields.io/badge/zip-v1.8.0-blue.svg)](https://github.com/NuggaN85/Protection-Anti-Plagiat/archive/master.zip) [![GitHub issues](https://img.shields.io/github/issues/NuggaN85/Protection-Anti-Plagiat)](https://github.com/NuggaN85/Protection-Anti-Plagiat/issues) [![GitHub forks](https://img.shields.io/github/forks/NuggaN85/Protection-Anti-Plagiat)](https://github.com/NuggaN85/Protection-Anti-Plagiat/network) [![GitHub stars](https://img.shields.io/github/stars/NuggaN85/Protection-Anti-Plagiat)](https://github.com/NuggaN85/Protection-Anti-Plagiat/stargazers) [![GitHub license](https://img.shields.io/github/license/NuggaN85/Protection-Anti-Plagiat)](https://github.com/NuggaN85/Protection-Anti-Plagiat)
+[![Donate](https://img.shields.io/badge/paypal-donate-yellow.svg?style=flat)](https://www.paypal.me/nuggan85)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/3319a02c269049cfa8720f3b7c408046)](https://app.codacy.com/gh/NuggaN85/Protection-Anti-Plagiat/commits?bid=14837328)
+[![v1.8.0](http://img.shields.io/badge/zip-v1.8.0-blue.svg)](https://github.com/NuggaN85/Protection-Anti-Plagiat/archive/master.zip)
+[![GitHub issues](https://img.shields.io/github/issues/NuggaN85/Protection-Anti-Plagiat)](https://github.com/NuggaN85/Protection-Anti-Plagiat/issues)
+[![GitHub forks](https://img.shields.io/github/forks/NuggaN85/Protection-Anti-Plagiat)](https://github.com/NuggaN85/Protection-Anti-Plagiat/network)
+[![GitHub stars](https://img.shields.io/github/stars/NuggaN85/Protection-Anti-Plagiat)](https://github.com/NuggaN85/Protection-Anti-Plagiat/stargazers)
+[![GitHub license](https://img.shields.io/github/license/NuggaN85/Protection-Anti-Plagiat)](https://github.com/NuggaN85/Protection-Anti-Plagiat)
 
-<a target="_blank" href="https://www.dmca.com/Protection/Status.aspx?ID=e1725bf3-1ec4-44bb-b65e-0a20fd4919fa&refurl=https://github.com/NuggaN85/Protection-Anti-Plagiat" title="DMCA.com Protection Status" class="dmca-badge"> <img src ="https://images.dmca.com/Badges/dmca_protected_sml_120d.png?ID=e1725bf3-1ec4-44bb-b65e-0a20fd4919fa"  alt="DMCA.com Protection Status" /></a>
+<a target="_blank" href="https://www.dmca.com/Protection/Status.aspx?ID=e1725bf3-1ec4-44bb-b65e-0a20fd4919fa&refurl=https://github.com/NuggaN85/Protection-Anti-Plagiat" title="DMCA.com Protection Status" class="dmca-badge">
+  <img src="https://images.dmca.com/Badges/dmca_protected_sml_120d.png?ID=e1725bf3-1ec4-44bb-b65e-0a20fd4919fa" alt="DMCA.com Protection Status">
+</a>
 
---------------------------------------------------------------------------------------------------------------------------------------
+---
 
-- Signalez-nous les bugs que vous remarquez sur via [Github](https://github.com/NuggaN85/Protection-Anti-Plagiat/issues/1).
-- Nous-suggérez des modifications sur via [Github](https://github.com/NuggaN85/Protection-Anti-Plagiat/issues/2).
+- Signalez-nous les bugs que vous remarquez sur [Github](https://github.com/NuggaN85/Protection-Anti-Plagiat/issues/1).
+- Suggérez des modifications sur [Github](https://github.com/NuggaN85/Protection-Anti-Plagiat/issues/2).
 - Suivez [@NuggaN85](https://twitter.com/NuggaN85) sur Twitter
-- Discord : https://discord.gg/4gZsXRKdmJ
-
---------------------------------------------------------------------------------------------------------------------------------------
-
+- Discord : [https://discord.gg/4gZsXRKdmJ](https://discord.gg/4gZsXRKdmJ)
+```
