@@ -1,12 +1,12 @@
 ```markdown
-# 🛡️ Protection Anti Plagiat - béta 1.8.0 🛡️
+# 🛡️ Protection Anti Plagiat - Version 1.8.0 🛡️
 
 ```
-* Dev: NuggaN85
-* Github: NuggaN85
-* Twitter: @NuggaN85
-* Copyright © 2015 - 2023 All rights reserved.
-* MIT Licensed
+* Développeur: NuggaN85
+* GitHub: [NuggaN85](https://github.com/NuggaN85)
+* Twitter: [@NuggaN85](https://twitter.com/NuggaN85)
+* Copyright © 2015 - 2023 Tous droits réservés.
+* Sous licence MIT
 ```
 
 <div align="center">
@@ -15,7 +15,7 @@
 
 ## 🆕 Présentation
 
-Ce script vous permettra de protéger votre site web contre les attaques d'aspirateurs de site web, afin d'éviter le plagiat et la vente de votre contenu en tant que `NULLED`. Les aspirateurs, comme le logiciel le plus connu `HTTRACK`, seront automatiquement bannis grâce à notre système de blocage.
+Ce script vous permet de protéger votre site web contre les attaques d'aspirateurs de site web, afin d'éviter le plagiat et la vente de votre contenu en tant que `NULLED`. Les aspirateurs, comme le logiciel le plus connu `HTTRACK`, seront automatiquement bannis grâce à notre système de blocage.
 
 Notre solution de sécurité comprend deux éléments : un encodage automatique de votre site web dans un fichier `.CNX` qui n'est pas reconnu par les navigateurs web, ainsi qu'un système de blocage des aspirateurs. Ces mesures garantiront que votre site web est protégé contre les tentatives de copie de contenu.
 
@@ -35,19 +35,19 @@ Pour protéger votre site web, placez le dossier `papprotect` à la racine de vo
 
 ---
 
-## 🆕 Important
+## ⚠️ Important
 
 Afin d'installer correctement la protection de votre site web, veuillez suivre les étapes suivantes :
 
-⚠️ **Pour les fichiers en PHP**, incluez la ligne `include_once($base_dir. 'papprotect/papprotect.php');` juste après la balise `<?php` dans les pages que vous souhaitez protéger. Cette étape est idéalement réalisée dans le fichier "config.php" de votre site web.
+🔹 **Pour les fichiers en PHP**, incluez la ligne `include_once($base_dir. 'papprotect/papprotect.php');` juste après la balise `<?php` dans les pages que vous souhaitez protéger. Cette étape est idéalement réalisée dans le fichier "config.php" de votre site web.
 
-⚠️ **Pour les fichiers en HTML**, insérez le code `<?php include_once($base_dir. 'papprotect/papprotect.php'); ?>` avant la balise `</head>` dans les pages que vous souhaitez protéger.
+🔹 **Pour les fichiers en HTML**, insérez le code `<?php include_once($base_dir. 'papprotect/papprotect.php'); ?>` avant la balise `</head>` dans les pages que vous souhaitez protéger.
 
 Ces étapes sont cruciales pour assurer que la protection de votre site web est active et fonctionnelle. N'hésitez pas à nous contacter si vous rencontrez des problèmes lors de l'installation de la protection de votre site web.
 
 ---
 
-## 🆕 Sécurité
+## 🔒 Sécurité
 
 Pour protéger certains fichiers de votre site web tels que `.htaccess` et `papprotect-log.cnx`, vous pouvez ajouter le code suivant à votre fichier `.htaccess` :
 
@@ -87,8 +87,8 @@ N'hésitez pas à contacter notre équipe d'assistance si vous avez des question
 
 ---
 
-- Signalez-nous les bugs que vous remarquez sur [Github](https://github.com/NuggaN85/Protection-Anti-Plagiat/issues/1).
-- Suggérez des modifications sur [Github](https://github.com/NuggaN85/Protection-Anti-Plagiat/issues/2).
-- Suivez [@NuggaN85](https://twitter.com/NuggaN85) sur Twitter
-- Discord : [https://discord.gg/4gZsXRKdmJ](https://discord.gg/4gZsXRKdmJ)
+- 🐞 [Signaler un bug](https://github.com/NuggaN85/Protection-Anti-Plagiat/issues/1)
+- 💡 [Suggérer une modification](https://github.com/NuggaN85/Protection-Anti-Plagiat/issues/2)
+- 📢 Suivez [@NuggaN85](https://twitter.com/NuggaN85) sur Twitter
+- 💬 Rejoignez notre [Discord](https://discord.gg/4gZsXRKdmJ)
 ```
