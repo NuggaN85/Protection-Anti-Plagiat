@@ -1,23 +1,25 @@
 <?php
-//===== Inclure les fichiers externes
+/**
+ * data.php — Chargement de la liste des bots indésirables
+ *
+ * Charge bad_bots.php et expose $bad_bots pour les traitements ultérieurs.
+ * Ce fichier est un simple bootstrapper ; la logique de détection se trouve
+ * dans papprotect.php.
+ */
 
-// Initialisez la variable $base_dir avec le chemin du répertoire racine de l'application
-$base_dir = __DIR__ . DIRECTORY_SEPARATOR . "papprotect" . DIRECTORY_SEPARATOR;
+declare(strict_types=1);
 
-// Utilisez la constante DIRECTORY_SEPARATOR pour garantir la portabilité des chemins
-$bad_bots_file = $base_dir . "bad_bots.php";
+$badBotsFile = __DIR__ . DIRECTORY_SEPARATOR . 'papprotect' . DIRECTORY_SEPARATOR . 'bad_bots.php';
 
-// Utilisez require_once() pour inclure le fichier bad_bots.php et arrêter l'exécution si le fichier n'existe pas
-if (!file_exists($bad_bots_file)) {
-    exit("Le fichier bad_bots.php est manquant dans le répertoire papprotect!");
-}
-require_once $bad_bots_file;
-
-// Ajouter une vérification pour s'assurer que $bad_bots est défini et est un tableau
-if (!isset($bad_bots) || !is_array($bad_bots)) {
-    exit("Le fichier bad_bots.php n'a pas été inclus correctement ou ne contient pas de tableau valide.");
+if (!is_file($badBotsFile)) {
+    exit('Le fichier bad_bots.php est introuvable dans le répertoire papprotect.');
 }
 
-// Continuez avec les opérations de détection de bots ici...
+/** @var array<string> $bad_bots */
+$bad_bots = require $badBotsFile;
 
-?>
+if (!is_array($bad_bots) || $bad_bots === []) {
+    exit('bad_bots.php ne retourne pas un tableau valide.');
+}
+
+// Continuez ici avec les opérations de détection de bots…
