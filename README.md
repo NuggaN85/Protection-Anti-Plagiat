@@ -1,85 +1,155 @@
-refait moi au propre ceci pour mettre sur GitHub 
+<div align="center">
 
-## 🛡️ Protection Anti Plagiat - béta 1.8.0 🛡️
+# 🛡️ Protection Anti-Plagiat
 
+**Protégez votre site web contre le scraping, le plagiat et la revente de contenu nulled.**
+
+[![Version](https://img.shields.io/badge/version-1.8.0-blue.svg)](https://github.com/NuggaN85/Protection-Anti-Plagiat/archive/master.zip)
+[![License: MIT](https://img.shields.io/github/license/NuggaN85/Protection-Anti-Plagiat)](https://github.com/NuggaN85/Protection-Anti-Plagiat)
+[![Issues](https://img.shields.io/github/issues/NuggaN85/Protection-Anti-Plagiat)](https://github.com/NuggaN85/Protection-Anti-Plagiat/issues)
+[![Forks](https://img.shields.io/github/forks/NuggaN85/Protection-Anti-Plagiat)](https://github.com/NuggaN85/Protection-Anti-Plagiat/network)
+[![Stars](https://img.shields.io/github/stars/NuggaN85/Protection-Anti-Plagiat)](https://github.com/NuggaN85/Protection-Anti-Plagiat/stargazers)
+[![Codacy](https://api.codacy.com/project/badge/Grade/3319a02c269049cfa8720f3b7c408046)](https://app.codacy.com/gh/NuggaN85/Protection-Anti-Plagiat/commits?bid=14837328)
+[![Donate](https://img.shields.io/badge/paypal-donate-yellow.svg?style=flat)](https://www.paypal.me/nuggan85)
+
+<a href="https://www.dmca.com/Protection/Status.aspx?ID=e1725bf3-1ec4-44bb-b65e-0a20fd4919fa&refurl=https://github.com/NuggaN85/Protection-Anti-Plagiat" title="DMCA.com Protection Status">
+  <img src="https://images.dmca.com/Badges/dmca_protected_sml_120d.png?ID=e1725bf3-1ec4-44bb-b65e-0a20fd4919fa" alt="DMCA.com Protection Status" />
+</a>
+
+</div>
+
+---
+
+## 📋 Table des matières
+
+- [Présentation](#-présentation)
+- [Fonctionnalités](#-fonctionnalités)
+- [Installation](#-installation)
+- [Configuration](#-configuration)
+- [Sécurité .htaccess](#-sécurité-htaccess)
+- [Contribuer](#-contribuer)
+- [Communauté](#-communauté)
+
+---
+
+## 📖 Présentation
+
+**Protection Anti-Plagiat** est un script PHP léger conçu pour bloquer les aspirateurs de sites web (scrapers) avant qu'ils ne puissent copier votre contenu. Il cible notamment les outils bien connus comme `HTTrack`, `WebCopier`, `Black Widow` et plus de **1 800 agents malveillants** référencés.
+
+La solution repose sur deux mécanismes complémentaires :
+
+- **Blocage des agents** — comparaison de l'`User-Agent` de chaque visiteur contre une liste maintenue de bots et scrapers connus.
+- **Journal d'activité** — chaque tentative de scraping est enregistrée dans un fichier `.cnx`, inaccessible aux navigateurs web, pour une traçabilité complète.
+
+---
+
+## ✨ Fonctionnalités
+
+| Fonctionnalité | Détail |
+|---|---|
+| 🤖 Blocage de bots | +1 800 agents malveillants détectés |
+| 📝 Journalisation | IP, port, user-agent, date/heure enregistrés |
+| 🔒 Fichier log protégé | Format `.cnx` non interprété par les navigateurs |
+| ⚡ Léger | Aucune dépendance externe, PHP pur |
+| 🌐 Compatible | PHP 8.0+ |
+
+---
+
+## 📦 Installation
+
+1. **Téléchargez** le dossier `papprotect` et placez-le à la **racine de votre site** (`public_html`, `www`, etc.) :
+
+   ```
+   votre-site/
+   ├── public_html/
+   │   ├── papprotect/          ← ici
+   │   │   ├── papprotect.php
+   │   │   ├── bad_bots.php
+   │   │   └── papprotect-log.cnx  (créé automatiquement)
+   │   └── index.php
+   ```
+
+2. **Installation automatique** (optionnel) — uploadez `auto_install.php` à la racine, ouvrez-le dans votre navigateur, puis supprimez-le immédiatement après.
+
+> ⚠️ **Supprimez `auto_install.php` du serveur après installation.** Ce fichier ne doit jamais rester accessible en production.
+
+---
+
+## ⚙️ Configuration
+
+Incluez la protection au début de chaque page à protéger. La méthode recommandée est de le faire **une seule fois dans votre fichier de configuration global** (`config.php`, `bootstrap.php`, etc.).
+
+### Fichiers PHP
+
+Ajoutez cette ligne juste après la balise d'ouverture `<?php` :
+
+```php
+<?php
+$base_dir = __DIR__ . '/';
+include_once($base_dir . 'papprotect/papprotect.php');
 ```
- * Dev: NuggaN85
- * Github: NuggaN85
- * Twitter: @NuggaN85
- * Copyright © 2015 - 2023 All rights reserved.
- * MIT Licensed
+
+### Fichiers HTML (avec PHP activé)
+
+Ajoutez ce bloc **avant** la balise `</head>` :
+
+```html
+<?php
+$base_dir = __DIR__ . '/';
+include_once($base_dir . 'papprotect/papprotect.php');
+?>
 ```
 
-<div style="text-align:center"><img src ="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.fidelizarte.pt%2Fblog%2Fwp-content%2Fuploads%2F2019%2F09%2F1_1-1024x561.png&f=1&nofb=1&ipt=df1e87f6a3b8113e33f15c4caaa78c0c30d8160ea2c93d09ca1bd5fee5c866a7&ipo=images" /></div>
+### Via `data.php` (accès direct à la liste)
 
-## <strong>🆕 Présentation</strong> 
+Si vous avez besoin d'accéder au tableau `$bad_bots` dans votre propre logique :
 
-Ce script vous permettra de protéger votre site web contre les attaques d'aspirateurs de site web, afin d'éviter le plagiat et la vente de votre contenu en tant que `NULLED`. Les aspirateurs, comme le logiciel le plus connu `HTTRACK`, seront automatiquement bannis grâce à notre système de blocage.
-
-Notre solution de sécurité comprend deux éléments : un encodage automatique de votre site web dans un fichier `.CNX` qui n'est pas reconnu par les navigateurs web, ainsi qu'un système de blocage des aspirateurs. Ces mesures garantiront que votre site web est protégé contre les tentatives de copie de contenu.
-
-N'hésitez pas à nous contacter si vous avez des questions ou si vous souhaitez en savoir plus sur notre solution de protection de site web.
-
---------------------------------------------------------------------------------------------------------------------------------------
-
-## <strong>🆕 Instalation</strong> 
-
-Pour protéger votre site web, veuillez placer le dossier `papprotect` à la racine de votre site, par exemple dans le dossier `public_html` ou `www`. Une fois installé, un fichier supplémentaire nommé `papprotect-log.cnx` sera automatiquement inclus dans le dossier `papprotect`. Ce fichier enregistrera toutes les tentatives de fraudeurs qui tenteront d'aspirer votre site web.
-
-## <strong>🆕 Setup</strong> 
-
-To protect your website, please place the `papprotect` folder in the root of your website, for example in the `public_html` or `www` folder. Once installed, an additional file named `papprotect-log.cnx` will automatically be included in the `papprotect` folder. This file will log all attempts by fraudsters to steal your website.
-
---------------------------------------------------------------------------------------------------------------------------------------
-
-## <strong>⚠️ Important</strong>
-
-Afin d'installer correctement la protection de votre site web, veuillez suivre les étapes suivantes :
-
-<strong>⚠️</strong>
-Pour les fichiers en PHP, incluez la ligne `include_once($base_dir. 'papprotect/papprotect.php');` juste après la balise `<?php` dans les pages que vous souhaitez protéger. Cette étape est idéalement réalisée dans le fichier "config.php" de votre site web.
-
-<strong>⚠️</strong>
-Pour les fichiers en HTML, insérez le code `<?php include_once($base_dir. 'papprotect/papprotect.php'); ?>` avant la balise `</head>` dans les pages que vous souhaitez protéger.
-
-Ces étapes sont cruciales pour assurer que la protection de votre site web est active et fonctionnelle. N'hésitez pas à nous contacter si vous rencontrez des problèmes lors de l'installation de la protection de votre site web.
-
---------------------------------------------------------------------------------------------------------------------------------------
-
-## <strong>🔒 Sécurité</strong>
-Pour protéger certains fichiers de votre site web tels que `.htaccess` et `papprotect-log.cnx`, vous pouvez ajouter le code suivant à votre fichier `.htaccess` :
-
+```php
+<?php
+require_once 'data.php';
+// $bad_bots est désormais disponible
 ```
-## PROTECT FILES
-# Limiter l'accès au fichier .htaccess lui-même
+
+---
+
+## 🔒 Sécurité `.htaccess`
+
+Ajoutez les règles suivantes à votre fichier `.htaccess` pour empêcher tout accès direct aux fichiers sensibles du projet :
+
+```apache
+# Protection Anti-Plagiat — Bloquer les fichiers sensibles
 <Files ".htaccess">
     Require all denied
 </Files>
 
-# Bloquer l'accès à certains fichiers sensibles
-<FilesMatch "(^\.|\.htaccess$|^\.cnx$)">
+<FilesMatch "(^\.|\.htaccess$|\.cnx$)">
     Require all denied
 </FilesMatch>
-## PROTECT FILES
 ```
 
-Ce code permettra de restreindre l'accès à ces fichiers en empêchant les visiteurs d'y accéder directement via leur navigateur. Cela renforcera la sécurité de votre site web et empêchera les tentatives de piratage.
+Cela empêche les visiteurs d'accéder directement à `.htaccess` et au journal de log `papprotect-log.cnx`.
 
-N'hésitez pas à contacter notre équipe d'assistance si vous avez des questions sur la mise en place de cette protection.
+---
 
---------------------------------------------------------------------------------------------------------------------------------------
+## 🤝 Contribuer
 
-## <strong>❤️</strong> (Contribuer) <strong>❤️</strong>
+Les contributions sont les bienvenues !
 
-[![Donate](https://img.shields.io/badge/paypal-donate-yellow.svg?style=flat)](https://www.paypal.me/nuggan85) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/3319a02c269049cfa8720f3b7c408046)](https://app.codacy.com/gh/NuggaN85/Protection-Anti-Plagiat/commits?bid=14837328) [![v1.8.0](http://img.shields.io/badge/zip-v1.8.0-blue.svg)](https://github.com/NuggaN85/Protection-Anti-Plagiat/archive/master.zip) [![GitHub issues](https://img.shields.io/github/issues/NuggaN85/Protection-Anti-Plagiat)](https://github.com/NuggaN85/Protection-Anti-Plagiat/issues) [![GitHub forks](https://img.shields.io/github/forks/NuggaN85/Protection-Anti-Plagiat)](https://github.com/NuggaN85/Protection-Anti-Plagiat/network) [![GitHub stars](https://img.shields.io/github/stars/NuggaN85/Protection-Anti-Plagiat)](https://github.com/NuggaN85/Protection-Anti-Plagiat/stargazers) [![GitHub license](https://img.shields.io/github/license/NuggaN85/Protection-Anti-Plagiat)](https://github.com/NuggaN85/Protection-Anti-Plagiat)
+- 🐞 **Signaler un bug** → [Ouvrir une issue](https://github.com/NuggaN85/Protection-Anti-Plagiat/issues/1)
+- 💡 **Proposer une amélioration** → [Faire une suggestion](https://github.com/NuggaN85/Protection-Anti-Plagiat/issues/2)
+- ☕ **Soutenir le projet** → [Faire un don via PayPal](https://www.paypal.me/nuggan85)
 
-<a target="_blank" href="https://www.dmca.com/Protection/Status.aspx?ID=e1725bf3-1ec4-44bb-b65e-0a20fd4919fa&refurl=https://github.com/NuggaN85/Protection-Anti-Plagiat" title="DMCA.com Protection Status" class="dmca-badge"> <img src ="https://images.dmca.com/Badges/dmca_protected_sml_120d.png?ID=e1725bf3-1ec4-44bb-b65e-0a20fd4919fa"  alt="DMCA.com Protection Status" /></a>
+---
 
---------------------------------------------------------------------------------------------------------------------------------------
+## 💬 Communauté
 
-- 🐞 Signalez-nous les bugs que vous remarquez sur via [Github](https://github.com/NuggaN85/Protection-Anti-Plagiat/issues/1).
-- 💡 Nous-suggérez des modifications sur via [Github](https://github.com/NuggaN85/Protection-Anti-Plagiat/issues/2).
-- 📢 Suivez [@NuggaN85](https://bsky.app/profile/nuggan85.bsky.social) sur Bluesky
-- 💬 Discord : https://discord.gg/3FeWMvWdna
+- 📢 Bluesky : [@NuggaN85](https://bsky.app/profile/nuggan85.bsky.social)
+- 💬 Discord : [Rejoindre le serveur](https://discord.gg/3FeWMvWdna)
+- 🐙 GitHub : [NuggaN85](https://github.com/NuggaN85)
 
---------------------------------------------------------------------------------------------------------------------------------------
+---
+
+## 📄 Licence
+
+Ce projet est distribué sous licence **MIT**.
+Copyright © 2015–2024 [NuggaN85](https://github.com/NuggaN85) — All rights reserved.
