@@ -79,7 +79,7 @@ N'hésitez pas à contacter notre équipe d'assistance si vous avez des question
 
 - 🐞 Signalez-nous les bugs que vous remarquez sur via [Github](https://github.com/NuggaN85/Protection-Anti-Plagiat/issues/1).
 - 💡 Nous-suggérez des modifications sur via [Github](https://github.com/NuggaN85/Protection-Anti-Plagiat/issues/2).
-- 📢 Suivez [@NuggaN85](https://bsky.app/profile/nuggan85.bsky.social)) sur Blusky
+- 📢 Suivez [@NuggaN85](https://bsky.app/profile/nuggan85.bsky.social) sur Blusky
 - 💬 Discord : https://discord.gg/3FeWMvWdna
 
 --------------------------------------------------------------------------------------------------------------------------------------
