@@ -145,11 +145,10 @@ Les contributions sont les bienvenues !
 
 - 📢 Bluesky : [@NuggaN85](https://bsky.app/profile/nuggan85.bsky.social)
 - 💬 Discord : [Rejoindre le serveur](https://discord.gg/3FeWMvWdna)
-- 🐙 GitHub : [NuggaN85](https://github.com/NuggaN85)
 
 ---
 
 ## 📄 Licence
 
 Ce projet est distribué sous licence **MIT**.
-Copyright © 2015–2024 [NuggaN85](https://github.com/NuggaN85) — All rights reserved.
+Copyright © 2015–2026 [NuggaN85](https://github.com/NuggaN85) — All rights reserved.
