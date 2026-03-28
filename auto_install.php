@@ -1,112 +1,125 @@
 <?php
-// Désactiver l'affichage des erreurs à l'utilisateur, mais enregistrer les erreurs dans un fichier de log
-ini_set('display_errors', 0);
-ini_set('log_errors', 1);
-ini_set('error_log', '/path/to/php-error.log'); // Remplacez ceci par le chemin réel de votre fichier de log
+/**
+ * auto_install.php — Installation automatique de Protection-Anti-Plagiat
+ *
+ * Télécharge l'archive depuis GitHub, extrait le contenu et installe
+ * les fichiers dans le répertoire courant, puis redirige vers index.php.
+ *
+ * ⚠ À supprimer du serveur après installation.
+ */
+
+declare(strict_types=1);
+
+ini_set('display_errors', '0');
+ini_set('log_errors',     '1');
+// Ajustez le chemin ci-dessous selon votre configuration serveur :
+ini_set('error_log', '/var/log/php-error.log');
 error_reporting(E_ALL);
 set_time_limit(0);
 
-echo '<pre>';
-echo '<span style="color:blue">TÉLÉCHARGEMENT...</span>' . PHP_EOL;
+// ── Constantes ────────────────────────────────────────────────────────────────
+const ARCHIVE_URL  = 'https://github.com/NuggaN85/Protection-Anti-Plagiat/archive/refs/heads/master.zip';
+const ARCHIVE_FILE = 'master.zip';
+const SOURCE_DIR   = 'Protection-Anti-Plagiat-master/papprotect';
+const DEST_DIR     = './';
 
-// Téléchargement du fichier.
-$fileUrl = 'https://github.com/NuggaN85/Protection-Anti-Plagiat/archive/refs/heads/master.zip';
-$zipFile = 'master.zip';
+echo "<pre>\n";
+echo '<span style="color:blue">TÉLÉCHARGEMENT…</span>' . PHP_EOL;
 
-// Vérifier et télécharger le fichier ZIP en utilisant file_get_contents et file_put_contents pour une meilleure gestion des erreurs
-$response = @file_get_contents($fileUrl);
-if ($response === FALSE) {
-    echo 'Oups, le téléchargement du fichier a échoué...';
-    exit;
+// ── 1. Téléchargement ─────────────────────────────────────────────────────────
+$data = @file_get_contents(ARCHIVE_URL);
+if ($data === false) {
+    exit('Échec du téléchargement de l\'archive.');
 }
-if (file_put_contents($zipFile, $response) === FALSE) {
-    echo 'Oups, l\'enregistrement du fichier a échoué...';
-    exit;
+if (file_put_contents(ARCHIVE_FILE, $data) === false) {
+    exit('Impossible d\'écrire l\'archive sur le disque.');
 }
+echo 'Archive téléchargée.' . PHP_EOL;
 
+// ── 2. Extraction ─────────────────────────────────────────────────────────────
 $zip = new ZipArchive();
-
-// Vérifier si l'ouverture du fichier ZIP réussit.
-if ($zip->open($zipFile) === TRUE) {
-    // Extraction du fichier ZIP.
-    $extractPath = './';
-    if ($zip->extractTo($extractPath) === FALSE) {
-        echo 'Oups, l\'extraction du fichier ZIP a échoué...';
-        $zip->close();
-        unlink($zipFile);
-        exit;
-    }
-    $zip->close();
-    unlink($zipFile);
-
-    // Copie des fichiers du répertoire papprotect au répertoire par défaut.
-    $sourceDir = "Protection-Anti-Plagiat/papprotect";
-    if (!is_dir($sourceDir)) {
-        echo 'Le répertoire source est introuvable...';
-        exit;
-    }
-
-    $files = find_all_files($sourceDir);
-
-    foreach ($files as $file) {
-        $destination = basename($file);
-        $fullDestination = "./$destination";
-        
-        if (is_file($file)) {
-            // Utiliser le chemin complet pour la copie.
-            echo '[FILE] ' . $file . ' -> ' . $fullDestination . PHP_EOL;
-            if (!copy($file, $fullDestination)) {
-                echo 'Échec de la copie du fichier ' . $file . '...';
-            }
-        } elseif (is_dir($file)) {
-            echo '[DIR]  ' . $file . PHP_EOL;
-            
-            if (!is_dir($fullDestination)) {
-                // Créer le répertoire avec le chemin complet.
-                if (!mkdir($fullDestination, 0755, true)) {
-                    echo 'Échec de la création du répertoire ' . $fullDestination . '...';
-                }
-            }
-        }
-    }
-
-    // Suppression du dossier papprotect au répertoire par défaut après l'extraction.
-    foreach ($files as $file) {
-        if (is_dir($file)) {
-            echo '[REM]  ' . $file . PHP_EOL;
-            if (!@rmdir($file)) {
-                echo 'Échec de la suppression du répertoire ' . $file . '...';
-            }
-        }
-    }
-    @rmdir($sourceDir);
-
-    // Vérifier si la copie a réussi.
-    if (file_exists('index.php')) {
-        // Redirection vers la page d'installation de papprotect.
-        echo '<meta http-equiv="refresh" content="1;url=index.php" />';
-    } else {
-        echo 'Oups, cela n\'a pas fonctionné...';
-    }
-} else {
-    echo 'Oups, l\'ouverture du fichier ZIP a échoué...';
+$openResult = $zip->open(ARCHIVE_FILE);
+if ($openResult !== true) {
+    @unlink(ARCHIVE_FILE);
+    exit("Impossible d'ouvrir le fichier ZIP (code : $openResult).");
 }
 
-// Fonction améliorée pour rechercher tous les fichiers et répertoires de manière récursive
-function find_all_files($dir)
+if (!$zip->extractTo(DEST_DIR)) {
+    $zip->close();
+    @unlink(ARCHIVE_FILE);
+    exit('Échec de l\'extraction du fichier ZIP.');
+}
+$zip->close();
+@unlink(ARCHIVE_FILE);
+echo 'Archive extraite.' . PHP_EOL;
+
+// ── 3. Copie des fichiers ─────────────────────────────────────────────────────
+if (!is_dir(SOURCE_DIR)) {
+    exit('Le répertoire source est introuvable : ' . SOURCE_DIR);
+}
+
+/**
+ * Retourne récursivement tous les fichiers et répertoires d'un dossier.
+ *
+ * @return \SplFileInfo[]
+ */
+function listFilesRecursive(string $dir): array
 {
-    $result = [];
-    $dir = rtrim($dir, '/') . '/';
-    
-    $files = new RecursiveIteratorIterator(
+    $iterator = new RecursiveIteratorIterator(
         new RecursiveDirectoryIterator($dir, RecursiveDirectoryIterator::SKIP_DOTS),
         RecursiveIteratorIterator::SELF_FIRST
     );
-    
-    foreach ($files as $file) {
-        $result[] = $file->getPathname();
-    }
-    
-    return $result;
+
+    return iterator_to_array($iterator, false);
 }
-?>
+
+/** @var \SplFileInfo[] $items */
+$items = listFilesRecursive(SOURCE_DIR);
+
+// Copie (répertoires d'abord, puis fichiers)
+foreach ($items as $item) {
+    $relative = substr($item->getPathname(), strlen(SOURCE_DIR) + 1);
+    $dest     = rtrim(DEST_DIR, '/') . '/' . $relative;
+
+    if ($item->isDir()) {
+        if (!is_dir($dest) && !mkdir($dest, 0755, true)) {
+            echo "[WARN] Impossible de créer : $dest" . PHP_EOL;
+        } else {
+            echo "[DIR]  $dest" . PHP_EOL;
+        }
+    } elseif ($item->isFile()) {
+        if (!copy($item->getPathname(), $dest)) {
+            echo "[WARN] Copie échouée : {$item->getPathname()}" . PHP_EOL;
+        } else {
+            echo "[FILE] {$item->getPathname()} → $dest" . PHP_EOL;
+        }
+    }
+}
+
+// ── 4. Nettoyage du dossier extrait ──────────────────────────────────────────
+$allItems = listFilesRecursive(SOURCE_DIR);
+// Supprimer fichiers d'abord, puis répertoires (du plus profond au plus haut)
+$dirs = [];
+foreach (array_reverse($allItems) as $item) {
+    if ($item->isFile()) {
+        @unlink($item->getPathname());
+    } elseif ($item->isDir()) {
+        $dirs[] = $item->getPathname();
+    }
+}
+foreach ($dirs as $d) {
+    @rmdir($d);
+}
+@rmdir(SOURCE_DIR);
+// Supprimer le dossier racine de l'archive extraite
+@rmdir(dirname(SOURCE_DIR));
+
+echo 'Nettoyage terminé.' . PHP_EOL;
+
+// ── 5. Redirection ────────────────────────────────────────────────────────────
+if (is_file('index.php')) {
+    echo '</pre>';
+    echo '<meta http-equiv="refresh" content="1;url=index.php">';
+} else {
+    exit('Installation incomplète : index.php introuvable.');
+}
