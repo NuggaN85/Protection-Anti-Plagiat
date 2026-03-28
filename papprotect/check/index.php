@@ -1,19 +1,20 @@
 <?php
-// Utilisez la constante DIRECTORY_SEPARATOR pour garantir la portabilité des chemins
-$redirect_path = realpath(__DIR__ . DIRECTORY_SEPARATOR . ".." . DIRECTORY_SEPARATOR . ".." . DIRECTORY_SEPARATOR . "index.php");
+/**
+ * index.php — Redirection permanente vers la racine du site
+ *
+ * Vérifie que index.php existe bien deux niveaux au-dessus avant de rediriger.
+ */
 
-// Vérifiez que le chemin est valide et sécurisé avant de procéder à la redirection
-if ($redirect_path !== false && is_file($redirect_path)) {
-    // Utilisez la fonction header() pour envoyer l'en-tête de redirection
-    header("HTTP/1.1 301 Moved Permanently");
-    header("Location: /index.php"); // Utilisez une URL relative ou absolue pour la redirection
-    // Assurez-vous que le script se termine après la redirection
-    exit();
-} else {
-    // Si le chemin n'est pas valide, vous pouvez gérer l'erreur de manière appropriée
-    // Par exemple, vous pouvez rediriger vers une page d'erreur ou afficher un message
-    echo "Redirection impossible. Veuillez contacter l'administrateur.";
-    // Terminer le script
+declare(strict_types=1);
+
+$target = realpath(__DIR__ . '/../../index.php');
+
+if ($target !== false && is_file($target)) {
+    header('HTTP/1.1 301 Moved Permanently');
+    header('Location: /index.php');
     exit();
 }
-?>
+
+// Le fichier cible est introuvable — erreur explicite
+http_response_code(500);
+exit('Redirection impossible. Veuillez contacter l\'administrateur.');
