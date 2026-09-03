@@ -131,24 +131,13 @@ Cela empêche les visiteurs d'accéder directement à `.htaccess` et au journal 
 
 ---
 
-## 🤝 Contribuer
+## 🛡️ Licence
 
-Les contributions sont les bienvenues !
-
-- 🐞 **Signaler un bug** → [Ouvrir une issue](https://github.com/NuggaN85/Protection-Anti-Plagiat/issues/1)
-- 💡 **Proposer une amélioration** → [Faire une suggestion](https://github.com/NuggaN85/Protection-Anti-Plagiat/issues/2)
-- ☕ **Soutenir le projet** → [Faire un don via PayPal](https://www.paypal.me/nuggan85)
+Ce script est fourni sous licence **MIT** – vous pouvez l’utiliser, le modifier et le redistribuer librement.
 
 ---
 
-## 💬 Communauté
+## 🤝 Contributions
 
-- 📢 Bluesky : [@NuggaN85](https://bsky.app/profile/nuggan85.bsky.social)
-- 💬 Discord : [Rejoindre le serveur](https://discord.gg/3FeWMvWdna)
-
----
-
-## 📄 Licence
-
-Ce projet est distribué sous licence **MIT**.
-Copyright © 2015–2026 [NuggaN85](https://github.com/NuggaN85) — All rights reserved.
+Les pull requests et suggestions d’amélioration sont les bienvenues.  
+Pour signaler un problème, ouvrez une issue sur le dépôt.
