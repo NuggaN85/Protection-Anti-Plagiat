@@ -141,8 +141,3 @@ Ce script est fourni sous licence **MIT** – vous pouvez l’utiliser, le modif
 
 Les pull requests et suggestions d’amélioration sont les bienvenues.  
 Pour signaler un problème, ouvrez une issue sur le dépôt.
-
----
-
-© 2024 Ludovic Rose. Tous droits réservés.
-
